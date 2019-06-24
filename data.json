@@ -1,0 +1,4511 @@
+{
+  "head" : {
+    "vars" : [
+      "s",
+      "l"
+    ]
+  },
+  "results" : {
+    "bindings" : [
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Aalenian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Aalenian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Middle Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Jurassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Mesozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Mesozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Phanerozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Middle Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleJurassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Bajocian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseBajocian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Bajocian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Bajocian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Early Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/EarlyJurassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Toarcian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Toarcian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Aeronian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Aeronian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Llandovery"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Llandovery"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Paleozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Paleozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Silurian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Silurian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Aeronian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseAeronian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Telychian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseTelychian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Telychian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Telychian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Rhuddanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Rhuddanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Albian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Albian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Anisian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Anisian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Aptian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Aptian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Aquitanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Aquitanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Artinskian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Artinskian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Asselian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Asselian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Barremian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Barremian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Bartonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Bartonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Bashkirian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Bashkirian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Bathonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Bathonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Berriasian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Berriasian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Burdigalian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Burdigalian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Calabrian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Calabrian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Callovian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Callovian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cambrian-Stage 10"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage10"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cambrian-Stage 2"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage2"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cambrian-Stage 3"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage3"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cambrian-Stage 4"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage4"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Campanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Campanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Capitanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Capitanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Carnian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Carnian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cenomanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Cenomanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Changhsingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Changhsingian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Chattian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Chattian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Coniacian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Coniacian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Danian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Danian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Dapingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Dapingian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Darriwilian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Darriwilian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Drumian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Drumian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Eifelian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Eifelian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Emsian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Emsian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Famennian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Famennian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Floian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Floian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Fortunian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Fortunian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Frasnian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Frasnian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Gelasian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Gelasian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Givetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Givetian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Gorstian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Gorstian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Greenlandian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Greenlandian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Guzhangian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Guzhangian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Gzhelian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Gzhelian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Hauterivian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Hauterivian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Hettangian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Hettangian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Hirnantian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Hirnantian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Homerian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Homerian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Induan"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Induan"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Jiangshanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Jiangshanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Kasimovian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Kasimovian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Katian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Katian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Kimmeridgian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Kungurian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Kungurian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Ladinian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Ladinian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Langhian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Langhian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Late Pleistocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/LatePleistocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Lochkovian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Lochkovian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Ludfordian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Ludfordian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Lutetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Lutetian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Maastrichtian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Meghalayan"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Meghalayan"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Messinian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Messinian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Middle Pleistocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/MiddlePleistocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Moscovian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Moscovian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Norian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Norian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Northgrippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Northgrippian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Olenekian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Olenekian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Oxfordian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Oxfordian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Paibian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Paibian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Piacenzian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Piacenzian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Pliensbachian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Pragian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Pragian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Priabonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Priabonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Rhaetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Rhaetian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Roadian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Roadian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Rupelian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Rupelian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Sakmarian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Sakmarian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Sandbian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Sandbian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Santonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Santonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Selandian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Selandian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Serpukhovian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Serravallian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Serravallian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Sheinwoodian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Sheinwoodian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Sinemurian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Sinemurian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Thanetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Thanetian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Tithonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Tithonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Tortonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Tortonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Tournaisian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Tournaisian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Tremadocian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Tremadocian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Turonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Turonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Valanginian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Valanginian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Visean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Visean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Wordian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Wordian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Wuchiapingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Wuchiapingian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Wuliuan"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Wuliuan"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Ypresian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Ypresian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Zanclean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Zanclean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Early Cretaceous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/EarlyCretaceous"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cretaceous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Cretaceous"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Albian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseAlbian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Late Cretaceous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateCretaceous"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Late Cretaceous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/LateCretaceous"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Middle Triassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/MiddleTriassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Triassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Triassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Middle Triassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleTriassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Ladinian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLadinian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Early Triassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/EarlyTriassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Aptian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseAptian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Miocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Miocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cenozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Cenozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Neogene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Neogene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Neogene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseNeogene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Burdigalian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseBurdigalian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Oligocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Oligocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Paleogene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Paleogene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Archean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Archean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Precambrian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Precambrian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Eoarchean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Eoarchean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Mesoarchean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Mesoarchean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Neoarchean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Neoarchean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Paleoarchean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Paleoarchean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Archean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseArchean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Proterozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseProterozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Paleoproterozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Proterozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Proterozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Siderian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Siderian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Hadean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Hadean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cisuralian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Cisuralian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Permian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Permian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Artinskian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseArtinskian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Kungurian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseKungurian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Permian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePermian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Sakmarian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSakmarian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Carboniferous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Carboniferous"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Late Mississippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/LateMississippian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Late Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/LatePennsylvanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Bathonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseBathonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Barremian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseBarremian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Eocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Eocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Bartonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseBartonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Priabonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePriabonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Aeronian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseAeronianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Albian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseAlbianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Aptian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseAptianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Artinskian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseArtinskianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Bajocian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseBajocianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Barremian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseBarremianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Bartonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseBartonianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Bathonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseBathonianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Burdigalian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseBurdigalianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Calabrian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCalabrian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Calabrian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCalabrianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Callovian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCallovian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Callovian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCallovianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Cambrian Series 2"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianSeries2"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Cambrian Stage 3"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianSeries2SP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Miaolingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiaolingian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Miaolingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiaolingianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Cambrian Stage 10"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage10"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Cambrian Stage 10"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage10SP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Cambrian Stage 2"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage2"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Cambrian Stage 2"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage2SP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Cambrian Stage 4"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage4"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Cambrian Stage 4"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage4SP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Campanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCampanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Campanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCampanianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Capitanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCapitanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Capitanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCapitanianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Carboniferous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCarboniferous"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Carboniferous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCarboniferousSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Cenozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCenozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Cenozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCenozoicSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Changhsingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseChanghsingian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Changhsingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseChanghsingianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Chattian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseChattian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Chattian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseChattianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Coniacian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseConiacian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Coniaician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseConiacianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Cretaceous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCretaceous"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Cretaceous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCretaceousSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Cryogenian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCryogenian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Cryogenian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseCryogenianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Darriwilian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseDarriwilian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Darriwilian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseDarriwilianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseDevonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseDevonianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Drumian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseDrumian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Drumian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseDrumianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Ectasian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseEctasian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Ediacaran"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseEdiacaran"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Ediacaran"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseEdiacaranSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Emsian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseEmsian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Emsian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseEmsianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Eocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseEocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Eocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseEoceneSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Famennian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseFamennian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Famennian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseFamennianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Floian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseFloian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Floian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseFloianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Furongian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseFurongian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Furongian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseFurongianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Givetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseGivetian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Givetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseGivetianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Guadalupian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseGuadalupian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Guadalupian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseGuadalupianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Guzhangian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseGuzhangian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Guzhangian "
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseGuzhangianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Gzhelian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseGzhelian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Gzhelian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseGzhelianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Hauterivian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseHauterivian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Barremian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseHauterivianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Hirnantian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseHirnantian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Hirnantian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseHirnantianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Holocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseHolocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Holocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseHoloceneSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Homerian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseHomerian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Homerian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseHomerianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Jiangshanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseJiangshanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Jiangshanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseJiangshanianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseJurassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseJurassicSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Katian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseKatian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Katian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseKatianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Kimmeridgian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseKimmeridgian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Kimmeridgian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseKimmeridgianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Kungurian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseKungurianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Ladinian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLadinianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Langhian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLanghian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Langhian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLanghianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Upper Cretaceous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateCretaceousSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Upper Cretaceous"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseUpperCretaceousSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Upper Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateDevonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Upper Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateDevonianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Upper Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseUpperDevonianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Late Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateJurassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Upper Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateJurassicSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Upper Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseUpperJurassicSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Late Mississippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateMississippian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Late Mississippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateMississippianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Upper Mississippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseUpperMississippianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Late Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateOrdovician"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Late Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateOrdovicianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Upper Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseUpperOrdovicianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Late Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLatePennsylvanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Late Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLatePennsylvanianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Upper Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseUpperPennsylvanianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Late Pleistocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLatePleistocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Late Triassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateTriassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Late Triassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLateTriassicSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Upper Triassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseUpperTriassicSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Lopingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLopingian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Lopingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLopingianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Ludfordian Stage"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLudfordian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Ludfordian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLudfordianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Ludlow"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLudlow"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Ludlow"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLudlowSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Lutetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLutetian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Lutetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseLutetianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Maastrichtian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMaastrichtian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Maastrichtian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMaastrichtianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Meghalayan"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMeghalayan"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Auxiliary Stratotype Point Base of Meghalayan"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMeghalayanAuxSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Meghalayan"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMeghalayanSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Mesoarchean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMesoarchean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Mesoproterozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMesoproterozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Mesozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMesozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Mesozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMesozoicSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Messinian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMessinian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Messinian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMessinianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Middle Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleDevonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Middle Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleDevonianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Middle Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleJurassicSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Middle Mississippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleMississippian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Middle Mississippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleMississippianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Middle Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleOrdovician"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Middle Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleOrdovicianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Middle Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddlePennsylvanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Middle Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddlePennsylvanianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Middle Pleistocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddlePleistocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Middle Triassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleTriassicSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Neoarchean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseNeoarchean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Neogene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseNeogeneSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Neoproterozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseNeoproterozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Norian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseNorian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Norian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseNorianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Northgrippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseNorthgrippian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Auxiliary Stratotype Point Base of Northgrippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseNorthgrippianAuxSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Northgrippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseNorthgrippianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Olenekian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseOlenekian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Olenekian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseOlenekianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Oligocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseOligocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Oligocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseOligoceneSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseOrdovician"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseOrdovicianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Orosirian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseOrosirian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Paleoarchean"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePaleoarchean"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePennsylvanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePennsylvanianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Permian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePermianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Phanerozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePhanerozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Phanerozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePhanerozoicSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Piacenzian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePiacenzian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Piacenzian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePiacenzianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Pliensbachian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePliensbachian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Pliensbachian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePliensbachianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Pliocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePliocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Pliocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePlioceneSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Pragian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePragian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Pragian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePragianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Priabonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePriabonianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Pridoli"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePridoli"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Pridoli"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BasePridoliSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Quaternary"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseQuaternary"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Quaternary"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseQuaternarySP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Rhaetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseRhaetian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Rhaetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseRhaetianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Rhyacian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseRhyacian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Sakmarian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSakmarianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Santonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSantonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Santonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSantonianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Selandian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSelandian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Selandian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSelandianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Serravallian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSerravallian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Serravallian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSerravallianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Silurian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSilurian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Silurian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSilurianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Sinemurian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSinemurian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Sinemurian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseSinemurianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Statherian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseStatherian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Stenian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseStenian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Telychian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseTelychianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Thanetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseThanetian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Thanetian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseThanetianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Tithonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseTithonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Tithonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseTithonianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Toarcian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseToarcian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Toarcian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseToarcianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Tortonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseTortonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Tortonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseTortonianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Turonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseTuronian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Turonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseTuronianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Valanginian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseValanginian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Valanginian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseValanginianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Wenlock"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseWenlock"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Wenlock"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseWenlockSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Base of Wordian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseWordian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratotype Point Base of Wordian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/BaseWordianSP"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Early Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/EarlyPennsylvanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Middle Pennsylvanian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/MiddlePennsylvanian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Mississippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Mississippian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Late Jurassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/LateJurassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Formation of the earth"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/FormationOfEarth"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "The Present"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Present"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Geochronologic Boundaries"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Boundary-unspecified"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Pleistocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Pleistocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Quaternary"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Quaternary"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Calymmian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Calymmian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Mesoproterozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Ectasian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Ectasian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Statherian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Statherian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cambrian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Cambrian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cambrian Series 2"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries2"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Furongian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Furongian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Miaolingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Miaolingian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Terreneuvian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Early Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/EarlyOrdovician"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Ordovician"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Ediacaran"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Ediacaran"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Neoproterozoic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Guadalupian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Guadalupian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Early Mississippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/EarlyMississippian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Middle Mississippian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/MiddleMississippian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Devonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Late Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/LateDevonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Late Triassic"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/LateTriassic"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Holocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Holocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Paleocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Paleocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Pliocene"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Pliocene"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Lopingian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Lopingian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Cryogenian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Cryogenian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Tonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Tonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Middle Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/MiddleOrdovician"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Late Ordovician"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/LateOrdovician"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Early Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/EarlyDevonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Middle Devonian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/MiddleDevonian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Pridoli"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Pridoli"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stenian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Stenian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Ludlow"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Ludlow"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Wenlock"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Wenlock"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Orosirian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Orosirian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Rhyacian"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Rhyacian"
+        }
+      },
+      {
+        "l" : {
+          "xml:lang" : "en",
+          "type" : "literal",
+          "value" : "Stratigraphic points"
+        },
+        "s" : {
+          "type" : "uri",
+          "value" : "http://resource.geosciml.org/classifier/ics/ischart/Stratotype-unspecified"
+        }
+      }
+    ]
+  }
+}

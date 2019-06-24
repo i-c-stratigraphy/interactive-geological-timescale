@@ -3,17 +3,20 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <heading></heading>
     <graphic></graphic>
+    <custom-footer></custom-footer>
   </div>
 </template>
 
 <script>
 import Heading from './components/Heading.vue' 
 import Graphic from './components/Graphic.vue'
+import CustomFooter from './components/Footer.vue'
 export default {
   name: 'app',
   components: {
     Heading,
-    Graphic
+    Graphic,
+    CustomFooter
   }
 }
 </script>

@@ -4,13 +4,187 @@
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <rect class="eon" id="Phanerozoic" fill="#A1D4E2" x="0" y="0" width="100%" height="100%" stroke="black" stroke-width="5"/>
                 <rect class="era" id="Cenozoic" fill="#F6EB3B" x="10%" y="0" width="100%" height="16.67%"/>
+                    <rect class="period" id="Quaternary" fill="#FFF49E" x="20%" y="0" width="100%" height="100%"/>
+                        <rect class="epoch" id="Holocene" fill="#FFF3E6" x="30%" y="0" width="100%" height="100%"/>
+                            <rect class ="age" id="Holocene-Null" fill="#FFF4F0" x="60%" y="0" width="100%" height="100%" />
+                        <rect class="epoch" id="Pliocene" fill="#FFEFC0" x="30%" y="0" width="100%" height="100%"/>
+                            <rect class ="age" id="Upper" fill="#FFF2DD" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Middle" fill="#FFF1D3" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Calabrian" fill="#FFF0CA" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Gelasian" fill="#FFEEB7" x="60%" y="0" width="100%" height="100%" />
+                    <rect class="period" id="Neogene" fill="#FFDB4B" x="20%" y="0" width="100%" height="100%"/>
+                        <rect class="epoch" id="Pliocene" fill="#FFF6B2" x="30%" y="0" width="100%" height="100%"/>
+                            <rect class ="age" id="Piacenzian" fill="#FFF9CF" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Zanclean" fill="#FFF8C5" x="60%" y="0" width="100%" height="100%" />
+                        <rect class="epoch" id="Miocene" fill="#FFEB3D" x="30%" y="0" width="100%" height="100%"/>
+                            <rect class ="age" id="Messinian" fill="#FFF395" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Tortonian" fill="#FFF28B" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Serravallian" fill="#FFF181" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Langhian" fill="#FFF078" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Burdigalian" fill="#FFEF6E" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Aquitanian" fill="#FFEE64" x="60%" y="0" width="100%" height="100%" />
+                    <rect class="period" id="Paleogene" fill="#FFA76F" x="20%" y="0" width="100%" height="100%"/>
+                        <rect class="epoch" id="Oligocene" fill="#FFC694" x="30%" y="0" width="100%" height="100%"/>
+                            <rect class ="age" id="Chattian" fill="#FFE5BC" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Rupelian" fill="#FFDBAE" x="60%" y="0" width="100%" height="100%" />
+                        <rect class="epoch" id="Eocene" fill="#FFBC87" x="30%" y="0" width="100%" height="100%"/>
+                            <rect class ="age" id="Priabonian" fill="#FFD2B3" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Bartonian" fill="#FFC8A5" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Lutetian" fill="#FFBD98" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Ypresian" fill="#FFB38C" x="60%" y="0" width="100%" height="100%" />
+                        <rect class="epoch" id="Paleocene" fill="#FFB17B" x="30%" y="0" width="100%" height="100%"/>
+                            <rect class ="age" id="Thanetian" fill="#FFC58B" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Selandian" fill="#FFC482" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Danian" fill="#FFBB7E" x="60%" y="0" width="100%" height="100%" />
                 <rect class="era" id="Mesozoic" fill="#6CC0DB" x="10%" y="16.67%" width="100%" height="16.67%"/>
+                    <rect class="period" id="Cretaceous" fill="#82CC73" x="20%" y="16.67%" width="100%" height="100%"/>
+                        <rect class ="epoch" id="Upper" fill="#ABD671" x="30%" y="16.67%" width="100%" height="100%" />
+                            <rect class ="age" id="Maastrichtian" fill="#F9F1A8" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Campanian" fill="#EBEC9E" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Santonian" fill="#DFE895" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Coniacian" fill="#D2E38C" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Turonian" fill="#C5DF83" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Cenomanian" fill="#B8DA7A" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Lower" fill="#8FD07B" x="30%" y="16.67%" width="100%" height="100%" />
+                            <rect class ="age" id="Albian" fill="#CEE7B1" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Aptian" fill="#C1E2A8" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Barremian" fill="#B4DE9F" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Hauterivian" fill="#A7D996" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Valanginian" fill="#9AD58D" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Berriasian" fill="#8ED184" x="60%" y="0" width="100%" height="100%" />
+                    <rect class="period" id="Jurassic" fill="#1AC4EC" x="20%" y="16.67%" width="100%" height="100%"/>
+                        <rect class ="epoch" id="Upper" fill="#A9E8FB" x="30%" y="16.67%" width="100%" height="100%" />
+                            <rect class ="age" id="Tithonian" fill="#D4F3FD" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Kimmeridgian" fill="#C6EFFC" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Oxfordian" fill="#B7ECFC" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Middle" fill="#71D9EF" x="30%" y="16.67%" width="100%" height="100%" />
+                            <rect class ="age" id="Callovian" fill="#B9EBF2" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Bathonian" fill="#AAE7F2" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Bajocian" fill="#9CE3F1" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Aalenian" fill="#8DE0F0" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Lower" fill="#28C1F0" x="30%" y="16.67%" width="100%" height="100%" />
+                            <rect class ="age" id="Toarcian" fill="#8DD8F4" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Pliensbachian" fill="#70D1F3" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Sinemurian" fill="#54CBF1" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Hettangian" fill="#37C4F0" x="60%" y="0" width="100%" height="100%" />
+                    <rect class="period" id="Triassic" fill="#824FA8" x="20%" y="16.67%" width="100%" height="100%"/>
+                        <rect class ="epoch" id="Upper" fill="#BBA3D1" x="30%" y="16.67%" width="100%" height="100%" />
+                            <rect class ="age" id="Rhaetian" fill="#E3C8E2" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Norian" fill="#D5BBDD" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Carnian" fill="#C8AFD7" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Middle" fill="#B084C2" x="30%" y="16.67%" width="100%" height="100%" />
+                            <rect class ="age" id="Ladinian" fill="#C99CCD" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Anisian" fill="#BC90C7" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Lower" fill="#995BAE" x="30%" y="16.67%" width="100%" height="100%" />
+                            <rect class ="age" id="Olenekian" fill="#B171B8" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Induan" fill="#A566B3" x="60%" y="0" width="100%" height="100%" />
                 <rect class="era" id="Paleozoic" fill="#A3BC99" x="10%" y="33.33%" width="100%" height="16.67%"/>
+                    <rect class="period" id="Permian" fill="#F95F44" x="20%" y="33.33%" width="100%" height="100%"/>
+                        <rect class ="epoch" id="Lopingian" fill="#FFB5A6" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Changhsingian" fill="#FFCAC0" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Wuchiapingian" fill="#FFC0B3" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Guadalupian" fill="#FF8B75" x="30%" y="33.33%" width="100%" height="100%" />  
+                            <rect class ="age" id="Capitanian" fill="#FFAA99" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Wordian" fill="#FFA08D" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Roadian" fill="#FF9581" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Cisuralian" fill="#F8745F" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Kungurian" fill="#E99B8D" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Artinskian" fill="#EA9181" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Sakmarian" fill="#EA8776" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Asselian" fill="#EB7D6B" x="60%" y="0" width="100%" height="100%" />
+                    <rect class="period" id="Carboniferous" fill="#5FB6B5" x="20%" y="33.33%" width="100%" height="100%"/>
+                        <rect class ="epoch" id="Pennsylvanian" fill="#93CCCC" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="epoch sub-epoch" id="Upper" fill="#BCD6CD" x="40%" y="33.33%" width="100%" height="100%" />
+                                <rect class ="age" id="Gzhelian" fill="#C9DAD6" x="60%" y="0" width="100%" height="100%" />
+                                <rect class ="age" id="Kasimovian" fill="#BBD7D6" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="epoch sub-epoch" id="Middle" fill="#A1CFCC" x="40%" y="33.33%" width="100%" height="100%" />
+                                <rect class ="age" id="Moscovian" fill="#AFD3CC" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="epoch sub-epoch" id="Lower" fill="#85C9CB" x="40%" y="33.33%" width="100%" height="100%" />
+                                <rect class ="age" id="Bashkirian" fill="#93CCCC" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Mississippian" fill="#67A385" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="epoch sub-epoch" id="Upper" fill="#B6C48A" x="40%" y="33.33%" width="100%" height="100%" />
+                                <rect class ="age" id="Serpukhovian" fill="#C4C78A" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="epoch sub-epoch" id="Middle" fill="#9BBE8B" x="40%" y="33.33%" width="100%" height="100%" />
+                                <rect class ="age" id="Visean" fill="#A9C18B" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="epoch sub-epoch" id="Lower" fill="#80B88B" x="40%" y="33.33%" width="100%" height="100%" />
+                                <rect class ="age" id="Tournaisian" fill="#8EBB8B" x="60%" y="0" width="100%" height="100%" />
+                    <rect class="period" id="Devonian" fill="#D59C58" x="20%" y="33.33%" width="100%" height="100%"/>
+                        <rect class ="epoch" id="Upper" fill="#F6E1B2" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Famennian" fill="#F4EDD3" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Frasnian" fill="#F6EBC0" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Middle" fill="#F9CB86" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Givetian" fill="#F8DFA0" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Eifelian" fill="#F9D592" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Lower" fill="#EDB46E" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Emsian" fill="#EBD193" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Pragian" fill="#ECC886" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Lochkovian" fill="#ECBE7A" x="60%" y="0" width="100%" height="100%" />
+                    <rect class="period" id="Silurian" fill="#AFE3CD" x="20%" y="33.33%" width="100%" height="100%"/>
+                        <rect class ="epoch" id="Pridoli" fill="#E4F5EB" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Pridoli-Null" fill="#E4F5EB" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Ludlow" fill="#BBE8E0" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Ludfordian" fill="#D6F1EA" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Gorstian" fill="#C8EDE9" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Wenlock" fill="#AEE4D6" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Homerian" fill="#C9ECE0" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Sheinwoodian" fill="#BCE7D6" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Llandovery" fill="#0FB58F" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Telychian" fill="#BBE8E0" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Aeronian" fill="#AEE4D6" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Rhuddanian" fill="#A0DFCC" x="60%" y="0" width="100%" height="100%" />
+                    <rect class="period" id="Ordovician" fill="#00AF90" x="20%" y="33.33%" width="100%" height="100%"/>
+                        <rect class ="epoch" id="Upper" fill="#7AD2B1" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Hirnantian" fill="#A2DEC3" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Katian" fill="#93DAC3" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Sandbian" fill="#88D5B1" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Middle" fill="#44C3A0" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Darriwilian" fill="#6ACFBA" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Dapingian" fill="#5DCBB1" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Lower" fill="#0FB58F" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Floian" fill="#34C1A8" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Tremadocian" fill="#28BDA0" x="60%" y="0" width="100%" height="100%" />
+                    <rect class="period" id="Cambrian" fill="#83AF77" x="20%" y="33.33%" width="100%" height="100%"/>
+                        <rect class ="epoch" id="Furongian" fill="#B2E0B1" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Stage 10" fill="#E6F3D7" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Jiangshanian" fill="#D9EECE" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Paibian" fill="#CCE9C4" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Series 3" fill="#A6D3A4" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Guzhangian" fill="#CCE0BF" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Drumian" fill="#BFDCB6" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Stage 5" fill="#B2D7AD" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Series 2" fill="#99C797" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Stage 4" fill="#B3CFA9" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Stage 3" fill="#A6CBA0" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="epoch" id="Terreneuvian" fill="#8EBB8B" x="30%" y="33.33%" width="100%" height="100%" />
+                            <rect class ="age" id="Stage 2" fill="#A7C29C" x="60%" y="0" width="100%" height="100%" />
+                            <rect class ="age" id="Fortunian" fill="#9ABF93" x="60%" y="0" width="100%" height="100%" />
+            <!-- TABLE GETS MESSED UP HERE! -->
+            <rect class="eon" id="Precambrian" fill="#FF6485" x="0" y="50%" width="100%" height="100%" stroke="black" stroke-width="5"/>
                 <rect class="era" id="Proterozoic" fill="#EA5B70" x="10%" y="50%" width="100%" height="16.67%"/>
+                    <rect class ="epoch" id="Neo-proterozoic" fill="#FFB964" x="30%" y="50%" width="100%" height="100%" />
+                        <rect class ="age" id="Ediacaran" fill="#FFD789" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="age" id="Cryogenian" fill="#FFCD7C" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="age" id="Tonian" fill="#FFC370" x="60%" y="0" width="100%" height="100%" />
+                    <rect class ="epoch" id="Meso-proterozoic" fill="#FFBB7E" x="30%" y="50%" width="100%" height="100%" />
+                        <rect class ="age" id="Stenian" fill="#FFDBAE" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="age" id="Ectasian" fill="#FFD0A1" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="age" id="Calymmian" fill="#FFC694" x="60%" y="0" width="100%" height="100%" />
+                    <rect class ="epoch" id="Paleo-proterozoic" fill="#FF6485" x="30%" y="50%" width="100%" height="100%" />
+                        <rect class ="age" id="Statherian" fill="#FE90B5" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="age" id="Orosirian" fill="#FE85A8" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="age" id="Rhyacian" fill="#FF7A9C" x="60%" y="0" width="100%" height="100%" />
+                        <rect class ="age" id="Siderian" fill="#FF6F90" x="60%" y="0" width="100%" height="100%" />
                 <rect class="era" id="Archean" fill="#E72582" x="10%" y="66.67%" width="100%" height="16.67%"/>
+                    <rect class ="epoch" id="Neo-archean" fill="#FEAFCB" x="30%" y="66.67%" width="100%" height="100%" />
+                        <rect class ="age" id="Neo-archean-Null" fill="#FEB9D0" x="60%" y="0" width="100%" height="100%" />
+                    <rect class ="epoch" id="Meso-archean" fill="#FD86B8" x="30%" y="66.67%" width="100%" height="100%" />
+                        <rect class ="age" id="Meso-archean-Null" fill="#FD9BC1" x="60%" y="0" width="100%" height="100%" />
+                    <rect class ="epoch" id="Paleo-archean" fill="#FC67B1" x="30%" y="66.67%" width="100%" height="100%" />
+                        <rect class ="age" id="Paleo-archean-Null" fill="#FC87BF" x="60%" y="0" width="100%" height="100%" />
+                    <rect class ="epoch" id="Eo-archean" fill="#E42F99" x="30%" y="66.67%" width="100%" height="100%" />
+                        <rect class ="age" id="Eo-archean-Null" fill="#F046A2" x="60%" y="0" width="100%" height="100%" />
                 <rect class="era" id="Hadean" fill="#B12A7E" x="10%" y="83.34%" width="100%" height="100%"/>
         </svg>
-
     </div>
 </template>
 <script>

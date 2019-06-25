@@ -1,5 +1,6 @@
 <template>
     <div id="container">
+        
         <!-- 'y' must increase and must be the previous 'y' + previous 'height' -->
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <rect class="eon" id="Phanerozoic" fill="#A1D4E2" x="0" y="0" width="100%" height="100%" stroke="black" stroke-width="5"/>
@@ -7,7 +8,7 @@
                     <rect class="period" id="Quaternary" fill="#FFF49E" x="20%" y="0" width="100%" height="100%"/>
                         <rect class="epoch" id="Holocene" fill="#FFF3E6" x="30%" y="0" width="100%" height="100%"/>
                             <rect class ="age" id="Holocene-Null" fill="#FFF4F0" x="60%" y="0" width="100%" height="100%" />
-                        <rect class="epoch" id="Pliocene" fill="#FFEFC0" x="30%" y="0" width="100%" height="100%"/>
+                        <rect class="epoch" id="Pleistocene" fill="#FFEFC0" x="30%" y="0" width="100%" height="100%"/>
                             <rect class ="age" id="Upper" fill="#FFF2DD" x="60%" y="0" width="100%" height="100%" />
                             <rect class ="age" id="Middle" fill="#FFF1D3" x="60%" y="0" width="100%" height="100%" />
                             <rect class ="age" id="Calabrian" fill="#FFF0CA" x="60%" y="0" width="100%" height="100%" />
@@ -188,10 +189,40 @@
     </div>
 </template>
 <script>
-export default {
-    name: 'graphic',
-
-}
+    import data from '../assets/timeline_data.json'
+    //console.log(data)
+    export default {
+        name: 'graphic',
+        methods: {
+            calculateAgeHeight: function (data){
+                var counter = 0
+                for (let item in data){
+                    if (data[item]['type'] == 'age'){
+                        counter++
+                    }
+                }
+                return 100/counter
+            },
+            adjustVerticalAlignment: function(ageHeight, data){
+                var rectangles = document.getElementsByTagName('rect')
+                for (let item in data){
+                    if (data[item]['type'] == 'age'){
+                        console.log(item, document.getElementById(item))
+                        document.getElementById(item).setAttribute('y', ageHeight + "%")
+                    }
+                }
+            }
+        },
+        created() {
+            var ageHeight = this.calculateAgeHeight(data)       
+            this.adjustVerticalAlignment(ageHeight, data)
+        }/*,
+        data () {
+            return {
+                timescaleObjects: document.getElementsByTagName('rect')
+            }
+        }*/
+    }
 </script>
 <style scoped>
     #container {

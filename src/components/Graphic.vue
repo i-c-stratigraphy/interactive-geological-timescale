@@ -206,7 +206,7 @@
                         counter++
                     }
                 }
-                return 100/counter
+                return 100/(counter + 5) // '+ 5' is to correct issues by the Hadean Era not having any associated ages, but still needing to take up space.
             },
             calculateAges: function(data, id){
                var toScan = [id]
@@ -223,7 +223,7 @@
                        counter = counter + data[item]['narrow'].length
                    }
                }
-               return counter
+               return counter + 5 
             },
             preprocessPositions: function(data, ageHeight){
                 var yPositionAge = 0
@@ -283,6 +283,12 @@
                         data[item]['y'] = yPositionAge + '%'
                         data[item]['width'] = "90%"
                         data[item]['xlabel'] =  (!precambrian) ? "15%" : "20%"
+                        // Making Hadean Era the Width of 5 Ages
+                        if (precambrian && data[item]['id'] == 'Hadean') {
+                            data[item]['height'] = ageHeight * 5 + "%"
+                            yPositionAge = yPositionAge + (ageHeight * 5)
+                            data[item]['xlabel'] =  "55%"
+                        }
                     }else if (data[item]['type'] == 'eon'){
                         lastEon = item
                         data[item]['x'] = "0%"

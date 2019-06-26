@@ -23,23 +23,6 @@
                 }
                 return 100/(counter + 5) // '+ 5' is to correct issues by the Hadean Era not having any associated ages, but still needing to take up space.
             },
-            calculateAges: function(data, id){
-               var toScan = [id]
-               var counter = 0
-               while (toScan.length > 0) {
-                   var item = toScan.pop()
-                   //console.log(toScan)
-                   if (data[id]['type'] != 'epoch'){
-                        for (var i in data[item]['narrow']){
-                            toScan.push(data[item]['narrow'][i])
-                        }
-                       //console.log('Extended: ', toScan)
-                   } else {
-                       counter = counter + data[item]['narrow'].length
-                   }
-               }
-               return counter + 5 
-            },
             preprocessPositions: function(data, ageHeight){
                 var yPositionAge = 0
                 var toUpdateHeight = []

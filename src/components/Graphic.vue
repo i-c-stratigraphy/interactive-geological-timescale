@@ -1,7 +1,9 @@
 <template>
     <div id="container">
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <rect v-for="item in entries" v-bind:key="item.id" :id="item.id" :class="item.type" :fill="item.fill" :width="item.width" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y"><text>{{item['name']}}</text></rect>
+                <rect v-for="item in entries" v-bind:key="item.id" :id="item.id" :class="item.type" :fill="item.fill" :width="item.width" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y">
+                    <text>{{item.name}}</text>
+                </rect>
         </svg>
         <!-- Manual SVG -->
         <!-- 'y' must increase and must be the previous 'y' + previous 'height' -->
@@ -267,7 +269,6 @@
                         //data[item]['height'] = this.calculateAges(dataSizes, data[item]['id']) * ageHeight + '%'
                         data[item]['width'] = "100%"
                     }
-                    break
                 }
                 console.log(data)
                 return data

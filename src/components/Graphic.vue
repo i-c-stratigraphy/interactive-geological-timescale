@@ -257,6 +257,11 @@
                         data[item]['height'] = ageHeight + '%'
                         data[item]['width'] = "40%"
                         yPositionAge = yPositionAge + ageHeight
+                    }else if (data[item]['type'] == 'epoch sub-epoch'){
+                        data[item]['x'] = "40%"
+                        data[item]['y'] = yPositionAge + '%'
+                        data[item]['height'] = ageHeight * data[item]['narrow'].length + '%'
+                        data[item]['width'] = "80%"
                     }else if (data[item]['type'] == 'epoch'){
                         data[item]['x'] = "30%"
                         data[item]['y'] = yPositionAge + '%'

@@ -1,8 +1,11 @@
 <template>
     <div id="container">
-        
-        <!-- 'y' must increase and must be the previous 'y' + previous 'height' -->
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <rect v-for="item in entries" v-bind:key="item.id" :id="item.id" :class="item.type" :fill="item.fill" :width="item.width" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y"><text>{{item['name']}}</text></rect>
+        </svg>
+        <!-- Manual SVG -->
+        <!-- 'y' must increase and must be the previous 'y' + previous 'height' -->
+        <!--<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <rect class="eon" id="Phanerozoic" fill="#A1D4E2" x="0" y="0" width="100%" height="100%" stroke="black" stroke-width="5"/>
                 <rect class="era" id="Cenozoic" fill="#F6EB3B" x="10%" y="0" width="100%" height="16.67%"/>
                     <rect class="period" id="Quaternary" fill="#FFF49E" x="20%" y="0" width="100%" height="100%"/>
@@ -159,7 +162,6 @@
                         <rect class ="epoch" id="Terreneuvian" fill="#8EBB8B" x="30%" y="33.33%" width="100%" height="100%" />
                             <rect class ="age" id="Stage 2" fill="#A7C29C" x="60%" y="0" width="100%" height="100%" />
                             <rect class ="age" id="Fortunian" fill="#9ABF93" x="60%" y="0" width="100%" height="100%" />
-            <!-- TABLE GETS MESSED UP HERE! -->
             <rect class="eon" id="Precambrian" fill="#FF6485" x="0" y="50%" width="100%" height="100%" stroke="black" stroke-width="5"/>
                 <rect class="era" id="Proterozoic" fill="#EA5B70" x="10%" y="50%" width="100%" height="16.67%"/>
                     <rect class ="epoch" id="Neo-proterozoic" fill="#FFB964" x="30%" y="50%" width="100%" height="100%" />
@@ -184,8 +186,8 @@
                         <rect class ="age" id="Paleo-archean-Null" fill="#FC87BF" x="60%" y="0" width="100%" height="100%" />
                     <rect class ="epoch" id="Eo-archean" fill="#E42F99" x="30%" y="66.67%" width="100%" height="100%" />
                         <rect class ="age" id="Eo-archean-Null" fill="#F046A2" x="60%" y="0" width="100%" height="100%" />
-                <rect class="era" id="Hadean" fill="#B12A7E" x="10%" y="83.34%" width="100%" height="100%"/>
-        </svg>
+                <rect class="era" id="Hadean" fill="#B12A7E" x="10%" y="83.34%" width="100%" height="100%"/> 
+        </svg>-->
     </div>
 </template>
 <script>
@@ -203,25 +205,80 @@
                 }
                 return 100/counter
             },
-            adjustVerticalAlignment: function(ageHeight, data){
-                var rectangles = document.getElementsByTagName('rect')
+            calculateAges: function(data, id){
+               var toScan = [id]
+               var counter = 0
+               while (toScan.length > 0) {
+                   var item = toScan.pop()
+                   //console.log(toScan)
+                   if (data[id]['type'] != 'epoch'){
+                        for (var i in data[item]['narrow']){
+                            toScan.push(data[item]['narrow'][i])
+                        }
+                       //console.log('Extended: ', toScan)
+                   } else {
+                       counter = counter + data[item]['narrow'].length
+                   }
+               }
+               return counter
+            },
+            preprocessPositions: function(data, ageHeight){
+                console.log(ageHeight)
+                var dataSizes = {}
+                //for (var item in data){
+                //    dataSizes[data[item]['id']] = data[item]
+                //}
+                var yPositionAge = 0
+                var toUpdateHeight = []
+                var currentEon, currentEra, currentPeriod, currentEpoch, currentAge
                 for (let item in data){
                     if (data[item]['type'] == 'age'){
-                        console.log(item, document.getElementById(item))
-                        document.getElementById(item).setAttribute('y', ageHeight + "%")
+                        //currentAge = data[item]
+                        data[item]['x'] = "60%"
+                        data[item]['y'] = yPositionAge + '%'
+                        data[item]['height'] = ageHeight + '%'
+                        data[item]['width'] = "40%"
+                        yPositionAge = yPositionAge + ageHeight
+                    }else if (data[item]['type'] == 'epoch'){
+                        //currentEpoch = data[item]
+                        data[item]['x'] = "30%"
+                        data[item]['y'] = yPositionAge + '%'
+                        data[item]['height'] = ageHeight * data[item]['narrow'].length + '%'
+                        data[item]['width'] = "70%"
+                    }else if (data[item]['type'] == 'period'){
+                        //currentPeriod = data[item]
+                        data[item]['x'] = "20%"
+                        data[item]['y'] = yPositionAge + '%'
+                        //console.log(data[item]['id'], this.calculateAges(dataSizes, data[item]['id']))
+                        //data[item]['height'] = this.calculateAges(dataSizes, data[item]['id']) * ageHeight + '%'
+                        data[item]['width'] = "80%"
+                        console.log(currentPeriod)
+                    }else if (data[item]['type'] == 'era'){
+                        //currentEra = data[item]
+                        data[item]['x'] = "10%"
+                        data[item]['y'] = yPositionAge + '%'
+                        //data[item]['height'] = this.calculateAges(dataSizes, data[item]['id']) * ageHeight + '%'
+                        data[item]['width'] = "90%"
+                    }else if (data[item]['type'] == 'eon'){
+                        //currentEon = data[item]
+                        data[item]['x'] = "0%"
+                        data[item]['y'] = yPositionAge + '%'
+                        //console.log(data[item]['id'], this.calculateAges(dataSizes, data[item]['id']))
+                        //data[item]['height'] = this.calculateAges(dataSizes, data[item]['id']) * ageHeight + '%'
+                        data[item]['width'] = "100%"
                     }
+                    break
                 }
+                console.log(data)
+                return data
             }
         },
-        created() {
-            var ageHeight = this.calculateAgeHeight(data)       
-            this.adjustVerticalAlignment(ageHeight, data)
-        }/*,
         data () {
             return {
-                timescaleObjects: document.getElementsByTagName('rect')
+                ageHeight: this.calculateAgeHeight(data),
+                entries: this.preprocessPositions(data, this.calculateAgeHeight(data))
             }
-        }*/
+        }
     }
 </script>
 <style scoped>

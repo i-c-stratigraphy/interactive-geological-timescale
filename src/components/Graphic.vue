@@ -3,7 +3,8 @@
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <g v-for="item in entries" v-bind:key="item.id" :id="item.id">
                 <rect  :class="item.type" :fill="item.fill" :width="item.width" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y"/>
-                <text  :class="item.type" :x="item.xlabel" :y="(parseFloat(item.y) +  parseFloat(item.height) /2) + '%'">{{(item.name.endsWith("Null"))? "" : item.name }}</text>
+                <text  :class="item.type" :x="item.xlabel" :y="(parseFloat(item.y) +  parseFloat(item.height) /2) + '%'">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
+                <animateTransform attributeType="xml" type="rotate" from="360 24.69 35.778" to="0 24.69 35.778" dur="2s" begin="team.mouseover" end="team.mouseout" />
             </g>
         </svg>
     </div>
@@ -22,6 +23,9 @@
                     }
                 }
                 return 100/(counter + 5) // '+ 5' is to correct issues by the Hadean Era not having any associated ages, but still needing to take up space.
+            },
+            hoverOverElement: function(event) {
+                document.getElementById(event.target.parentNode.id).setAttribute('transform', 'translate(30, 40')
             },
             preprocessPositions: function(data, ageHeight){
                 var yPositionAge = 0
@@ -116,13 +120,16 @@
 </script>
 <style scoped>
     #container {
-        border: solid black 1px;
-        max-width: 75%;
+        border: solid white 1px;
+        width: 75%;
+        min-width: 980px;
+        max-width: 1250px;
         margin: auto;
         height: 3000px;;
     }
     svg{
-        background-color: red;
+        background-color: white;
+        overflow: visible;
     }
     rect{
         stroke-width: 1;
@@ -131,6 +138,15 @@
     text{
         dominant-baseline: middle;
         text-anchor: middle;
+        font-weight: bold;
+    }
+    g{
+        position: relative;
+        top: 0px;
+        transition: transform .2s ease-in-out;
+    }
+    g:hover{
+        transform: translate3d(-2.4%, 0px, 0px);
     }
 </style>
 

@@ -1,9 +1,10 @@
 <template>
     <div id="container">
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <rect v-for="item in entries" v-bind:key="item.id" :id="item.id" :class="item.type" :fill="item.fill" :width="item.width" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y">
-                    <text>{{item.name}}</text>
-                </rect>
+            <g v-for="item in entries" v-bind:key="item.id" :id="item.id">
+                <rect  :class="item.type" :fill="item.fill" :width="item.width" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y"/>
+                <text  :class="item.type" :x="item.xlabel" :y="(parseFloat(item.y) +  parseFloat(item.height) /2) + '%'">{{(item.name.endsWith("Null"))? "" : item.name }}</text>
+            </g>
         </svg>
         <!-- Manual SVG -->
         <!-- 'y' must increase and must be the previous 'y' + previous 'height' -->
@@ -256,32 +257,38 @@
                         data[item]['y'] = yPositionAge + '%'
                         data[item]['height'] = ageHeight + '%'
                         data[item]['width'] = "40%"
+                        data[item]['xlabel'] = "80%"
                         yPositionAge = yPositionAge + ageHeight
                     }else if (data[item]['type'] == 'epoch sub-epoch'){
-                        data[item]['x'] = "40%"
+                        data[item]['x'] = "45%"
                         data[item]['y'] = yPositionAge + '%'
                         data[item]['height'] = ageHeight * data[item]['narrow'].length + '%'
-                        data[item]['width'] = "80%"
+                        data[item]['width'] = "55%"
+                        data[item]['xlabel'] = "52.5%"
                     }else if (data[item]['type'] == 'epoch'){
                         data[item]['x'] = "30%"
                         data[item]['y'] = yPositionAge + '%'
                         data[item]['height'] = ageHeight * data[item]['narrow'].length + '%'
                         data[item]['width'] = "70%"
+                        data[item]['xlabel'] = (data[item]['id'] == 'Mississippian' || data[item]['id'] == 'Pennsylvanian') ? "37.5%" : "45%"
                     }else if (data[item]['type'] == 'period'){
                         lastPeriod = item
                         data[item]['x'] = "20%"
                         data[item]['y'] = yPositionAge + '%'
                         data[item]['width'] = "80%"
+                        data[item]['xlabel'] = "25%"
                     }else if (data[item]['type'] == 'era'){
                         lastEra = item
                         data[item]['x'] = "10%"
                         data[item]['y'] = yPositionAge + '%'
                         data[item]['width'] = "90%"
+                        data[item]['xlabel'] =  (!precambrian) ? "15%" : "20%"
                     }else if (data[item]['type'] == 'eon'){
                         lastEon = item
                         data[item]['x'] = "0%"
                         data[item]['y'] = yPositionAge + '%'
                         data[item]['width'] = "100%"
+                        data[item]['xlabel'] = "5%"
                     }
                     pastType = data[item]['type']
                     if (item == data.length - 1){
@@ -316,6 +323,10 @@
     rect{
         stroke-width: 1;
         stroke: black;
+    }
+    text{
+        dominant-baseline: middle;
+        text-anchor: middle;
     }
 </style>
 

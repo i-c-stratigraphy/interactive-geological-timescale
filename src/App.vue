@@ -3,7 +3,9 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <heading></heading>
     <graphic></graphic>
-    <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId"></data-sheet>
+    <transition name='fade'>
+      <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId"></data-sheet>
+    </transition>
     <custom-footer></custom-footer>
   </div>
 </template>
@@ -24,21 +26,6 @@ export default {
     CustomFooter,
     DataSheet
   },
-  methods: {
-    httpRequestAsync: function(url){
-    var xmlHttp = new XMLHttpRequest()
-    xmlHttp.onreadystatechange = function () {
-      if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
-        console.log(xmlHttp.responseText)
-        this.elementData = xmlHttp.responseText
-        this.dataReceived = true
-        Vue.nextTick()
-      }
-    }
-    xmlHttp.open("GET", url, true)
-    xmlHttp.send(null)
-    }
-  },
   data () {
     return {
       dataSheetOn: false,
@@ -50,12 +37,22 @@ export default {
       this.dataSheetOn = true
       this.dataSheetId = id
     })
+    EventBus.$on('destroy-data-sheet', payload =>{
+      this.dataSheetOn = false
+      this.dataSheetId = null
+    })
   }
 }
 //console.log(EventBus)
 </script>
 
 <style>
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -63,5 +60,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>

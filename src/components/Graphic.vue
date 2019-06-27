@@ -148,6 +148,7 @@
     }
     g:hover{
         transform: translate3d(-2.4%, 0px, 0px);
+        cursor: pointer;
     }
 </style>
 

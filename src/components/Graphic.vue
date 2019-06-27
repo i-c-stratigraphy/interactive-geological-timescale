@@ -1,7 +1,7 @@
 <template>
     <div id="container">
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <g v-for="item in entries" v-bind:key="item.id" :id="item.id" @click='getAdditionalInfo'>
+            <g v-for="item in entries" v-bind:key="item.id" :id="item.id" @click='sendClickToEventBus'>
                 <rect  :class="item.type" :fill="item.fill" :width="item.width" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y"/>
                 <text  :class="item.type" :x="item.xlabel" :y="(parseFloat(item.y) +  parseFloat(item.height) /2) + '%'">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
             </g>
@@ -25,9 +25,7 @@
                 }
                 return 100/(counter + 5) // '+ 5' is to correct issues by the Hadean Era not having any associated ages, but still needing to take up space.
             },
-            getAdditionalInfo: function(event) {
-                console.log(event.target.parentNode.id)
-                console.log(EventBus)
+            sendClickToEventBus: function(event) {
                 EventBus.$emit('create-data-sheet', event.target.parentNode.id)
             },
             preprocessPositions: function(data, ageHeight){

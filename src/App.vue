@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <heading></heading>
     <graphic></graphic>
-    <data-sheet v-if="dataSheetOn"></data-sheet>
+    <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId"></data-sheet>
     <custom-footer></custom-footer>
   </div>
 </template>
@@ -24,15 +24,31 @@ export default {
     CustomFooter,
     DataSheet
   },
+  methods: {
+    httpRequestAsync: function(url){
+    var xmlHttp = new XMLHttpRequest()
+    xmlHttp.onreadystatechange = function () {
+      if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+        console.log(xmlHttp.responseText)
+        this.elementData = xmlHttp.responseText
+        this.dataReceived = true
+        Vue.nextTick()
+      }
+    }
+    xmlHttp.open("GET", url, true)
+    xmlHttp.send(null)
+    }
+  },
   data () {
     return {
-      dataSheetOn: false
+      dataSheetOn: false,
+      dataSheetId: null
     }
   },
   mounted () {
     EventBus.$on('create-data-sheet', id => {
-      this.dataSheetOn = !this.dataSheetOn
-      console.log(id, this.dataSheetOn)
+      this.dataSheetOn = true
+      this.dataSheetId = id
     })
   }
 }

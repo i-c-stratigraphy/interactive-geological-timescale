@@ -1,6 +1,7 @@
 <template>
     <div id='datasheet-container'>
-        Hello World
+        <p>ID: {{id}}</p>
+        <p v-if="dataReceived" @click="show">DATA: {{elementData}}</p>
     </div>
 </template>
 
@@ -8,14 +9,38 @@
 
 
 export default {
-  name: 'DataSheet',
-  props: {
-      id: String
-  },
-  mounted() {
-      var requestURL = 'http://resource.geosciml.org/classifier/ics/ischart/' + this.id
-      console.log(requestURL)
-  }
+    name: 'DataSheet',
+    props: {
+        id: String
+    },
+    data (){
+        return {
+            elementData: "Waiting",
+            dataReceived: true
+        }
+    },
+    methods: {
+        show: function(){
+            console.log(this.elementData)
+        },
+        httpRequestAsync: function(url){
+            var this_ = this
+            var xmlHttp = new XMLHttpRequest()
+            xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+                var data = xmlHttp.responseText
+                this_.elementData = data
+                this_.dataReceived = true
+            }
+        }
+        xmlHttp.open("GET", url, true)
+        xmlHttp.send(null)
+        }
+    },
+    mounted(){
+        var requestURL = 'http://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=http://resource.geosciml.org/classifier/ics/ischart/' + this.id
+        this.httpRequestAsync(requestURL)
+    }
 }
 </script>
 

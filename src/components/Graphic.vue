@@ -1,16 +1,17 @@
 <template>
     <div id="container">
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <g v-for="item in entries" v-bind:key="item.id" :id="item.id">
+            <g v-for="item in entries" v-bind:key="item.id" :id="item.id" @click='getAdditionalInfo'>
                 <rect  :class="item.type" :fill="item.fill" :width="item.width" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y"/>
                 <text  :class="item.type" :x="item.xlabel" :y="(parseFloat(item.y) +  parseFloat(item.height) /2) + '%'">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
-                <animateTransform attributeType="xml" type="rotate" from="360 24.69 35.778" to="0 24.69 35.778" dur="2s" begin="team.mouseover" end="team.mouseout" />
             </g>
         </svg>
     </div>
 </template>
 <script>
     import data from '../assets/timeline_data.json'
+    import EventBus from '../assets/event-bus.js'
+    
     //console.log(data)
     export default {
         name: 'graphic',
@@ -24,8 +25,10 @@
                 }
                 return 100/(counter + 5) // '+ 5' is to correct issues by the Hadean Era not having any associated ages, but still needing to take up space.
             },
-            hoverOverElement: function(event) {
-                document.getElementById(event.target.parentNode.id).setAttribute('transform', 'translate(30, 40')
+            getAdditionalInfo: function(event) {
+                console.log(event.target.parentNode.id)
+                console.log(EventBus)
+                EventBus.$emit('create-data-sheet', event.target.parentNode.id)
             },
             preprocessPositions: function(data, ageHeight){
                 var yPositionAge = 0

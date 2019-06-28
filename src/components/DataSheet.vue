@@ -5,7 +5,7 @@
         <div id='datasheet-container' v-if="dataReceived">
             <div id='datasheet-header'>
                 <h1>{{jsonElementData.result.primaryTopic.label._value}}</h1>
-                <h2>/ <span v-for="label in jsonElementData.result.primaryTopic.prefLabel" v-bind:key="label._lang">{{label._value}} / </span></h2>
+                <h2 v-if="jsonElementData.result.primaryTopic.prefLabel.length > 0">/ <span v-for="label in jsonElementData.result.primaryTopic.prefLabel" v-bind:key="label._lang">{{label._value}} / </span></h2>
             </div>
             <div id="table-container">
                 <table>
@@ -25,7 +25,7 @@
                             </ul>
                         </td>
                     </tr>
-                    <tr>
+                    <tr v-if="jsonElementData.result.primaryTopic.narrower">
                         <th class='label'>Interval Contains</th>
                         <td class='value'>
                             <ul>
@@ -72,7 +72,7 @@
                             </ul>
                         </td>
                     </tr>
-                    <tr>
+                    <tr v-if="jsonElementData.result.primaryTopic.intervalStartedBy != null">
                         <th class='label'>Interval Started By</th>
                         <td class='value'>
                             <ul>
@@ -88,7 +88,7 @@
                             </ul>
                         </td>
                     </tr>
-                    <tr>
+                    <tr v-if='jsonElementData.result.primaryTopic.intervalFinishedBy != null'>
                         <th class='label'>Interval Finished By</th>
                         <td class='value'>
                             <ul>

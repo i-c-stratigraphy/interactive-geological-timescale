@@ -99,64 +99,64 @@
                         archean = true
                     } 
                     if (data[item]['type'] == 'age'){
-                        data[item]['x'] = "70%"
+                        data[item]['x'] = "72.5%"
                         data[item]['y'] = yPositionAge + '%'
                         data[item]['height'] = ageHeight + '%'
-                        data[item]['width'] = "30%"
-                        data[item]['xlabel'] = "85%"
+                        data[item]['width'] = "27.5%"
+                        data[item]['xlabel'] = "86.25%"
                         yPositionAge = yPositionAge + ageHeight
                     }else if (data[item]['type'] == 'epoch sub-epoch'){
-                        data[item]['x'] = "55%"
+                        data[item]['x'] = "57.5%"
                         data[item]['y'] = yPositionAge + '%'
                         data[item]['height'] = ageHeight * data[item]['narrow'].length + '%'
-                        data[item]['width'] = "45%"
-                        data[item]['xlabel'] = "62.5%"
+                        data[item]['width'] = "42.5%"
+                        data[item]['xlabel'] = "65%"
                     }else if (data[item]['type'] == 'epoch'){
-                        data[item]['x'] = "40%"
+                        data[item]['x'] = "42.5%"
                         data[item]['y'] = yPositionAge + '%'
                         data[item]['height'] = ageHeight * data[item]['narrow'].length + '%'
-                        data[item]['width'] = "60%"
-                        data[item]['xlabel'] = (data[item]['id'] == 'Mississippian' || data[item]['id'] == 'Pennsylvanian') ? "47.5%" : "55%"
+                        data[item]['width'] = "57.5%"
+                        data[item]['xlabel'] = (data[item]['id'] == 'Mississippian' || data[item]['id'] == 'Pennsylvanian') ? "50%" : "57.5%"
                     }else if (data[item]['type'] == 'period'){
                         lastPeriod = item
-                        data[item]['x'] = "30%"
+                        data[item]['x'] = "32.5%"
                         data[item]['y'] = yPositionAge + '%'
-                        data[item]['width'] = "70%"
-                        data[item]['xlabel'] = "35%"
+                        data[item]['width'] = "67.5%"
+                        data[item]['xlabel'] = "37.5%"
                         if (precambrian){
                             data[item]['height'] = ageHeight*2 + '%'
                             yPositionAge = yPositionAge + ageHeight*2
-                            data[item]['xlabel'] = "65%"
+                            data[item]['xlabel'] = "67.5%"
                         }
                     }else if (data[item]['type'] == 'era'){
                         lastEra = item
-                        data[item]['x'] = "20%"
+                        data[item]['x'] = "22.5%"
                         data[item]['y'] = yPositionAge + '%'
-                        data[item]['width'] = "80%"
-                        data[item]['xlabel'] =  (!precambrian) ? "25%" : "25%"
+                        data[item]['width'] = "77.5%"
+                        data[item]['xlabel'] =  (!precambrian) ? "27.5%" : "27.5%"
                         if (archean){
                             data[item]['height'] = ageHeight*2 + '%'
                             yPositionAge = yPositionAge + ageHeight*2
-                            data[item]['xlabel'] = "60%"
+                            data[item]['xlabel'] = "62.5%"
                         }
                     }else if (data[item]['type'] == 'eon'){
                         lastEon = item
-                        data[item]['x'] = "10%"
+                        data[item]['x'] = "12.5%"
                         data[item]['y'] = yPositionAge + '%'
-                        data[item]['width'] = "90%"
-                        data[item]['xlabel'] = "15%"
+                        data[item]['width'] = "87.5%"
+                        data[item]['xlabel'] = "17.5%"
                         // Making Hadean Eon the Height of 5 Ages
                         if (precambrian && data[item]['id'] == 'Hadean') {
                             data[item]['height'] = ageHeight * 5 + "%"
                             yPositionAge = yPositionAge + (ageHeight * 5)
-                            data[item]['xlabel'] =  "55%"
+                            data[item]['xlabel'] =  "57.5%"
                         }
                     }else if (data[item]['type'] == 'super-eon'){
                         lastSuperEon = item
-                        data[item]['x'] = "0%"
+                        data[item]['x'] = "2.5%"
                         data[item]['y'] = yPositionAge + '%'
-                        data[item]['width'] = "100%"
-                        data[item]['xlabel'] = "5%"
+                        data[item]['width'] = "97.5%"
+                        data[item]['xlabel'] = "7.5%"
                     }
                     pastType = data[item]['type']
                     if (item == data.length - 1){

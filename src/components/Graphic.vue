@@ -2,12 +2,12 @@
     <div id="container">
         <svg width="100%" :height="'40px'" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <g class='headings'>
-                <text x="5%" y="50%">Supereon</text>
-                <text x="15%" y="50%"><tspan x="15%" y="30%">Eonothem /</tspan><tspan x="15%" y="70%">Eon</tspan></text>
-                <text x="25%" y="50%"><tspan x="25%" y="30%">Erathem /</tspan><tspan x="25%" y="70%">Era</tspan></text>
-                <text x="35%" y="50%"><tspan x="35%" y="30%">System /</tspan><tspan x="35%" y="70%">Period</tspan></text>
-                <text x="55%" y="50%">Series / Epoch</text>
-                <text x="85%" y="50%">Stage / Age</text>
+                <text x="7.5%" y="50%">Supereon</text>
+                <text x="17.5%" y="50%"><tspan x="17.5%" y="30%">Eonothem /</tspan><tspan x="17.5%" y="70%">Eon</tspan></text>
+                <text x="27.5%" y="50%"><tspan x="27.5%" y="30%">Erathem /</tspan><tspan x="27.5%" y="70%">Era</tspan></text>
+                <text x="37.5%" y="50%"><tspan x="37.5%" y="30%">System /</tspan><tspan x="37.5%" y="70%">Period</tspan></text>
+                <text x="57.5%" y="50%">Series / Epoch</text>
+                <text x="86.25%" y="50%">Stage / Age</text>
             </g>
         </svg>
         <svg class="animated-svg" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">

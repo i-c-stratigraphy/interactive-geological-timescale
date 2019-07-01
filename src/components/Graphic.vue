@@ -199,6 +199,8 @@
     svg{
         background-color: white;
         overflow: auto;
+    }
+    .animated-svg {
         border-right: solid black 1px;
     }
     rect{
@@ -214,8 +216,6 @@
         position: relative;
         right: 0px;
         top: 0px;
-    }
-    g {
         transition: transform .2s ease-in-out;
     }
     .animated-svg g:hover{

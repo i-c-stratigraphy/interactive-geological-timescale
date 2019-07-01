@@ -3,118 +3,19 @@
         <div id='datasheet-overlay' @click='destroyDataSheet'></div>
         <div id="datasheet-exit-button" @click='destroyDataSheet'><div id="datasheet-exit-button-text">&#x2573;</div></div>
         <div id='datasheet-container' v-if="dataReceived">
-            <div id='datasheet-header'>
-                <h1>{{jsonElementData.result.primaryTopic.label._value}}</h1>
-                <h2 v-if="jsonElementData.result.primaryTopic.prefLabel.length > 0">/ <span v-for="label in jsonElementData.result.primaryTopic.prefLabel" v-bind:key="label._lang">{{label._value}} / </span></h2>
-                <h3 v-if="jsonElementData.result.primaryTopic._about != null"><a :href="jsonElementData.result.primaryTopic._about">{{jsonElementData.result.primaryTopic._about}}</a></h3>
-            </div>
-            <div id="table-container">
-                <table>
-                    <tr>
-                        <th class='label'>Notation</th>
-                        <td class='value'>
-                            <ul>
-                                <li>{{jsonElementData.result.primaryTopic.notation}}</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class='label'>Comments</th>
-                        <td class='value'>
-                            <ul>
-                                <li v-for="comment in jsonElementData.result.primaryTopic.comment" v-bind:key="comment">{{comment._value}}</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr v-if="jsonElementData.result.primaryTopic.narrower">
-                        <th class='label'>Interval Contains</th>
-                        <td class='value'>
-                            <ul>
-                                <li>
-                                    <table class='nested-table' v-for="child in jsonElementData.result.primaryTopic.narrower" v-bind:key="child">
-                                        <tr>
-                                            <th colspan=2>{{child.label._value}}</th>
-                                        </tr>
-                                        <tr>
-                                            <td class='label'>Interval During</td>
-                                            <td class='value'>{{jsonElementData.result.primaryTopic.label._value}}</td>
-                                        </tr>
-                                    </table>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class='label'>Interval During</th>
-                        <td class='value'>
-                            <ul>
-                                <li>
-                                    <table class='nested-table' v-for="parent in jsonElementData.result.primaryTopic.broader" v-bind:key="parent">
-                                        <tr>
-                                            <th colspan=2>{{parent.label._value}}</th>
-                                        </tr>
-                                        <tr>
-                                            <td class='label'>Interval Contains</td>
-                                            <td class='value'>{{jsonElementData.result.primaryTopic.label._value}}</td>
-                                        </tr>
-                                    </table>
-                                </li>
-                                <li>
-                                    <table class='nested-table' v-for="parent in jsonElementData.result.primaryTopic.broaderTransitive" v-bind:key="parent">
-                                        <tr>
-                                            <th colspan=2>{{parent.label._value}}</th>
-                                        </tr>
-                                        <tr>
-                                            <td class='label'>Interval Contains</td>
-                                            <td class='value'>{{jsonElementData.result.primaryTopic.label._value}}</td>
-                                        </tr>
-                                    </table>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr v-if="jsonElementData.result.primaryTopic.intervalStartedBy != null">
-                        <th class='label'>Interval Started By</th>
-                        <td class='value'>
-                            <ul>
-                                <li>{{jsonElementData.result.primaryTopic.intervalStartedBy.label._value}}</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class='label'>Beginning</th>
-                        <td class='value'>
-                            <ul>
-                                <li>{{jsonElementData.result.primaryTopic.hasBeginning.label._value}}</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr v-if='jsonElementData.result.primaryTopic.intervalFinishedBy != null'>
-                        <th class='label'>Interval Finished By</th>
-                        <td class='value'>
-                            <ul>
-                                <li>{{jsonElementData.result.primaryTopic.intervalFinishedBy.label._value}}</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class='label'>End</th>
-                        <td class='value'>
-                            <ul>
-                                <li>{{jsonElementData.result.primaryTopic.hasEnd.label._value}}</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <data-sheet-basic v-bind:jsonElementData="jsonElementData"></data-sheet-basic>
         </div>
     </div>
 </template>
 
 <script>
 import EventBus from "../assets/event-bus.js"
+import DataSheetBasic from './DataSheetBasic.vue'
 export default {
     name: 'DataSheet',
+    components: {
+        DataSheetBasic
+    },
     props: {
         id: String
     },
@@ -254,7 +155,13 @@ export default {
     #datasheet-header a:hover, #datasheet-header a:focus {
         background-size: 100% 2px;
     }
-
+    #datasheet-container{
+        transition: transform .2s;
+    }
+    #datasheet-container:hover{
+        background-color: pink;
+        transform: translateX(-100%);
+    }
     #table-container{
         border: 3px solid lightgray;
         border: 0;

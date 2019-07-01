@@ -6,6 +6,7 @@
             <div id='datasheet-header'>
                 <h1>{{jsonElementData.result.primaryTopic.label._value}}</h1>
                 <h2 v-if="jsonElementData.result.primaryTopic.prefLabel.length > 0">/ <span v-for="label in jsonElementData.result.primaryTopic.prefLabel" v-bind:key="label._lang">{{label._value}} / </span></h2>
+                <h3 v-if="jsonElementData.result.primaryTopic._about != null"><a :href="jsonElementData.result.primaryTopic._about">{{jsonElementData.result.primaryTopic._about}}</a></h3>
             </div>
             <div id="table-container">
                 <table>
@@ -132,6 +133,7 @@ export default {
                     var data = xmlHttp.responseText
                     this_.jsonElementData = JSON.parse(data)
                     this_.dataReceived = true
+                    console.log(data)
             }
         }
         xmlHttp.open("GET", url, true)
@@ -240,6 +242,19 @@ export default {
         margin-bottom: 0;
         border-bottom: 0;
     }
+    #datasheet-header a {
+        color: white;
+        text-decoration: none;
+        background-image: linear-gradient(white, white);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .2s ease-in-out;
+    }
+    #datasheet-header a:hover, #datasheet-header a:focus {
+        background-size: 100% 2px;
+    }
+
     #table-container{
         border: 3px solid lightgray;
         border: 0;

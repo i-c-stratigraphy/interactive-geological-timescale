@@ -2,8 +2,12 @@
     <div id='datasheet'>
         <div id='datasheet-overlay' @click='destroyDataSheet'></div>
         <div id="datasheet-exit-button" @click='destroyDataSheet'><div id="datasheet-exit-button-text">&#x2573;</div></div>
-        <div id='datasheet-container' v-if="dataReceived">
-            <data-sheet-basic v-bind:jsonElementData="jsonElementData"></data-sheet-basic>
+        <div id='datasheet-container'>
+            <data-sheet-basic v-if="dataReceived" v-bind:jsonElementData="jsonElementData"></data-sheet-basic>
+            <div id="loading-icon" v-else>
+                <img src="../assets/loading.svg" width="120px" height="120px">
+                <p>Loading...</p>
+            </div>
         </div>
     </div>
 </template>
@@ -22,7 +26,7 @@ export default {
     data (){
         return {
             jsonElementData: "Waiting",
-            dataReceived: true
+            dataReceived: false
         }
     },
     methods: {
@@ -129,87 +133,11 @@ export default {
         right: 20px;
         z-index: 3;
     }
-    #datasheet-header{
-        border: 3px solid lightgray;
-        border: 0;
-        padding: 10px;
-        margin-bottom: 0;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        background-color: #0C415A;
-        color: white;
-        margin-bottom: 0;
-        border-bottom: 0;
+    #loading-icon{
+        margin: auto;
+        position: absolute;
+        top: 25%;
+        left: 0;  
+        right: 0;
     }
-    #datasheet-header a {
-        color: white;
-        text-decoration: none;
-        background-image: linear-gradient(white, white);
-        background-position: 50% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .2s ease-in-out;
-    }
-    #datasheet-header a:hover, #datasheet-header a:focus {
-        background-size: 100% 2px;
-    }
-    #datasheet-container{
-        transition: transform .2s;
-    }
-    #datasheet-container:hover{
-        background-color: pink;
-        transform: translateX(-100%);
-    }
-    #table-container{
-        border: 3px solid lightgray;
-        border: 0;
-        padding: 10px;
-        margin-top: 0;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        background-color: white;
-    }
-    table, td, th {
-        border-top: 1px solid lightgrey;
-        border-bottom: 1px solid lightgrey;
-        border-collapse: collapse;
-    }
-    table{
-        width: 100%;
-    }
-    td{
-        width: 60%;
-    }
-    td li{
-        display: block;
-        text-align: left;
-    }
-    th{
-        text-align: left;
-        padding-left: 5%;
-        padding-top: 16px;
-        vertical-align: top;
-        padding-right: 5%;
-    }
-    .nested-table, .nested-table td, .nested-table th {
-        border: 1px solid lightgrey;
-        border-collapse: collapse;
-    }
-    .nested-table td{
-        font-size: 0.9em;
-        text-align: left;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .nested-table th{
-        background-color: #dae2e6;
-    }
-    .nested-table .label{
-        width: 40%;
-    }
-
 </style>

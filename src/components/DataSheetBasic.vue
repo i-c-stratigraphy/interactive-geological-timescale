@@ -142,7 +142,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 p {
   text-align: center;
 }
@@ -159,65 +159,6 @@ li {
 }
 a {
   color: #42b983;
-}
-#datasheet {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-}
-#datasheet-overlay {
-  overflow: visible;
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.75;
-  background-color: black;
-  z-index: 1;
-}
-#datasheet-container {
-  position: fixed;
-  overflow: auto;
-  background-color: white;
-  width: 50%;
-  height: 80%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  left: 25%;
-  right: 25%;
-  z-index: 2;
-  box-shadow: 2px 2px 5px black;
-  border: 1px solid black;
-  padding: 20px;
-  background-color: #e9e9e9;
-}
-#datasheet-exit-button {
-  transition: opacity 0.5s;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 75px;
-  width: 75px;
-  padding-top: 0px;
-  background-color: black;
-  opacity: 0.25;
-  border-bottom-left-radius: 95%;
-  z-index: 2;
-}
-#datasheet-exit-button:hover {
-  opacity: 0.75;
-  transition: opacity 0.5s;
-  cursor: pointer;
-}
-#datasheet-exit-button-text {
-  position: fixed;
-  font-size: 26px;
-  font-weight: bold;
-  color: white;
-  top: 10px;
-  right: 20px;
-  z-index: 3;
 }
 #datasheet-header {
   border: 3px solid lightgray;
@@ -242,17 +183,7 @@ a {
   background-size: 0% 2px;
   transition: background-size 0.2s ease-in-out;
 }
-#datasheet-header a:hover,
-#datasheet-header a:focus {
-  background-size: 100% 2px;
-}
-#datasheet-container {
-  transition: transform 0.2s;
-}
-#datasheet-container:hover {
-  background-color: pink;
-  transform: translateX(-100%);
-}
+
 #table-container {
   border: 3px solid lightgray;
   border: 0;
@@ -264,9 +195,7 @@ a {
   margin-bottom: 20px;
   background-color: white;
 }
-table,
-td,
-th {
+table, td, th {
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
   border-collapse: collapse;

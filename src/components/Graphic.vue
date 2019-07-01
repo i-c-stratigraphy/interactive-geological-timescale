@@ -12,7 +12,8 @@
         </svg>
         <svg class="animated-svg" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <g v-for="item in entries" v-bind:key="item.id" :id="item.id" @click='sendClickToEventBus'>
-                <rect  :class="item.type" :fill="item.fill" :width="item.width" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y"/>
+                <rect  :class="item.type" :fill="item.fill" :width="(parseFloat(item.width) + 2.5) + '%'" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y">
+                </rect>
                 <text  :class="item.type" :x="item.xlabel" :y="(parseFloat(item.y) +  parseFloat(item.height) /2) + '%'">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
             </g>
         </svg>
@@ -46,6 +47,18 @@
             },
             sendClickToEventBus: function(event) {
                 EventBus.$emit('create-data-sheet', event.target.parentNode.id)
+            },
+            stretchElement: function(event){
+                console.log(event.originalTarget.parentNode.id)
+
+                var target = event.originalTarget.parentNode.childNodes[0]
+                var currentWidth = parseFloat(target.getAttribute('width'))
+                target.setAttribute('width', (currentWidth + 2.4) + "%")
+            },
+            unStretchElement: function(event){
+                var target = event.originalTarget.parentNode.childNodes[0]
+                var currentWidth = parseFloat(target.getAttribute('width'))
+                target.setAttribute('width', (currentWidth - 2.4) + "%")
             },
             preprocessPositions: function(data, ageHeight){
                 var yPositionAge = 0
@@ -185,7 +198,8 @@
     }
     svg{
         background-color: white;
-        overflow: visible;
+        overflow: auto;
+        border-right: solid black 1px;
     }
     rect{
         stroke-width: 1;
@@ -198,13 +212,26 @@
     }
     g{
         position: relative;
+        right: 0px;
         top: 0px;
+    }
+    g {
         transition: transform .2s ease-in-out;
     }
     .animated-svg g:hover{
+        /*transform-origin: 100% 100%;
+        transform: scale(1.1, 1);*/ 
         transform: translate3d(-2.4%, 0px, 0px);
+        transform-origin: 100% 100%;
         cursor: pointer;
     }
+    /*
+    .animated-svg g rect{
+        transition: all .2s ease-in-out;
+    }
+    .animated-svg g rect:hover{
+        width: 500px;
+    }*/
 </style>
 
 

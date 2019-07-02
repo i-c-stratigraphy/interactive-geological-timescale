@@ -11,6 +11,7 @@
       <h3 v-if="jsonElementData.result.primaryTopic._about != null">
         <a
           :href="jsonElementData.result.primaryTopic._about"
+          target="_blank"
         >{{jsonElementData.result.primaryTopic._about}}</a>
       </h3>
     </div>
@@ -183,7 +184,7 @@ a {
   background-size: 0% 2px;
   transition: background-size 0.2s ease-in-out;
 }
-#datasheet-header a:hover, #datasheet-header a:focus {
+#datasheet-header a:hover {
     background-size: 100% 2px;
 }
 

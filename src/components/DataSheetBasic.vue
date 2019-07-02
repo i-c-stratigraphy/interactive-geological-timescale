@@ -115,7 +115,7 @@
           <th class="label">Beginning</th>
           <td class="value">
             <ul>
-              <li @click="getMoreData(jsonElementData.result.primaryTopic.hasBeginning._about)">{{jsonElementData.result.primaryTopic.hasBeginning.label._value}}</li>
+              <li @click="getMoreData(jsonElementData.result.primaryTopic.hasBeginning._about)"><a>{{jsonElementData.result.primaryTopic.hasBeginning.label._value}}</a></li>
             </ul>
           </td>
         </tr>
@@ -123,7 +123,7 @@
           <th class="label">End</th>
           <td class="value">
             <ul>
-              <li @click="getMoreData(jsonElementData.result.primaryTopic.hasEnd._about)">{{jsonElementData.result.primaryTopic.hasEnd.label._value}}</li>
+              <li @click="getMoreData(jsonElementData.result.primaryTopic.hasEnd._about)"><a>{{jsonElementData.result.primaryTopic.hasEnd.label._value}}</a></li>
             </ul>
           </td>
         </tr>
@@ -227,6 +227,18 @@ th {
   vertical-align: top;
   padding-right: 5%;
 }
+.value a{
+  font-weight: 500;
+  background-image: linear-gradient(#42B983, #42B983);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.2s ease-in-out;
+}
+.value a:hover{
+  background-size: 100% 1px;
+  cursor: pointer;
+}
 .nested-table,
 .nested-table td,
 .nested-table th {
@@ -245,4 +257,5 @@ th {
 .nested-table .label {
   width: 40%;
 }
+
 </style>

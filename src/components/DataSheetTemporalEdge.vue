@@ -221,8 +221,20 @@ a {
   background-size: 0% 2px;
   transition: background-size 0.2s ease-in-out;
 }
+
 #datasheet-header a:hover {
-    background-size: 100% 2px;
+  background-size: 100% 2px;
+}
+h4 a{
+  text-decoration: none;
+  background-image: linear-gradient(#42B983, #42B983);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.2s ease-in-out;
+}
+h4 a:hover{
+  background-size: 100% 2px;
 }
 
 #table-container {

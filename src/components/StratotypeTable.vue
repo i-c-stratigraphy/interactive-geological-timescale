@@ -57,13 +57,23 @@
             </ul>
           </td>
         </tr>
-        <tr v-if="stratotypeData.result.primaryTopic.comment != null">
+        <tr v-if="stratotypeData.result.primaryTopic.comment != null && !(stratotypeData.result.primaryTopic.comment instanceof Array)">
           <th class='label'>
             Comment
           </th>
           <td class='value'>
             <ul>
               <li>{{stratotypeData.result.primaryTopic.comment._value}} ({{stratotypeData.result.primaryTopic.comment._lang}})</li>
+            </ul>
+          </td>
+        </tr>
+        <tr v-else-if="stratotypeData.result.primaryTopic.comment != null">
+          <th class='label'>
+            Comment
+          </th>
+          <td class='value'>
+            <ul>
+              <li v-for="(comment, index) in stratotypeData.result.primaryTopic.comment" v-bind:key="index">{{comment._value}} ({{comment._lang}})</li>
             </ul>
           </td>
         </tr>

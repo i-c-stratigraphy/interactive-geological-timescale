@@ -3,12 +3,14 @@
         <div id='datasheet-overlay' @click='destroyDataSheet'></div>
         <div id="datasheet-exit-button" @click='destroyDataSheet'><div id="datasheet-exit-button-text">&#x2573;</div></div>
         <div id='datasheet-container'>
-            <data-sheet-basic v-if="dataReceived" v-bind:jsonElementData="jsonElementData"></data-sheet-basic>
-            <data-sheet-temporal-edge v-else-if="edgeDataReceived" v-bind:jsonElementData="edgeData" v-bind:stratotypeData="stratotypeData"></data-sheet-temporal-edge>
-            <div id="loading-icon" v-else>
-                <img src="../assets/loading.svg" width="120px" height="120px">
-                <p>Loading...</p>
-            </div>
+            <transition name='fade' mode='out-in'>
+                <data-sheet-basic v-if="dataReceived" v-bind:jsonElementData="jsonElementData"></data-sheet-basic>
+                <data-sheet-temporal-edge v-else-if="edgeDataReceived" v-bind:jsonElementData="edgeData" v-bind:stratotypeData="stratotypeData"></data-sheet-temporal-edge>
+                <div id="loading-icon" v-else>
+                    <img src="../assets/loading.svg" width="120px" height="120px">
+                    <p>Loading...</p>
+                </div>
+            </transition>
         </div>
     </div>
 </template>

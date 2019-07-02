@@ -171,5 +171,9 @@ export default {
         top: 25%;
         left: 0;  
         right: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;   
     }
 </style>

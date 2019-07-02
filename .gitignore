@@ -20,5 +20,5 @@ yarn-error.log*
 *.sln
 *.sw?
 
-test.html
-
+# Jetbrains
+.idea/

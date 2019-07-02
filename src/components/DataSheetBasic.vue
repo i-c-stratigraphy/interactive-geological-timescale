@@ -183,6 +183,9 @@ a {
   background-size: 0% 2px;
   transition: background-size 0.2s ease-in-out;
 }
+#datasheet-header a:hover, #datasheet-header a:focus {
+    background-size: 100% 2px;
+}
 
 #table-container {
   border: 3px solid lightgray;

@@ -4,7 +4,7 @@
         <div id="datasheet-exit-button" @click='destroyDataSheet'><div id="datasheet-exit-button-text">&#x2573;</div></div>
         <div id='datasheet-container'>
             <data-sheet-basic v-if="dataReceived" v-bind:jsonElementData="jsonElementData"></data-sheet-basic>
-            <data-sheet-temporal-edge v-else-if="edgeDataReceived" v-bind:jsonElementData="edgeData"></data-sheet-temporal-edge>
+            <data-sheet-temporal-edge v-else-if="edgeDataReceived" v-bind:jsonElementData="edgeData" v-bind:stratotypeData="stratotypeData"></data-sheet-temporal-edge>
             <div id="loading-icon" v-else>
                 <img src="../assets/loading.svg" width="120px" height="120px">
                 <p>Loading...</p>
@@ -31,6 +31,7 @@ export default {
             jsonElementData: null,
             dataReceived: false,
             edgeData: null,
+            stratotypeData: null,
             edgeDataReceived: false
         }
     },
@@ -47,7 +48,13 @@ export default {
                     } else if (dataType == 'edgeData'){
                         this_.edgeData = JSON.parse(data)
                         this_.dataReceived = false
+                        if (this_.edgeData.result.primaryTopic.stratotype != null){
+                            console.log("Getting Stratotype Data")
+                            this_.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + this_.edgeData.result.primaryTopic.stratotype._about, 'stratotypeData')
+                        }
                         this_.edgeDataReceived = true
+                    } else if (dataType == "stratotypeData"){
+                        this_.stratotypeData = JSON.parse(data)
                     }
                     console.log(data)
             }

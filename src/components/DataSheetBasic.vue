@@ -103,19 +103,19 @@
             </ul>
           </td>
         </tr>
-        <tr>
-          <th class="label">Beginning</th>
-          <td class="value">
-            <ul>
-              <li>{{jsonElementData.result.primaryTopic.hasBeginning.label._value}}</li>
-            </ul>
-          </td>
-        </tr>
         <tr v-if="jsonElementData.result.primaryTopic.intervalFinishedBy != null">
           <th class="label">Interval Finished By</th>
           <td class="value">
             <ul>
               <li>{{jsonElementData.result.primaryTopic.intervalFinishedBy.label._value}}</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th class="label">Beginning</th>
+          <td class="value">
+            <ul>
+              <li @click="getMoreData(jsonElementData.result.primaryTopic.hasBeginning._about)">{{jsonElementData.result.primaryTopic.hasBeginning.label._value}}</li>
             </ul>
           </td>
         </tr>

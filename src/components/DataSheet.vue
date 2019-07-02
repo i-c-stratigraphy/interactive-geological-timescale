@@ -143,6 +143,10 @@ export default {
         opacity: 0.25;
         border-bottom-left-radius: 95%;
         z-index: 2;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;   
     }
     #datasheet-exit-button:hover{
         opacity: 0.75;

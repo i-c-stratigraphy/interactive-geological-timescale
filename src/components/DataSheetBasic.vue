@@ -191,7 +191,7 @@ a {
   transition: background-size 0.2s ease-in-out;
 }
 #datasheet-header a:hover {
-    background-size: 100% 2px;
+  background-size: 100% 2px;
 }
 
 #table-container {

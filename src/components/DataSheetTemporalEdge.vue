@@ -175,6 +175,10 @@ export default {
   position: absolute;
   transition: opacity .5s;
   opacity: 0.25;
+  -webkit-user-select: none;
+  -moz-user-select: none;  
+  -ms-user-select: none;  
+  user-select: none;   
 }
 #back-arrow:hover{
   color: #0C415A;

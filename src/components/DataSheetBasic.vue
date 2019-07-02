@@ -6,7 +6,7 @@
         <span
           v-for="(label, index) in jsonElementData.result.primaryTopic.prefLabel"
           v-bind:key="index"
-        >{{label._value}}<span v-if="index != jsonElementData.result.primaryTopic.prefLabel.length - 1">, </span></span>
+        >{{label._value}}<span v-if="index != jsonElementData.result.primaryTopic.prefLabel.length -1">, </span></span>
       </h2>
       <h3 v-if="jsonElementData.result.primaryTopic._about != null">
         <a
@@ -17,7 +17,7 @@
     </div>
     <div id="table-container">
       <table>
-        <tr>
+        <tr v-if="jsonElementData.result.primaryTopic.notation != null">
           <th class="label">Notation</th>
           <td class="value">
             <ul>
@@ -25,26 +25,26 @@
             </ul>
           </td>
         </tr>
-        <tr>
+        <tr v-if="jsonElementData.result.primaryTopic.comment != null">
           <th class="label">Comments</th>
           <td class="value">
             <ul>
               <li
-                v-for="comment in jsonElementData.result.primaryTopic.comment"
-                v-bind:key="comment"
+                v-for="(comment, index) in jsonElementData.result.primaryTopic.comment"
+                v-bind:key="index"
               >{{comment._value}}</li>
             </ul>
           </td>
         </tr>
-        <tr v-if="jsonElementData.result.primaryTopic.narrower">
+        <tr v-if="jsonElementData.result.primaryTopic.narrower != null">
           <th class="label">Interval Contains</th>
           <td class="value">
             <ul>
               <li>
                 <table
                   class="nested-table"
-                  v-for="child in jsonElementData.result.primaryTopic.narrower"
-                  v-bind:key="child"
+                  v-for="(child, index) in jsonElementData.result.primaryTopic.narrower"
+                  v-bind:key="index"
                 >
                   <tr>
                     <th colspan="2">{{child.label._value}}</th>
@@ -58,15 +58,15 @@
             </ul>
           </td>
         </tr>
-        <tr>
+        <tr v-if="jsonElementData.result.primaryTopic.broader != null">
           <th class="label">Interval During</th>
           <td class="value">
             <ul>
               <li>
                 <table
                   class="nested-table"
-                  v-for="parent in jsonElementData.result.primaryTopic.broader"
-                  v-bind:key="parent"
+                  v-for="(parent, index) in jsonElementData.result.primaryTopic.broader"
+                  v-bind:key="index"
                 >
                   <tr>
                     <th colspan="2">{{parent.label._value}}</th>
@@ -77,11 +77,11 @@
                   </tr>
                 </table>
               </li>
-              <li>
+              <li v-if="jsonElementData.result.primaryTopic.broaderTransitive != null">
                 <table
                   class="nested-table"
-                  v-for="parent in jsonElementData.result.primaryTopic.broaderTransitive"
-                  v-bind:key="parent"
+                  v-for="(parent, index) in jsonElementData.result.primaryTopic.broaderTransitive"
+                  v-bind:key="index"
                 >
                   <tr>
                     <th colspan="2">{{parent.label._value}}</th>
@@ -111,7 +111,7 @@
             </ul>
           </td>
         </tr>
-        <tr>
+        <tr v-if="jsonElementData.result.primaryTopic.hasBeginning != null">
           <th class="label">Beginning</th>
           <td class="value">
             <ul>
@@ -119,7 +119,7 @@
             </ul>
           </td>
         </tr>
-        <tr>
+        <tr v-if="jsonElementData.result.primaryTopic.hasEnd != null">
           <th class="label">End</th>
           <td class="value">
             <ul>

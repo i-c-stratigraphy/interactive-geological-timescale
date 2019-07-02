@@ -65,9 +65,6 @@ export default {
     clickBackButton: function() {
       EventBus.$emit('go-back', true)
     }
-  },
-  mounted(){
-    console.log(this.stratotypeData[0])
   }
 };
 </script>

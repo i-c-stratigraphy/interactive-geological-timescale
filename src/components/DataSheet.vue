@@ -109,6 +109,7 @@ export default {
         height: 100%;
         width: 100%;
         top: 0;
+        bottom: 0;
     }
     #datasheet-overlay{
         overflow: visible;
@@ -123,9 +124,8 @@ export default {
     #datasheet-container{
         position: fixed;
         overflow: auto;
-        background-color: white;
         width: 50%;
-        height: 80%;
+        height: 80%; /* Change this to 'max-height' to get a dynamic container*/
         margin-top: 5%;
         margin-bottom: 5%;
         left: 25%;

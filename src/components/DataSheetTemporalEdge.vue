@@ -1,5 +1,8 @@
 <template>
   <div id="base-sheet">
+    <div id="back-arrow" @click="clickBackButton">
+      &#x1f844;
+    </div>
     <div id="datasheet-header">
       <h1>{{jsonElementData.result.primaryTopic.label._value}}</h1>
       <h2 v-if="jsonElementData.result.primaryTopic.prefLabel.length > 0">
@@ -156,12 +159,28 @@ export default {
   props: {
     jsonElementData: Array,
     stratotypeData: Array
+  },
+  methods: {
+    clickBackButton: function() {
+      EventBus.$emit('go-back', true)
+    }
   }
 };
 </script>
 
 
 <style scoped>
+#back-arrow{
+  font-size: 68px;
+  position: absolute;
+  transition: opacity .5s;
+  opacity: 0.25;
+}
+#back-arrow:hover{
+  color: #0C415A;
+  opacity: 1;
+  cursor: pointer;
+}
 p {
   text-align: center;
 }

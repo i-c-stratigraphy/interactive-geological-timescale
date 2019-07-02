@@ -72,6 +72,10 @@ export default {
         EventBus.$on('get-more-data', url => {
             this.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + url, 'edgeData')
         })
+        EventBus.$on('go-back', payload => {
+            this.edgeDataReceived = !payload
+            this.dataReceived = payload
+        })
     }
 }
 </script>

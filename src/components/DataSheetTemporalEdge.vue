@@ -18,147 +18,21 @@
         >{{jsonElementData.result.primaryTopic._about}}</a>
       </h3>
     </div>
-    <div id="table-container">
-      <table>
-        <tr v-if="jsonElementData.result.primaryTopic.altLabel != null && jsonElementData.result.primaryTopic.altLabel.length > 0">
-          <th class='label'>
-            Alternate Label
-          </th>
-          <td class='value'>
-            <ul>
-              <li v-for="(label, index) in jsonElementData.result.primaryTopic.altLabel" :key="index">{{label._value}} ({{label._lang}})</li>
-            </ul>
-          </td>
-        </tr>
-        <tr v-if="jsonElementData.result.primaryTopic.ratifiedGSSP != null">
-          <th class='label'>
-            Ratified GSSP
-          </th>
-          <td class='value'>
-            <ul>
-              <li><span v-if="jsonElementData.result.primaryTopic.ratifiedGSSP == null || !jsonElementData.result.primaryTopic.ratifiedGSSP">&#x2718;</span><span v-else-if="jsonElementData.result.primaryTopic.ratifiedGSSP">&#x2714;</span></li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-      <h3 v-if="stratotypeData != null">Stratotype Data</h3>
-      <h4 v-if="stratotypeData != null"><a
-          :href="stratotypeData.result.primaryTopic._about"
-          target="_blank"
-        >{{stratotypeData.result.primaryTopic._about}}</a></h4>
-      <table v-if="stratotypeData != null">
-        <tr v-if="stratotypeData.result.primaryTopic.label != null">
-          <th class='label'>
-            Label
-          </th>
-          <td class='value'>
-            <ul>
-              <li>{{stratotypeData.result.primaryTopic.label._value}} ({{stratotypeData.result.primaryTopic.label._lang}})</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th class='label'>
-            Ratified GSSP
-          </th>
-          <td class='value'>
-            <ul>
-              <li><span v-if="stratotypeData.result.primaryTopic.ratifiedGSSP == null || !stratotypeData.result.primaryTopic.ratifiedGSSP">&#x2718;</span><span v-else-if="stratotypeData.result.primaryTopic.ratifiedGSSP">&#x2714;</span></li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th class='label'>
-            Formal ICS Status
-          </th>
-          <td class='value'>
-            <ul>
-              <li>{{stratotypeData.result.primaryTopic.status}}</li>
-            </ul>
-          </td>
-        </tr>
-        <tr v-if="stratotypeData.result.primaryTopic.boundaryLevel != null">
-          <th class='label'>
-            Boundary Level
-          </th>
-          <td class='value'>
-            <ul>
-              <li>{{stratotypeData.result.primaryTopic.boundaryLevel}}</li>
-            </ul>
-          </td>
-        </tr>
-        <tr v-if="stratotypeData.result.primaryTopic.correlationEvent != null">
-          <th class='label'>
-            Correlation Event
-          </th>
-          <td class='value'>
-            <ul>
-              <li>{{stratotypeData.result.primaryTopic.correlationEvent}}</li>
-            </ul>
-          </td>
-        </tr>
-        <tr v-if="stratotypeData.result.primaryTopic.comment != null">
-          <th class='label'>
-            Comment
-          </th>
-          <td class='value'>
-            <ul>
-              <li>{{stratotypeData.result.primaryTopic.comment._value}} ({{stratotypeData.result.primaryTopic.comment._lang}})</li>
-            </ul>
-          </td>
-        </tr>
-        <tr v-if="stratotypeData.result.primaryTopic.source != null && (stratotypeData.result.primaryTopic.source instanceof Array)">
-          <th class='label'>
-            Source(s)
-          </th>
-          <td class='value'>
-            <ul>
-              <li v-for="(source, index) in stratotypeData.result.primaryTopic.source" :key="index">{{source}}</li>
-            </ul>
-          </td>
-        </tr>
-        <tr v-else-if="stratotypeData.result.primaryTopic.source != null && !(stratotypeData.result.primaryTopic.source instanceof Array)">
-          <th class='label'>
-            Source(s)
-          </th>
-          <td class='value'>
-            <ul>
-              <li>{{stratotypeData.result.primaryTopic.source}}</li>
-            </ul>
-          </td>
-        </tr>
-        <tr v-if="stratotypeData.result.primaryTopic.seeAlso != null && (stratotypeData.result.primaryTopic.seeAlso instanceof Array)">
-          <th class='label'>
-            See Also
-          </th>
-          <td class='value'>
-            <ul>
-              <li v-for="(source, index) in stratotypeData.result.primaryTopic.seeAlso" :key="index"><a :href="source" target="_blank">{{source.split('/')[source.split('/').length - 1]}}</a></li>
-            </ul>
-          </td>
-        </tr>
-        <tr v-else-if="stratotypeData.result.primaryTopic.seeAlso != null && !(stratotypeData.result.primaryTopic.seeAlso instanceof Array)">
-          <th class='label'>
-            See Also
-          </th>
-          <td class='value'>
-            <ul>
-              <li><a :href="stratotypeData.result.primaryTopic.seeAlso" target="_blank">{{stratotypeData.result.primaryTopic.seeAlso.split('/')[stratotypeData.result.primaryTopic.seeAlso.split('/').length - 1]}}</a></li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    </div>
+    <stratotype-table v-if="stratotypeData != null" v-bind:stratotypeData="stratotypeData"></stratotype-table>
   </div>
 </template>
 
 <script>
 import EventBus from "../assets/event-bus.js";
+import StratotypeTable from "./StratotypeTable.vue"
 export default {
   name: "DataSheetTemporalEdge",
   props: {
     jsonElementData: Array,
     stratotypeData: Array
+  },
+  components: {
+    StratotypeTable
   },
   methods: {
     clickBackButton: function() {

@@ -4,9 +4,9 @@
       <h1>{{jsonElementData.result.primaryTopic.label._value}}</h1>
       <h2 v-if="jsonElementData.result.primaryTopic.prefLabel.length > 0">
         <span
-          v-for="label in jsonElementData.result.primaryTopic.prefLabel"
-          v-bind:key="label._lang"
-        >{{label._value}} /</span>
+          v-for="(label, index) in jsonElementData.result.primaryTopic.prefLabel"
+          v-bind:key="index"
+        >{{label._value}}<span v-if="index != jsonElementData.result.primaryTopic.prefLabel.length - 1">, </span></span>
       </h2>
       <h3 v-if="jsonElementData.result.primaryTopic._about != null">
         <a

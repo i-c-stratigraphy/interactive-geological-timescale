@@ -77,6 +77,7 @@ export default {
         EventBus.$on('go-back', payload => {
             this.edgeDataReceived = !payload
             this.dataReceived = payload
+            this.stratotypeData = null;
         })
     }
 }

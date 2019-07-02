@@ -1,7 +1,8 @@
 <template>
-  <div id="stratotype-table-container">
-      <h3 v-if="stratotypeData != null">Stratotype Data</h3>
-      <h4 v-if="stratotypeData != null"><a
+  <div class="stratotype-table-container">
+      <h3 v-if="sdHeading">Stratotype Data</h3>
+      <h3 v-else><br></h3>
+      <h4 v-if="stratotypeData.result.primaryTopic._about != null"><a
           :href="stratotypeData.result.primaryTopic._about"
           target="_blank"
         >{{stratotypeData.result.primaryTopic._about}}</a></h4>
@@ -115,7 +116,11 @@ import EventBus from "../assets/event-bus.js";
 export default {
   name: "StratotypeTable",
   props: {
-    stratotypeData: Object
+    stratotypeData: Object,
+    sdHeading: {
+      type: Boolean,
+      default: true
+    }
   },
   methods: {
     clickBackButton: function() {

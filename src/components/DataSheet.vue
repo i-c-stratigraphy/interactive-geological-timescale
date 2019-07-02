@@ -33,7 +33,7 @@ export default {
             jsonElementData: null,
             dataReceived: false,
             edgeData: null,
-            stratotypeData: null,
+            stratotypeData: [],
             edgeDataReceived: false
         }
     },
@@ -50,12 +50,16 @@ export default {
                     } else if (dataType == 'edgeData'){
                         this_.edgeData = JSON.parse(data)
                         this_.dataReceived = false
-                        if (this_.edgeData.result.primaryTopic.stratotype != null){
+                        if (this_.edgeData.result.primaryTopic.stratotype != null && !(this_.edgeData.result.primaryTopic.stratotype instanceof Array)){
                             this_.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + this_.edgeData.result.primaryTopic.stratotype._about, 'stratotypeData')
+                        } else if (this_.edgeData.result.primaryTopic.stratotype != null && (this_.edgeData.result.primaryTopic.stratotype instanceof Array)){
+                            for (var stratotype in this_.edgeData.result.primaryTopic.stratotype){
+                                this_.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + this_.edgeData.result.primaryTopic.stratotype[stratotype]._about, 'stratotypeData')
+                            }
                         }
                         this_.edgeDataReceived = true
                     } else if (dataType == "stratotypeData"){
-                        this_.stratotypeData = JSON.parse(data)
+                        this_.stratotypeData.push(JSON.parse(data))
                     }
             }
         }
@@ -75,7 +79,7 @@ export default {
         EventBus.$on('go-back', payload => {
             this.edgeDataReceived = !payload
             this.dataReceived = payload
-            this.stratotypeData = null;
+            this.stratotypeData = [];
         })
     }
 }

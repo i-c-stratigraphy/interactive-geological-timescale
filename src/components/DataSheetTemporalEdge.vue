@@ -41,7 +41,10 @@
             </td>
           </tr>
         </table>
-      <stratotype-table v-if="stratotypeData != null" v-bind:stratotypeData="stratotypeData"></stratotype-table>
+      <stratotype-table v-if="stratotypeData != null && stratotypeData.length == 1" v-bind:stratotypeData="stratotypeData[0]"></stratotype-table>
+      <div id="stratotype-tables" v-else-if="stratotypeData != null && stratotypeData.length > 1">
+        <stratotype-table v-for="(data, index) in stratotypeData" v-bind:key="index" v-bind:stratotypeData="data" v-bind:sdHeading="index == 0"></stratotype-table>
+      </div>
     </div>
   </div>
 </template>
@@ -53,7 +56,7 @@ export default {
   name: "DataSheetTemporalEdge",
   props: {
     jsonElementData: Object,
-    stratotypeData: Object
+    stratotypeData: Array
   },
   components: {
     StratotypeTable
@@ -62,6 +65,9 @@ export default {
     clickBackButton: function() {
       EventBus.$emit('go-back', true)
     }
+  },
+  mounted(){
+    console.log(this.stratotypeData[0])
   }
 };
 </script>

@@ -49,8 +49,6 @@
                 EventBus.$emit('create-data-sheet', event.target.parentNode.id)
             },
             stretchElement: function(event){
-                console.log(event.originalTarget.parentNode.id)
-
                 var target = event.originalTarget.parentNode.childNodes[0]
                 var currentWidth = parseFloat(target.getAttribute('width'))
                 target.setAttribute('width', (currentWidth + 2.4) + "%")

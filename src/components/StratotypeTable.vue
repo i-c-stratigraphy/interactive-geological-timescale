@@ -1,27 +1,5 @@
 <template>
-  <div id="table-container">
-      <table>
-        <tr v-if="jsonElementData.result.primaryTopic.altLabel != null && jsonElementData.result.primaryTopic.altLabel.length > 0">
-          <th class='label'>
-            Alternate Label
-          </th>
-          <td class='value'>
-            <ul>
-              <li v-for="(label, index) in jsonElementData.result.primaryTopic.altLabel" :key="index">{{label._value}} ({{label._lang}})</li>
-            </ul>
-          </td>
-        </tr>
-        <tr v-if="jsonElementData.result.primaryTopic.ratifiedGSSP != null">
-          <th class='label'>
-            Ratified GSSP
-          </th>
-          <td class='value'>
-            <ul>
-              <li><span v-if="jsonElementData.result.primaryTopic.ratifiedGSSP == null || !jsonElementData.result.primaryTopic.ratifiedGSSP">&#x2718;</span><span v-else-if="jsonElementData.result.primaryTopic.ratifiedGSSP">&#x2714;</span></li>
-            </ul>
-          </td>
-        </tr>
-      </table>
+  <div id="stratotype-table-container">
       <h3 v-if="stratotypeData != null">Stratotype Data</h3>
       <h4 v-if="stratotypeData != null"><a
           :href="stratotypeData.result.primaryTopic._about"
@@ -48,7 +26,7 @@
             </ul>
           </td>
         </tr>
-        <tr>
+        <tr v-if="stratotypeData.result.primaryTopic.status != null">
           <th class='label'>
             Formal ICS Status
           </th>
@@ -137,7 +115,7 @@ import EventBus from "../assets/event-bus.js";
 export default {
   name: "StratotypeTable",
   props: {
-    stratotypeData: Array
+    stratotypeData: Object
   },
   methods: {
     clickBackButton: function() {

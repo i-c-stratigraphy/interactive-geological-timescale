@@ -18,7 +18,31 @@
         >{{jsonElementData.result.primaryTopic._about}}</a>
       </h3>
     </div>
-    <stratotype-table v-if="stratotypeData != null" v-bind:stratotypeData="stratotypeData"></stratotype-table>
+    <div id="table-container">
+      <table>
+          <tr v-if="jsonElementData.result.primaryTopic.altLabel != null && jsonElementData.result.primaryTopic.altLabel.length > 0">
+            <th class='label'>
+              Alternate Label
+            </th>
+            <td class='value'>
+              <ul>
+                <li v-for="(label, index) in jsonElementData.result.primaryTopic.altLabel" :key="index">{{label._value}} ({{label._lang}})</li>
+              </ul>
+            </td>
+          </tr>
+          <tr v-if="jsonElementData.result.primaryTopic.ratifiedGSSP != null">
+            <th class='label'>
+              Ratified GSSP
+            </th>
+            <td class='value'>
+              <ul>
+                <li><span v-if="jsonElementData.result.primaryTopic.ratifiedGSSP == null || !jsonElementData.result.primaryTopic.ratifiedGSSP">&#x2718;</span><span v-else-if="jsonElementData.result.primaryTopic.ratifiedGSSP">&#x2714;</span></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      <stratotype-table v-if="stratotypeData != null" v-bind:stratotypeData="stratotypeData"></stratotype-table>
+    </div>
   </div>
 </template>
 
@@ -28,8 +52,8 @@ import StratotypeTable from "./StratotypeTable.vue"
 export default {
   name: "DataSheetTemporalEdge",
   props: {
-    jsonElementData: Array,
-    stratotypeData: Array
+    jsonElementData: Object,
+    stratotypeData: Object
   },
   components: {
     StratotypeTable
@@ -46,7 +70,7 @@ export default {
 <style scoped>
 #back-arrow{
   font-size: 68px;
-  position: absolute;
+  position: fixed;
   transition: opacity .5s;
   opacity: 0.25;
   -webkit-user-select: none;

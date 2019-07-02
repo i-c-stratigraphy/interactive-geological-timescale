@@ -141,7 +141,6 @@ export default {
   },
   methods: {
     getMoreData: function(url) {
-      console.log('click')
       EventBus.$emit('get-more-data', url)
     }
   }

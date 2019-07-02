@@ -51,14 +51,12 @@ export default {
                         this_.edgeData = JSON.parse(data)
                         this_.dataReceived = false
                         if (this_.edgeData.result.primaryTopic.stratotype != null){
-                            console.log("Getting Stratotype Data")
                             this_.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + this_.edgeData.result.primaryTopic.stratotype._about, 'stratotypeData')
                         }
                         this_.edgeDataReceived = true
                     } else if (dataType == "stratotypeData"){
                         this_.stratotypeData = JSON.parse(data)
                     }
-                    console.log(data)
             }
         }
         xmlHttp.open("GET", url, true)

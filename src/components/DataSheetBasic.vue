@@ -123,7 +123,7 @@
           <th class="label">End</th>
           <td class="value">
             <ul>
-              <li>{{jsonElementData.result.primaryTopic.hasEnd.label._value}}</li>
+              <li @click="getMoreData(jsonElementData.result.primaryTopic.hasEnd._about)">{{jsonElementData.result.primaryTopic.hasEnd.label._value}}</li>
             </ul>
           </td>
         </tr>
@@ -137,7 +137,13 @@ import EventBus from "../assets/event-bus.js";
 export default {
   name: "DataSheetBasic",
   props: {
-    jsonElementData: Array
+    jsonElementData: Object
+  },
+  methods: {
+    getMoreData: function(url) {
+      console.log('click')
+      EventBus.$emit('get-more-data', url)
+    }
   }
 };
 </script>

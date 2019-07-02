@@ -4,6 +4,7 @@
         <div id="datasheet-exit-button" @click='destroyDataSheet'><div id="datasheet-exit-button-text">&#x2573;</div></div>
         <div id='datasheet-container'>
             <data-sheet-basic v-if="dataReceived" v-bind:jsonElementData="jsonElementData"></data-sheet-basic>
+            <data-sheet-temporal-edge v-else-if="edgeDataReceived" v-bind:jsonElementData="edgeData"></data-sheet-temporal-edge>
             <div id="loading-icon" v-else>
                 <img src="../assets/loading.svg" width="120px" height="120px">
                 <p>Loading...</p>
@@ -15,29 +16,39 @@
 <script>
 import EventBus from "../assets/event-bus.js"
 import DataSheetBasic from './DataSheetBasic.vue'
+import DataSheetTemporalEdge from './DataSheetTemporalEdge.vue'
 export default {
     name: 'DataSheet',
     components: {
-        DataSheetBasic
+        DataSheetBasic,
+        DataSheetTemporalEdge
     },
     props: {
         id: String
     },
     data (){
         return {
-            jsonElementData: "Waiting",
-            dataReceived: false
+            jsonElementData: null,
+            dataReceived: false,
+            edgeData: null,
+            edgeDataReceived: false
         }
     },
     methods: {
-        httpRequestAsync: function(url){
+        httpRequestAsync: function(url, dataType){
             var this_ = this
             var xmlHttp = new XMLHttpRequest()
             xmlHttp.onreadystatechange = function () {
                 if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
                     var data = xmlHttp.responseText
-                    this_.jsonElementData = JSON.parse(data)
-                    this_.dataReceived = true
+                    if (dataType == 'jsonElementData'){
+                        this_.jsonElementData = JSON.parse(data)
+                        this_.dataReceived = true
+                    } else if (dataType == 'edgeData'){
+                        this_.edgeData = JSON.parse(data)
+                        this_.dataReceived = false
+                        this_.edgeDataReceived = true
+                    }
                     console.log(data)
             }
         }
@@ -50,7 +61,10 @@ export default {
     },
     mounted(){
         var requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=http://resource.geosciml.org/classifier/ics/ischart/' + this.id
-        this.httpRequestAsync(requestURL)
+        this.httpRequestAsync(requestURL, 'jsonElementData')
+        EventBus.$on('get-more-data', url => {
+            this.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + url, 'edgeData')
+        })
     }
 }
 </script>

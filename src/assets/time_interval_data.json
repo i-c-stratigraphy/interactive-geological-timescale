@@ -1,181 +1,718 @@
 {
-    "http://resource.geosciml.org/classifier/ics/ischart/Meghalayan": "0.0042",
-    "http://resource.geosciml.org/classifier/ics/ischart/Northgrippian": "0.008276",
-    "http://resource.geosciml.org/classifier/ics/ischart/Greenlandian": "0.0117",
-    "http://resource.geosciml.org/classifier/ics/ischart/Holocene": "0.0117",
-    "http://resource.geosciml.org/classifier/ics/ischart/LatePleistocene": "0.126",
-    "http://resource.geosciml.org/classifier/ics/ischart/MiddlePleistocene": "0.781",
-    "http://resource.geosciml.org/classifier/ics/ischart/Calabrian": "1.80",
-    "http://resource.geosciml.org/classifier/ics/ischart/Gelasian": "2.58",
-    "http://resource.geosciml.org/classifier/ics/ischart/Pleistocene": "2.58",
-    "http://resource.geosciml.org/classifier/ics/ischart/Quaternary": "2.58",
-    "http://resource.geosciml.org/classifier/ics/ischart/Piacenzian": "3.6",
-    "http://resource.geosciml.org/classifier/ics/ischart/Zanclean": "5.333",
-    "http://resource.geosciml.org/classifier/ics/ischart/Pliocene": "5.333",
-    "http://resource.geosciml.org/classifier/ics/ischart/Messinian": "7.246",
-    "http://resource.geosciml.org/classifier/ics/ischart/Tortonian": "11.63",
-    "http://resource.geosciml.org/classifier/ics/ischart/Serravallian": "13.82",
-    "http://resource.geosciml.org/classifier/ics/ischart/Langhian": "15.97",
-    "http://resource.geosciml.org/classifier/ics/ischart/Burdigalian": "20.44",
-    "http://resource.geosciml.org/classifier/ics/ischart/Aquitanian": "23.03",
-    "http://resource.geosciml.org/classifier/ics/ischart/Miocene": "23.03",
-    "http://resource.geosciml.org/classifier/ics/ischart/Neogene": "23.03",
-    "http://resource.geosciml.org/classifier/ics/ischart/Chattian": "27.82",
-    "http://resource.geosciml.org/classifier/ics/ischart/Rupelian": "33.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Oligocene": "33.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Priabonian": "37.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Bartonian": "41.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Lutetian": "47.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Ypresian": "56",
-    "http://resource.geosciml.org/classifier/ics/ischart/Eocene": "56",
-    "http://resource.geosciml.org/classifier/ics/ischart/Thanetian": "59.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Selandian": "61.6",
-    "http://resource.geosciml.org/classifier/ics/ischart/Danian": "66.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Cenozoic": "66.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Paleogene": "66.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Paleocene": "66.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian": "72.1",
-    "http://resource.geosciml.org/classifier/ics/ischart/Campanian": "83.6",
-    "http://resource.geosciml.org/classifier/ics/ischart/Santonian": "86.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/Coniacian": "89.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Turonian": "93.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Cenomanian": "100.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/LateCretaceous": "100.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/Albian": "113.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Aptian": "125.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Barremian": "129.4",
-    "http://resource.geosciml.org/classifier/ics/ischart/Hauterivian": "132.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Valanginian": "139.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Berriasian": "145.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyCretaceous": "145.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Cretaceous": "145.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous": "145.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Tithonian": "152.1",
-    "http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian": "157.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/Oxfordian": "163.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/LateJurassic": "163.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/Callovian": "166.1",
-    "http://resource.geosciml.org/classifier/ics/ischart/Bathonian": "168.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/Bajocian": "170.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/Aalenian": "174.1",
-    "http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic": "174.1",
-    "http://resource.geosciml.org/classifier/ics/ischart/Toarcian": "182.7",
-    "http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian": "190.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Sinemurian": "199.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/Jurassic": "201.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyJurassic": "201.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/Hettangian": "201.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/Rhaetian": "208.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/Norian": "227",
-    "http://resource.geosciml.org/classifier/ics/ischart/Carnian": "237",
-    "http://resource.geosciml.org/classifier/ics/ischart/LateTriassic": "237",
-    "http://resource.geosciml.org/classifier/ics/ischart/Ladinian": "242",
-    "http://resource.geosciml.org/classifier/ics/ischart/Anisian": "247.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/MiddleTriassic": "247.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Olenekian": "251.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Mesozoic": "251.902",
-    "http://resource.geosciml.org/classifier/ics/ischart/Induan": "251.902",
-    "http://resource.geosciml.org/classifier/ics/ischart/Triassic": "251.902",
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyTriassic": "251.902",
-    "http://resource.geosciml.org/classifier/ics/ischart/Changhsingian": "254.14",
-    "http://resource.geosciml.org/classifier/ics/ischart/Wuchiapingian": "259.1",
-    "http://resource.geosciml.org/classifier/ics/ischart/Lopingian": "259.1",
-    "http://resource.geosciml.org/classifier/ics/ischart/Capitanian": "265.1",
-    "http://resource.geosciml.org/classifier/ics/ischart/Wordian": "268.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Roadian": "272.95",
-    "http://resource.geosciml.org/classifier/ics/ischart/Guadalupian": "272.95",
-    "http://resource.geosciml.org/classifier/ics/ischart/Kungurian": "283.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/Artinskian": "290.1",
-    "http://resource.geosciml.org/classifier/ics/ischart/Sakmarian": "295.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Asselian": "298.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Cisuralian": "298.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Permian": "298.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Gzhelian": "303.7",
-    "http://resource.geosciml.org/classifier/ics/ischart/Kasimovian": "307",
-    "http://resource.geosciml.org/classifier/ics/ischart/LatePennsylvanian": "307",
-    "http://resource.geosciml.org/classifier/ics/ischart/Moscovian": "315.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/MiddlePennsylvanian": "315.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Bashkirian": "323.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian": "323.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyPennsylvanian": "323.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian": "330.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/LateMississippian": "330.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Visean": "346.7",
-    "http://resource.geosciml.org/classifier/ics/ischart/MiddleMississippian": "346.7",
-    "http://resource.geosciml.org/classifier/ics/ischart/Tournaisian": "358.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Carboniferous": "358.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Mississippian": "358.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyMississippian": "358.9",
-    "http://resource.geosciml.org/classifier/ics/ischart/Famennian": "372.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Frasnian": "382.7",
-    "http://resource.geosciml.org/classifier/ics/ischart/LateDevonian": "382.7",
-    "http://resource.geosciml.org/classifier/ics/ischart/Givetian": "387.7",
-    "http://resource.geosciml.org/classifier/ics/ischart/Eifelian": "393.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/MiddleDevonian": "393.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/Emsian": "407.6",
-    "http://resource.geosciml.org/classifier/ics/ischart/Pragian": "410.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Lochkovian": "419.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Devonian": "419.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyDevonian": "419.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Pridoli": "423",
-    "http://resource.geosciml.org/classifier/ics/ischart/Ludfordian": "425.6",
-    "http://resource.geosciml.org/classifier/ics/ischart/Gorstian": "427.4",
-    "http://resource.geosciml.org/classifier/ics/ischart/Ludlow": "427.4",
-    "http://resource.geosciml.org/classifier/ics/ischart/Homerian": "430.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/Sheinwoodian": "433.4",
-    "http://resource.geosciml.org/classifier/ics/ischart/Wenlock": "433.4",
-    "http://resource.geosciml.org/classifier/ics/ischart/Telychian": "438.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/Aeronian": "440.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Llandovery": "443.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Silurian": "443.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Rhuddanian": "443.8",
-    "http://resource.geosciml.org/classifier/ics/ischart/Hirnantian": "445.2",
-    "http://resource.geosciml.org/classifier/ics/ischart/Katian": "453",
-    "http://resource.geosciml.org/classifier/ics/ischart/Sandbian": "458.4",
-    "http://resource.geosciml.org/classifier/ics/ischart/LateOrdovician": "458.4",
-    "http://resource.geosciml.org/classifier/ics/ischart/Darriwilian": "467.3",
-    "http://resource.geosciml.org/classifier/ics/ischart/Dapingian": "470.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/MiddleOrdovician": "470.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Floian": "477.7",
-    "http://resource.geosciml.org/classifier/ics/ischart/Tremadocian": "485.4",
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyOrdovician": "485.4",
-    "http://resource.geosciml.org/classifier/ics/ischart/Ordovician": "485.4",
-    "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage10": "489.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/Jiangshanian": "494",
-    "http://resource.geosciml.org/classifier/ics/ischart/Paibian": "497",
-    "http://resource.geosciml.org/classifier/ics/ischart/Furongian": "497",
-    "http://resource.geosciml.org/classifier/ics/ischart/Guzhangian": "500.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/Drumian": "504.5",
-    "http://resource.geosciml.org/classifier/ics/ischart/Wuliuan": "509",
-    "http://resource.geosciml.org/classifier/ics/ischart/Miaolingian": "509",
-    "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage4": "514",
-    "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage3": "521",
-    "http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries2": "521",
-    "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage2": "529",
-    "http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic": "541.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Paleozoic": "541.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Fortunian": "541.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Cambrian": "541.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian": "541.0",
-    "http://resource.geosciml.org/classifier/ics/ischart/Ediacaran": "635",
-    "http://resource.geosciml.org/classifier/ics/ischart/Cryogenian": "720",
-    "http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic": "1000",
-    "http://resource.geosciml.org/classifier/ics/ischart/Tonian": "1000",
-    "http://resource.geosciml.org/classifier/ics/ischart/Stenian": "1200",
-    "http://resource.geosciml.org/classifier/ics/ischart/Ectasian": "1400",
-    "http://resource.geosciml.org/classifier/ics/ischart/Calymmian": "1600",
-    "http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic": "1600",
-    "http://resource.geosciml.org/classifier/ics/ischart/Statherian": "1800",
-    "http://resource.geosciml.org/classifier/ics/ischart/Orosirian": "2050",
-    "http://resource.geosciml.org/classifier/ics/ischart/Rhyacian": "2300",
-    "http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic": "2500",
-    "http://resource.geosciml.org/classifier/ics/ischart/Proterozoic": "2500",
-    "http://resource.geosciml.org/classifier/ics/ischart/Siderian": "2500",
-    "http://resource.geosciml.org/classifier/ics/ischart/Neoarchean": "2800",
-    "http://resource.geosciml.org/classifier/ics/ischart/Mesoarchean": "3200",
-    "http://resource.geosciml.org/classifier/ics/ischart/Paleoarchean": "3600",
-    "http://resource.geosciml.org/classifier/ics/ischart/Archean": "4000",
-    "http://resource.geosciml.org/classifier/ics/ischart/Eoarchean": "4000",
-    "http://resource.geosciml.org/classifier/ics/ischart/Precambrian": "4567",
-    "http://resource.geosciml.org/classifier/ics/ischart/Hadean": "4567"
+    "http://resource.geosciml.org/classifier/ics/ischart/Aeronian": {
+        "hasBeginning": 440.8,
+        "hasEnd": 438.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Albian": {
+        "hasBeginning": 113.0,
+        "hasEnd": 100.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Aptian": {
+        "hasBeginning": 125.0,
+        "hasEnd": 113.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Archean": {
+        "hasBeginning": 4000.0,
+        "hasEnd": 2500.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Eoarchean": {
+        "hasBeginning": 4000.0,
+        "hasEnd": 3600.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Artinskian": {
+        "hasBeginning": 290.1,
+        "hasEnd": 283.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Bajocian": {
+        "hasBeginning": 170.3,
+        "hasEnd": 168.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Barremian": {
+        "hasBeginning": 129.4,
+        "hasEnd": 125.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Bartonian": {
+        "hasBeginning": 41.2,
+        "hasEnd": 37.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Bathonian": {
+        "hasBeginning": 168.3,
+        "hasEnd": 166.1
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Burdigalian": {
+        "hasBeginning": 20.44,
+        "hasEnd": 15.97
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Calabrian": {
+        "hasBeginning": 1.8,
+        "hasEnd": 0.781
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Callovian": {
+        "hasBeginning": 166.1,
+        "hasEnd": 163.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage3": {
+        "hasBeginning": 521.0,
+        "hasEnd": 514.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries2": {
+        "hasBeginning": 521.0,
+        "hasEnd": 509.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Wuliuan": {
+        "hasBeginning": 509.0,
+        "hasEnd": 504.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Miaolingian": {
+        "hasBeginning": 509.0,
+        "hasEnd": 497.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage10": {
+        "hasBeginning": 489.5,
+        "hasEnd": 485.4
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage2": {
+        "hasBeginning": 529.0,
+        "hasEnd": 521.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/CambrianStage4": {
+        "hasBeginning": 514.0,
+        "hasEnd": 509.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Campanian": {
+        "hasBeginning": 83.6,
+        "hasEnd": 72.1
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Capitanian": {
+        "hasBeginning": 265.1,
+        "hasEnd": 272.95
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Tournaisian": {
+        "hasBeginning": 358.9,
+        "hasEnd": 346.7
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Carboniferous": {
+        "hasBeginning": 358.9,
+        "hasEnd": 298.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Mississippian": {
+        "hasBeginning": 358.9,
+        "hasEnd": 323.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/EarlyMississippian": {
+        "hasBeginning": 358.9,
+        "hasEnd": 346.7
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Danian": {
+        "hasBeginning": 66.0,
+        "hasEnd": 61.6
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Cenozoic": {
+        "hasBeginning": 66.0,
+        "hasEnd": 0.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Paleogene": {
+        "hasBeginning": 66.0,
+        "hasEnd": 23.03
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Paleocene": {
+        "hasBeginning": 66.0,
+        "hasEnd": 56.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Changhsingian": {
+        "hasBeginning": 254.14,
+        "hasEnd": 251.902
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Chattian": {
+        "hasBeginning": 27.82,
+        "hasEnd": 23.03
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Coniacian": {
+        "hasBeginning": 89.8,
+        "hasEnd": 86.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Berriasian": {
+        "hasBeginning": 145.0,
+        "hasEnd": 139.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/EarlyCretaceous": {
+        "hasBeginning": 145.0,
+        "hasEnd": 100.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Cretaceous": {
+        "hasBeginning": 145.0,
+        "hasEnd": 66.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous": {
+        "hasBeginning": 145.0,
+        "hasEnd": 100.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Cryogenian": {
+        "hasBeginning": 720.0,
+        "hasEnd": 635.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Darriwilian": {
+        "hasBeginning": 467.3,
+        "hasEnd": 458.4
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Lochkovian": {
+        "hasBeginning": 419.2,
+        "hasEnd": 410.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Devonian": {
+        "hasBeginning": 419.2,
+        "hasEnd": 358.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/EarlyDevonian": {
+        "hasBeginning": 419.2,
+        "hasEnd": 393.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Drumian": {
+        "hasBeginning": 504.5,
+        "hasEnd": 500.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Ectasian": {
+        "hasBeginning": 1400.0,
+        "hasEnd": 1200.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Ediacaran": {
+        "hasBeginning": 635.0,
+        "hasEnd": 541.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Emsian": {
+        "hasBeginning": 407.6,
+        "hasEnd": 393.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Ypresian": {
+        "hasBeginning": 56.0,
+        "hasEnd": 47.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Eocene": {
+        "hasBeginning": 56.0,
+        "hasEnd": 33.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Famennian": {
+        "hasBeginning": 372.2,
+        "hasEnd": 358.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Floian": {
+        "hasBeginning": 477.7,
+        "hasEnd": 470.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Paibian": {
+        "hasBeginning": 497.0,
+        "hasEnd": 494.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Furongian": {
+        "hasBeginning": 497.0,
+        "hasEnd": 485.4
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Givetian": {
+        "hasBeginning": 387.7,
+        "hasEnd": 382.7
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Roadian": {
+        "hasBeginning": 272.95,
+        "hasEnd": 268.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Guadalupian": {
+        "hasBeginning": 272.95,
+        "hasEnd": 259.1
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Guzhangian": {
+        "hasBeginning": 500.5,
+        "hasEnd": 497.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Gzhelian": {
+        "hasBeginning": 303.7,
+        "hasEnd": 298.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Hauterivian": {
+        "hasBeginning": 132.9,
+        "hasEnd": 129.4
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Hirnantian": {
+        "hasBeginning": 445.2,
+        "hasEnd": 443.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Greenlandian": {
+        "hasBeginning": 0.0117,
+        "hasEnd": 0.008276
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Holocene": {
+        "hasBeginning": 0.0117,
+        "hasEnd": 0.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Homerian": {
+        "hasBeginning": 430.5,
+        "hasEnd": 427.4
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Jiangshanian": {
+        "hasBeginning": 494.0,
+        "hasEnd": 489.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Jurassic": {
+        "hasBeginning": 201.3,
+        "hasEnd": 145.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/EarlyJurassic": {
+        "hasBeginning": 201.3,
+        "hasEnd": 174.1
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Hettangian": {
+        "hasBeginning": 201.3,
+        "hasEnd": 199.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Katian": {
+        "hasBeginning": 453.0,
+        "hasEnd": 445.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian": {
+        "hasBeginning": 157.3,
+        "hasEnd": 152.1
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Kungurian": {
+        "hasBeginning": 283.5,
+        "hasEnd": 272.95
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Ladinian": {
+        "hasBeginning": 242.0,
+        "hasEnd": 237.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Langhian": {
+        "hasBeginning": 15.97,
+        "hasEnd": 13.82
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Cenomanian": {
+        "hasBeginning": 100.5,
+        "hasEnd": 93.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/LateCretaceous": {
+        "hasBeginning": 100.5,
+        "hasEnd": 66.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Frasnian": {
+        "hasBeginning": 382.7,
+        "hasEnd": 372.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/LateDevonian": {
+        "hasBeginning": 382.7,
+        "hasEnd": 358.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Oxfordian": {
+        "hasBeginning": 163.5,
+        "hasEnd": 157.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/LateJurassic": {
+        "hasBeginning": 163.5,
+        "hasEnd": 145.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian": {
+        "hasBeginning": 330.9,
+        "hasEnd": 323.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/LateMississippian": {
+        "hasBeginning": 330.9,
+        "hasEnd": 298.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Sandbian": {
+        "hasBeginning": 458.4,
+        "hasEnd": 453.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/LateOrdovician": {
+        "hasBeginning": 458.4,
+        "hasEnd": 443.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Kasimovian": {
+        "hasBeginning": 307.0,
+        "hasEnd": 303.7
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/LatePennsylvanian": {
+        "hasBeginning": 307.0,
+        "hasEnd": 298.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/LatePleistocene": {
+        "hasBeginning": 0.126,
+        "hasEnd": 0.0117
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Carnian": {
+        "hasBeginning": 237.0,
+        "hasEnd": 227.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/LateTriassic": {
+        "hasBeginning": 237.0,
+        "hasEnd": 201.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Wuchiapingian": {
+        "hasBeginning": 259.1,
+        "hasEnd": 254.14
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Lopingian": {
+        "hasBeginning": 259.1,
+        "hasEnd": 251.902
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Ludfordian": {
+        "hasBeginning": 425.6,
+        "hasEnd": 423.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Gorstian": {
+        "hasBeginning": 427.4,
+        "hasEnd": 425.6
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Ludlow": {
+        "hasBeginning": 427.4,
+        "hasEnd": 423.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Lutetian": {
+        "hasBeginning": 47.8,
+        "hasEnd": 41.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian": {
+        "hasBeginning": 72.1,
+        "hasEnd": 66.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Meghalayan": {
+        "hasBeginning": 0.0042,
+        "hasEnd": 0.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Mesoarchean": {
+        "hasBeginning": 3200.0,
+        "hasEnd": 2800.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Calymmian": {
+        "hasBeginning": 1600.0,
+        "hasEnd": 1400.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic": {
+        "hasBeginning": 1600.0,
+        "hasEnd": 1000.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Mesozoic": {
+        "hasBeginning": 251.902,
+        "hasEnd": 66.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Induan": {
+        "hasBeginning": 251.902,
+        "hasEnd": 251.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Triassic": {
+        "hasBeginning": 251.902,
+        "hasEnd": 201.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/EarlyTriassic": {
+        "hasBeginning": 251.902,
+        "hasEnd": 247.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Messinian": {
+        "hasBeginning": 7.246,
+        "hasEnd": 5.333
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Eifelian": {
+        "hasBeginning": 393.3,
+        "hasEnd": 387.7
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/MiddleDevonian": {
+        "hasBeginning": 393.3,
+        "hasEnd": 382.7
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Aalenian": {
+        "hasBeginning": 174.1,
+        "hasEnd": 170.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic": {
+        "hasBeginning": 174.1,
+        "hasEnd": 163.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Visean": {
+        "hasBeginning": 346.7,
+        "hasEnd": 330.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/MiddleMississippian": {
+        "hasBeginning": 346.7,
+        "hasEnd": 330.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Dapingian": {
+        "hasBeginning": 470.0,
+        "hasEnd": 467.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/MiddleOrdovician": {
+        "hasBeginning": 470.0,
+        "hasEnd": 458.4
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Moscovian": {
+        "hasBeginning": 315.2,
+        "hasEnd": 307.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/MiddlePennsylvanian": {
+        "hasBeginning": 315.2,
+        "hasEnd": 307.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/MiddlePleistocene": {
+        "hasBeginning": 0.781,
+        "hasEnd": 0.126
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Anisian": {
+        "hasBeginning": 247.2,
+        "hasEnd": 242.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/MiddleTriassic": {
+        "hasBeginning": 247.2,
+        "hasEnd": 237.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Neoarchean": {
+        "hasBeginning": 2800.0,
+        "hasEnd": 2500.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Aquitanian": {
+        "hasBeginning": 23.03,
+        "hasEnd": 20.44
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Miocene": {
+        "hasBeginning": 23.03,
+        "hasEnd": 5.333
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Neogene": {
+        "hasBeginning": 23.03,
+        "hasEnd": 2.58
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic": {
+        "hasBeginning": 1000.0,
+        "hasEnd": 541.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Tonian": {
+        "hasBeginning": 1000.0,
+        "hasEnd": 720.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Norian": {
+        "hasBeginning": 227.0,
+        "hasEnd": 208.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Northgrippian": {
+        "hasBeginning": 0.008276,
+        "hasEnd": 0.0042
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Olenekian": {
+        "hasBeginning": 251.2,
+        "hasEnd": 247.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Rupelian": {
+        "hasBeginning": 33.9,
+        "hasEnd": 27.82
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Oligocene": {
+        "hasBeginning": 33.9,
+        "hasEnd": 23.03
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Tremadocian": {
+        "hasBeginning": 485.4,
+        "hasEnd": 477.7
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/EarlyOrdovician": {
+        "hasBeginning": 485.4,
+        "hasEnd": 470.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Ordovician": {
+        "hasBeginning": 485.4,
+        "hasEnd": 443.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Orosirian": {
+        "hasBeginning": 2050.0,
+        "hasEnd": 1800.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Paleoarchean": {
+        "hasBeginning": 3600.0,
+        "hasEnd": 3200.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Bashkirian": {
+        "hasBeginning": 323.2,
+        "hasEnd": 315.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian": {
+        "hasBeginning": 323.2,
+        "hasEnd": 298.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/EarlyPennsylvanian": {
+        "hasBeginning": 323.2,
+        "hasEnd": 315.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Asselian": {
+        "hasBeginning": 298.9,
+        "hasEnd": 295.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Cisuralian": {
+        "hasBeginning": 298.9,
+        "hasEnd": 272.95
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Permian": {
+        "hasBeginning": 298.9,
+        "hasEnd": 251.902
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic": {
+        "hasBeginning": 541.0,
+        "hasEnd": 0.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Paleozoic": {
+        "hasBeginning": 541.0,
+        "hasEnd": 251.902
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Fortunian": {
+        "hasBeginning": 541.0,
+        "hasEnd": 529.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Cambrian": {
+        "hasBeginning": 541.0,
+        "hasEnd": 485.4
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian": {
+        "hasBeginning": 541.0,
+        "hasEnd": 521.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Piacenzian": {
+        "hasBeginning": 3.6,
+        "hasEnd": 2.58
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian": {
+        "hasBeginning": 190.8,
+        "hasEnd": 182.7
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Zanclean": {
+        "hasBeginning": 5.333,
+        "hasEnd": 3.6
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Pliocene": {
+        "hasBeginning": 5.333,
+        "hasEnd": 2.58
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Pragian": {
+        "hasBeginning": 410.8,
+        "hasEnd": 407.6
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Priabonian": {
+        "hasBeginning": 37.8,
+        "hasEnd": 33.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Pridoli": {
+        "hasBeginning": 423.0,
+        "hasEnd": 419.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic": {
+        "hasBeginning": 2500.0,
+        "hasEnd": 1600.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Proterozoic": {
+        "hasBeginning": 2500.0,
+        "hasEnd": 541.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Siderian": {
+        "hasBeginning": 2500.0,
+        "hasEnd": 2300.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Gelasian": {
+        "hasBeginning": 2.58,
+        "hasEnd": 1.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Pleistocene": {
+        "hasBeginning": 2.58,
+        "hasEnd": 0.0117
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Quaternary": {
+        "hasBeginning": 2.58,
+        "hasEnd": 0.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Rhaetian": {
+        "hasBeginning": 208.5,
+        "hasEnd": 201.3
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Rhyacian": {
+        "hasBeginning": 2300.0,
+        "hasEnd": 2050.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Sakmarian": {
+        "hasBeginning": 295.0,
+        "hasEnd": 290.1
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Santonian": {
+        "hasBeginning": 86.3,
+        "hasEnd": 83.6
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Selandian": {
+        "hasBeginning": 61.6,
+        "hasEnd": 59.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Serravallian": {
+        "hasBeginning": 13.82,
+        "hasEnd": 11.63
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Llandovery": {
+        "hasBeginning": 443.8,
+        "hasEnd": 433.4
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Silurian": {
+        "hasBeginning": 443.8,
+        "hasEnd": 419.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Rhuddanian": {
+        "hasBeginning": 443.8,
+        "hasEnd": 440.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Sinemurian": {
+        "hasBeginning": 199.3,
+        "hasEnd": 190.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Statherian": {
+        "hasBeginning": 1800.0,
+        "hasEnd": 1600.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Stenian": {
+        "hasBeginning": 1200.0,
+        "hasEnd": 1000.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Telychian": {
+        "hasBeginning": 438.5,
+        "hasEnd": 433.4
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Thanetian": {
+        "hasBeginning": 59.2,
+        "hasEnd": 56.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Tithonian": {
+        "hasBeginning": 152.1,
+        "hasEnd": 145.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Toarcian": {
+        "hasBeginning": 182.7,
+        "hasEnd": 174.1
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Tortonian": {
+        "hasBeginning": 11.63,
+        "hasEnd": 7.246
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Turonian": {
+        "hasBeginning": 93.9,
+        "hasEnd": 89.8
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Valanginian": {
+        "hasBeginning": 139.8,
+        "hasEnd": 132.9
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Sheinwoodian": {
+        "hasBeginning": 433.4,
+        "hasEnd": 430.5
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Wenlock": {
+        "hasBeginning": 433.4,
+        "hasEnd": 427.4
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Wordian": {
+        "hasBeginning": 268.8,
+        "hasEnd": 265.1
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Precambrian": {
+        "hasBeginning": 4567.0,
+        "hasEnd": 541.0
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Hadean": {
+        "hasBeginning": 4567.0,
+        "hasEnd": 4000.0
+    }
 }

@@ -26,25 +26,6 @@
     export default {
         name: 'graphic',
         methods: {
-            calculateAgeHeight: function (data){
-                var counter = 0
-                var precambrian = false
-                var archean = false
-                for (let item in data){
-                    if (data[item]['id'] == "Precambrian"){
-                        precambrian = true
-                    } else if (data[item]['id'] == "Archean"){
-                        archean = true
-                    }
-                    if (!precambrian && data[item]['type'] == 'age'){
-                        counter++
-                    } else if ((precambrian && data[item]['type'] == 'period') || (archean && data[item]['type'] == 'era')){
-                        counter++
-                        counter++
-                    }
-                }
-                return 100/(counter + 5) // '+ 5' is to correct issues by the Hadean Era not having any associated ages, but still needing to take up space.
-            },
             sendClickToEventBus: function(event) {
                 EventBus.$emit('create-data-sheet', event.target.parentNode.id)
             },
@@ -61,21 +42,10 @@
             baseLog: function(x, y){
                 return Math.log(y) / Math.log(x)
             },
-            preprocessPositionsLogarithmic: function(data, ageHeight, intervalData){
-                var yPositionAge = 0
+            preprocessPositionsLogarithmic: function(data, intervalData){
                 var base = 50
-                const elementOrder = { 
-                    'super-eon':0,
-                    'eon': 1, 
-                    'era': 2, 
-                    'period': 3, 
-                    'epoch': 4, 
-                    'epoch sub-epoch': 5, 
-                    'age': 6
-                }
                 var precambrian = false
                 var archean = false
-                console.log(intervalData["http://resource.geosciml.org/classifier/ics/ischart/CambrianStage4"])
                 for (let item in data){
                     if (data[item]['id'] == "Precambrian") {// Necessary as precambrian supereon has no epochs
                         precambrian = true
@@ -85,7 +55,6 @@
                     }
                     var end = this.baseLog(base, intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd'] + 1) / this.baseLog(base, 4568) * 100
                     var beginning = this.baseLog(base, intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasBeginning'] + 1) / this.baseLog(base, 4568) * 100
-                    //console.log(end, beginning)
                     data[item]['y'] = (end != -Infinity) ? end + "%" : '0%'
                     data[item]['height'] = (beginning - parseFloat(data[item]['y'])) + '%'
                     data[item]['ylabel'] = (parseFloat(data[item]['y']) +  (parseFloat(data[item]['height'])) /2) + '%'
@@ -135,8 +104,7 @@
             return {
                 intervalData: numericTimeData,
                 dividerPosition: -1,
-                ageHeight: this.calculateAgeHeight(data),
-                entries: this.preprocessPositionsLogarithmic(data, this.calculateAgeHeight(data), numericTimeData)
+                entries: this.preprocessPositionsLogarithmic(data, numericTimeData)
             }
         }
     }

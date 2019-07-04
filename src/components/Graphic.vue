@@ -63,7 +63,7 @@
             },
             preprocessPositionsLogarithmic: function(data, ageHeight, intervalData){
                 var yPositionAge = 0
-                var base = 500000
+                var base = 50
                 const elementOrder = { 
                     'super-eon':0,
                     'eon': 1, 

@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <heading></heading>
+    <toggle-switch v-bind:values="['None', 'Logarithmic', 'Linear']" v-bind:defaultSelected="'None'" v-bind:label="'Time Scale Type'" v-model="currentGraphicScale"></toggle-switch>
     <graphic></graphic>
     <transition name='fade'>
       <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId"></data-sheet>
@@ -14,6 +15,7 @@ import Heading from './components/Heading.vue'
 import Graphic from './components/Graphic.vue'
 import CustomFooter from './components/Footer.vue'
 import DataSheet from './components/DataSheet.vue'
+import ToggleSwitch from './components/ToggleSwitch.vue'
 import EventBus from './assets/event-bus.js'
 
 
@@ -23,12 +25,14 @@ export default {
     Heading,
     Graphic,
     CustomFooter,
-    DataSheet
+    DataSheet,
+    ToggleSwitch
   },
   data () {
     return {
       dataSheetOn: false,
-      dataSheetId: null
+      dataSheetId: null,
+      currentGraphicScale: 'None'
     }
   },
   mounted () {
@@ -42,7 +46,6 @@ export default {
     })
   }
 }
-//console.log(EventBus)
 </script>
 
 <style>

@@ -2,7 +2,11 @@
   <div id="app">
     <heading></heading>
     <toggle-switch v-bind:values="['None', 'Logarithmic', 'Linear']" v-bind:defaultSelected="'None'" v-bind:label="'Time Scale Type'" v-model="currentGraphicScale"></toggle-switch>
-    <graphic></graphic>
+    <transition name='fade'>
+      <graphic v-if="currentGraphicScale == 'None'" key="None" v-bind:scaleMode="'None'"></graphic>
+      <graphic v-else-if="currentGraphicScale == 'Logarithmic'" key="Logarithmic" v-bind:scaleMode="'Logarithmic'"></graphic>
+      <graphic v-else-if="currentGraphicScale == 'Linear'" key="Linear" v-bind:scaleMode="currentGraphicScale"></graphic>
+    </transition>
     <transition name='fade'>
       <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId"></data-sheet>
     </transition>

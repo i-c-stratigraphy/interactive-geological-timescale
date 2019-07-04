@@ -1,5 +1,6 @@
 <template>
-    <div id="container">
+    <div id="container" v-if="loaded">
+        <br>
         <svg width="100%" :height="'40px'" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <g class='headings'>
                 <text x="7.5%" y="50%">Supereon</text>
@@ -18,6 +19,7 @@
             </g>
         </svg>
     </div>
+
 </template>
 <script>
     import data from '../assets/timeline_data.json'
@@ -25,6 +27,12 @@
     import EventBus from '../assets/event-bus.js'
     export default {
         name: 'graphic',
+        props: {
+            scaleMode: {
+                type: String,
+                default: 'None'
+            }
+        },
         methods: {
             sendClickToEventBus: function(event) {
                 EventBus.$emit('create-data-sheet', event.target.parentNode.id)
@@ -38,7 +46,7 @@
                 var target = event.originalTarget.parentNode.childNodes[0]
                 var currentWidth = parseFloat(target.getAttribute('width'))
                 target.setAttribute('width', (currentWidth - 2.4) + "%")
-            },
+            },            
             baseLog: function(x, y){
                 return Math.log(y) / Math.log(x)
             },
@@ -98,13 +106,80 @@
                     }
                 }
                 return data
+            },
+            preprocessPositionsLinear: function(data, intervalData){
+                var total = 4567
+                var precambrian = false
+                var archean = false
+                for (let item in data){
+                    if (data[item]['id'] == "Precambrian") {// Necessary as precambrian supereon has no epochs
+                        precambrian = true
+                    } 
+                    if (data[item]['id'] == "Archean") {// Necessary as archean eon has no periods
+                        archean = true
+                    }
+                    var end = (intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd']) / total * 100
+                    var beginning = (intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasBeginning']) / total * 100
+                    data[item]['y'] = end + "%"
+                    data[item]['height'] = (beginning - parseFloat(data[item]['y'])) + '%'
+                    data[item]['ylabel'] = (parseFloat(data[item]['y']) +  (parseFloat(data[item]['height'])) /2) + '%'
+                    if (data[item]['type'] == 'age'){
+                        data[item]['x'] = "72.5%"
+                        data[item]['width'] = "27.5%"
+                        data[item]['xlabel'] = "86.25%"
+                    }else if (data[item]['type'] == 'epoch sub-epoch'){
+                        data[item]['x'] = "57.5%"
+                        data[item]['width'] = "42.5%"
+                        data[item]['xlabel'] = "65%"
+                    }else if (data[item]['type'] == 'epoch'){
+                        data[item]['x'] = "42.5%"
+                        data[item]['width'] = "57.5%"
+                        data[item]['xlabel'] = (data[item]['id'] == 'Mississippian' || data[item]['id'] == 'Pennsylvanian') ? "50%" : "57.5%"
+                    }else if (data[item]['type'] == 'period'){
+                        data[item]['x'] = "32.5%"
+                        data[item]['width'] = "67.5%"
+                        data[item]['xlabel'] = "37.5%"
+                        if (precambrian){
+                            data[item]['xlabel'] = "67.5%"
+                        }
+                    }else if (data[item]['type'] == 'era'){
+                        data[item]['x'] = "22.5%"
+                        data[item]['width'] = "77.5%"
+                        data[item]['xlabel'] =  (!precambrian) ? "27.5%" : "27.5%"
+                        if (archean){
+                             data[item]['xlabel'] = "62.5%"
+                        }
+                    }else if (data[item]['type'] == 'eon'){
+                        data[item]['x'] = "12.5%"
+                        data[item]['width'] = "87.5%"
+                        data[item]['xlabel'] = "17.5%"
+                        if (data[item]['id'] == 'Hadean'){
+                             data[item]['xlabel'] = "56.25%"
+                        }
+                    }else if (data[item]['type'] == 'super-eon'){
+                        data[item]['x'] = "2.5%"
+                        data[item]['width'] = "97.5%"
+                        data[item]['xlabel'] = "7.5%"
+                    }
+                }
+                return data
             }
         },
-        data () {
+        mounted() {
+            if (this.scaleMode == "Logarithmic"){
+                this.entries = this.preprocessPositionsLogarithmic(data, this.intervalData)
+                this.loaded = true
+            } else if (this.scaleMode == "Linear"){
+                this.entries = this.preprocessPositionsLinear(data, this.intervalData)
+                this.loaded = true
+            }
+        },
+        data() {
             return {
                 intervalData: numericTimeData,
                 dividerPosition: -1,
-                entries: this.preprocessPositionsLogarithmic(data, numericTimeData)
+                entries: null,
+                loaded: false
             }
         }
     }
@@ -118,6 +193,15 @@
         max-width: 1250px;
         margin: auto;
         height: 30000px;
+    }
+    #loading-icon {
+        position: relative;
+        border: solid white 1px;
+        width: 75%;
+        min-width: 980px;
+        max-width: 1250px;
+        margin: auto;
+        padding: 50px;
     }
     svg{
         background-color: white;

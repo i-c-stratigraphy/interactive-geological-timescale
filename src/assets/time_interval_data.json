@@ -85,7 +85,7 @@
     },
     "http://resource.geosciml.org/classifier/ics/ischart/Capitanian": {
         "hasBeginning": 265.1,
-        "hasEnd": 272.95
+        "hasEnd": 259.1
     },
     "http://resource.geosciml.org/classifier/ics/ischart/Tournaisian": {
         "hasBeginning": 358.9,
@@ -313,7 +313,7 @@
     },
     "http://resource.geosciml.org/classifier/ics/ischart/LateMississippian": {
         "hasBeginning": 330.9,
-        "hasEnd": 298.9
+        "hasEnd":  	323.2
     },
     "http://resource.geosciml.org/classifier/ics/ischart/Sandbian": {
         "hasBeginning": 458.4,
@@ -592,6 +592,10 @@
         "hasEnd": 33.9
     },
     "http://resource.geosciml.org/classifier/ics/ischart/Pridoli": {
+        "hasBeginning": 423.0,
+        "hasEnd": 419.2
+    },
+    "http://resource.geosciml.org/classifier/ics/ischart/Pridoli-Null": {
         "hasBeginning": 423.0,
         "hasEnd": 419.2
     },

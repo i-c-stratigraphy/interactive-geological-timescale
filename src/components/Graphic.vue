@@ -14,15 +14,15 @@
             <g v-for="item in entries" v-bind:key="item.id" :id="item.id" @click='sendClickToEventBus'>
                 <rect  :class="item.type" :fill="item.fill" :width="(parseFloat(item.width) + 2.5) + '%'" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y">
                 </rect>
-                <text  :class="item.type" :x="item.xlabel" :y="(parseFloat(item.y) +  parseFloat(item.height) /2) + '%'">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
+                <text  :class="item.type" :x="item.xlabel" :y="item.ylabel">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
             </g>
         </svg>
     </div>
 </template>
 <script>
     import data from '../assets/timeline_data.json'
+    import numericTimeData from '../assets/time_interval_data.json'
     import EventBus from '../assets/event-bus.js'
-    
     export default {
         name: 'graphic',
         methods: {
@@ -58,10 +58,12 @@
                 var currentWidth = parseFloat(target.getAttribute('width'))
                 target.setAttribute('width', (currentWidth - 2.4) + "%")
             },
-            preprocessPositions: function(data, ageHeight){
+            baseLog: function(x, y){
+                return Math.log(y) / Math.log(x)
+            },
+            preprocessPositionsLogarithmic: function(data, ageHeight, intervalData){
                 var yPositionAge = 0
-                var toUpdateHeight = []
-                var lastSuperEon, lastEon, lastEra, lastPeriod, pastType
+                var base = 500000
                 const elementOrder = { 
                     'super-eon':0,
                     'eon': 1, 
@@ -73,113 +75,68 @@
                 }
                 var precambrian = false
                 var archean = false
+                console.log(intervalData["http://resource.geosciml.org/classifier/ics/ischart/CambrianStage4"])
                 for (let item in data){
-                    if (data[item]['type'] != [pastType] && elementOrder[data[item]['type']] < elementOrder[pastType]){
-                        if (data[item]['type'] == 'period'){
-                            toUpdateHeight.push([lastPeriod, (yPositionAge - parseFloat(data[lastPeriod]['y'])) + '%'])
-                        } else if (data[item]['type'] == 'era'){
-                            if (!precambrian) toUpdateHeight.push([lastPeriod, (yPositionAge - parseFloat(data[lastPeriod]['y'])) + '%'])
-                            toUpdateHeight.push([lastEra, (yPositionAge - parseFloat(data[lastEra]['y'])) + '%'])
-                        } else if (data[item]['type'] == 'eon'){
-                            if (!precambrian) toUpdateHeight.push([lastPeriod, (yPositionAge - parseFloat(data[lastPeriod]['y'])) + '%'])
-                            toUpdateHeight.push([lastEra, (yPositionAge - parseFloat(data[lastEra]['y'])) + '%'])
-                            toUpdateHeight.push([lastEon, (yPositionAge - parseFloat(data[lastEon]['y'])) + '%'])
-                        }else if (data[item]['type'] == 'super-eon'){
-                            if (!precambrian) toUpdateHeight.push([lastPeriod, (yPositionAge - parseFloat(data[lastPeriod]['y'])) + '%'])
-                            toUpdateHeight.push([lastEra, (yPositionAge - parseFloat(data[lastEra]['y'])) + '%'])
-                            toUpdateHeight.push([lastEon, (yPositionAge - parseFloat(data[lastEon]['y'])) + '%'])
-                        }
-                    }
-                    if (data[item]['id'] == "Precambrian") {// HATE this, but necessary as precambrian eon has no periods
+                    if (data[item]['id'] == "Precambrian") {// Necessary as precambrian supereon has no epochs
                         precambrian = true
                     } 
-                    if (data[item]['id'] == "Archean") {// HATE this, but necessary as precambrian eon has no periods
+                    if (data[item]['id'] == "Archean") {// Necessary as archean eon has no periods
                         archean = true
-                    } 
+                    }
+                    var end = this.baseLog(base, intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd'] + 1) / this.baseLog(base, 4568) * 100
+                    var beginning = this.baseLog(base, intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasBeginning'] + 1) / this.baseLog(base, 4568) * 100
+                    //console.log(end, beginning)
+                    data[item]['y'] = (end != -Infinity) ? end + "%" : '0%'
+                    data[item]['height'] = (beginning - parseFloat(data[item]['y'])) + '%'
+                    data[item]['ylabel'] = (parseFloat(data[item]['y']) +  (parseFloat(data[item]['height'])) /2) + '%'
                     if (data[item]['type'] == 'age'){
                         data[item]['x'] = "72.5%"
-                        data[item]['y'] = yPositionAge + '%'
-                        data[item]['height'] = ageHeight + '%'
                         data[item]['width'] = "27.5%"
                         data[item]['xlabel'] = "86.25%"
-                        yPositionAge = yPositionAge + ageHeight
                     }else if (data[item]['type'] == 'epoch sub-epoch'){
                         data[item]['x'] = "57.5%"
-                        data[item]['y'] = yPositionAge + '%'
-                        data[item]['height'] = ageHeight * data[item]['narrow'].length + '%'
                         data[item]['width'] = "42.5%"
                         data[item]['xlabel'] = "65%"
                     }else if (data[item]['type'] == 'epoch'){
                         data[item]['x'] = "42.5%"
-                        data[item]['y'] = yPositionAge + '%'
-                        data[item]['height'] = ageHeight * data[item]['narrow'].length + '%'
                         data[item]['width'] = "57.5%"
                         data[item]['xlabel'] = (data[item]['id'] == 'Mississippian' || data[item]['id'] == 'Pennsylvanian') ? "50%" : "57.5%"
                     }else if (data[item]['type'] == 'period'){
-                        lastPeriod = item
                         data[item]['x'] = "32.5%"
-                        data[item]['y'] = yPositionAge + '%'
                         data[item]['width'] = "67.5%"
                         data[item]['xlabel'] = "37.5%"
                         if (precambrian){
-                            data[item]['height'] = ageHeight*2 + '%'
-                            yPositionAge = yPositionAge + ageHeight*2
                             data[item]['xlabel'] = "67.5%"
                         }
                     }else if (data[item]['type'] == 'era'){
-                        lastEra = item
                         data[item]['x'] = "22.5%"
-                        data[item]['y'] = yPositionAge + '%'
                         data[item]['width'] = "77.5%"
                         data[item]['xlabel'] =  (!precambrian) ? "27.5%" : "27.5%"
                         if (archean){
-                            data[item]['height'] = ageHeight*2 + '%'
-                            yPositionAge = yPositionAge + ageHeight*2
-                            data[item]['xlabel'] = "62.5%"
+                             data[item]['xlabel'] = "62.5%"
                         }
                     }else if (data[item]['type'] == 'eon'){
-                        lastEon = item
                         data[item]['x'] = "12.5%"
-                        data[item]['y'] = yPositionAge + '%'
                         data[item]['width'] = "87.5%"
                         data[item]['xlabel'] = "17.5%"
-                        // Making Hadean Eon the Height of 5 Ages
-                        if (precambrian && data[item]['id'] == 'Hadean') {
-                            data[item]['height'] = ageHeight * 5 + "%"
-                            yPositionAge = yPositionAge + (ageHeight * 5)
-                            data[item]['xlabel'] =  "57.5%"
+                        if (data[item]['id'] == 'Hadean'){
+                             data[item]['xlabel'] = "56.25%"
                         }
                     }else if (data[item]['type'] == 'super-eon'){
-                        lastSuperEon = item
                         data[item]['x'] = "2.5%"
-                        data[item]['y'] = yPositionAge + '%'
                         data[item]['width'] = "97.5%"
                         data[item]['xlabel'] = "7.5%"
                     }
-                    pastType = data[item]['type']
-                    if (item == data.length - 1){
-                        toUpdateHeight.push([lastSuperEon, (yPositionAge - parseFloat(data[lastSuperEon]['y'])) + '%'])
-                    }
-                    /*
-                    if (precambrian && data[item]['type'] != 'age' && data[item]['type'] == [pastType]){
-                        toUpdateHeight.push([item, ageHeight + "%"])
-                        yPositionAge = yPositionAge + ageHeight
-                    }
-                    */
-
-                }
-                for (let item in toUpdateHeight){
-                    data[toUpdateHeight[item][0]]['height'] = toUpdateHeight[item][1]
-                    
                 }
                 return data
             }
         },
         data () {
             return {
+                intervalData: numericTimeData,
                 dividerPosition: -1,
                 ageHeight: this.calculateAgeHeight(data),
-                entries: this.preprocessPositions(data, this.calculateAgeHeight(data))
+                entries: this.preprocessPositionsLogarithmic(data, this.calculateAgeHeight(data), numericTimeData)
             }
         }
     }
@@ -192,7 +149,7 @@
         min-width: 980px;
         max-width: 1250px;
         margin: auto;
-        height: 3500px;
+        height: 30000px;
     }
     svg{
         background-color: white;

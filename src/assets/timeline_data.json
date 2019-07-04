@@ -1721,7 +1721,7 @@
         "Guzhangian",
         "Drumian",
         "Wuliuan",
-        "CambrianSeries2 ",
+        "CambrianSeries2",
         "CambrianStage4",
         "CambrianStage3",
         "Terreneuvian",
@@ -1821,7 +1821,7 @@
       ]
     },
     {
-      "id": "CambrianSeries2 ",
+      "id": "CambrianSeries2",
       "name": "Series 2 ",
       "fill": "#99C797",
       "type": "epoch",
@@ -1840,7 +1840,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "CambrianSeries2 "
+        "CambrianSeries2"
       ]
     },
     {
@@ -1850,7 +1850,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "CambrianSeries2 "
+        "CambrianSeries2"
       ]
     },
     {

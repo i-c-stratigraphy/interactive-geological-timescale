@@ -21,9 +21,13 @@
     <div id="table-container">
       <table>
           <tr v-if="jsonElementData.result.primaryTopic.altLabel != null && jsonElementData.result.primaryTopic.altLabel.length > 0">
-            <th class='label'>
+            <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content:'The alternative human-readable name(s) for the ' + jsonElementData.result.primaryTopic.label._value + ' geochronologic boundary.', 
+              class: 'tooltip',
+              delay: 50
+            }">
               Alternate Label
-            </th>
+            </span></th>
             <td class='value'>
               <ul>
                 <li v-for="(label, index) in jsonElementData.result.primaryTopic.altLabel" :key="index">{{label._value}} ({{label._lang}})</li>
@@ -31,9 +35,13 @@
             </td>
           </tr>
           <tr v-if="jsonElementData.result.primaryTopic.ratifiedGSSP != null">
-            <th class='label'>
+            <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'The ' + jsonElementData.result.primaryTopic.label._value + ' has been ratified by the ICS.', 
+              class: 'tooltip',
+              delay: 50
+            }">
               Ratified GSSP
-            </th>
+            </span></th>
             <td class='value'>
               <ul>
                 <li><span v-if="jsonElementData.result.primaryTopic.ratifiedGSSP == null || !jsonElementData.result.primaryTopic.ratifiedGSSP">&#x2718;</span><span v-else-if="jsonElementData.result.primaryTopic.ratifiedGSSP">&#x2714;</span></li>

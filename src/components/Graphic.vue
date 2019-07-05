@@ -34,7 +34,7 @@
         props: {
             scaleMode: {
                 type: String,
-                default: 'Inheritance'
+                default: 'None'
             }
         },
         methods: {
@@ -334,7 +334,7 @@
             } else if (this.scaleMode == "Linear"){
                 this.entries = this.preprocessPositionsLinear(data, this.intervalData)
                 this.loaded = true
-            } else if (this.scaleMode == "Inheritance"){
+            } else if (this.scaleMode == "None"){
                 this.intervalChildrenData = this.preprocessChildData()
                 this.entries = this.preprocessPositionsNoscale(data, this.intervalData, this.intervalChildrenData)
                 this.loaded = true
@@ -360,7 +360,7 @@
         max-width: 1250px;
         margin: auto;
     }
-    .Inheritance {
+    .None {
         height: 3500px;
     }
     .Logarithmic {

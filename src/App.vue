@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <heading></heading>
-    <toggle-switch v-bind:values="['Inheritance', 'Logarithmic', 'Linear']" v-bind:defaultSelected="'Inheritance'" v-bind:label="'Scale Type'" v-model="currentGraphicScale"></toggle-switch>
+    <toggle-switch v-bind:values="['No Scaling', 'Logarithmic Time', 'Linear Time']" v-bind:defaultSelected="'No Scaling'" v-bind:label="'Time Scaling'" v-model="currentGraphicScale"></toggle-switch>
     <transition name='fade'>
-      <graphic v-if="currentGraphicScale == 'Inheritance'" key="Inheritance" v-bind:scaleMode="'Inheritance'"></graphic>
-      <graphic v-else-if="currentGraphicScale == 'Logarithmic'" key="Logarithmic" v-bind:scaleMode="'Logarithmic'"></graphic>
-      <graphic v-else-if="currentGraphicScale == 'Linear'" key="Linear" v-bind:scaleMode="currentGraphicScale"></graphic>
+      <graphic v-if="currentGraphicScale == 'No Scaling'" key="None" v-bind:scaleMode="'None'"></graphic>
+      <graphic v-else-if="currentGraphicScale == 'Logarithmic Time'" key="Logarithmic" v-bind:scaleMode="'Logarithmic'"></graphic>
+      <graphic v-else-if="currentGraphicScale == 'Linear Time'" key="Linear" v-bind:scaleMode="'Linear'"></graphic>
     </transition>
     <transition name='fade'>
       <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId"></data-sheet>
@@ -36,7 +36,7 @@ export default {
     return {
       dataSheetOn: false,
       dataSheetId: null,
-      currentGraphicScale: 'Inheritance'
+      currentGraphicScale: 'No Scaling'
     }
   },
   mounted () {

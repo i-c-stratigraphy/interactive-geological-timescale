@@ -8,9 +8,13 @@
         >{{stratotypeData.result.primaryTopic._about}}</a></h4>
       <table v-if="stratotypeData != null">
         <tr v-if="stratotypeData.result.primaryTopic.label != null">
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'The human readable name of this stratographic point.', 
+              class: 'tooltip',
+              delay: 50
+            }">
             Label
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li>{{stratotypeData.result.primaryTopic.label._value}} ({{stratotypeData.result.primaryTopic.label._lang}})</li>
@@ -18,9 +22,13 @@
           </td>
         </tr>
         <tr>
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: (!stratotypeData.result.primaryTopic.ratifiedGSSP) ? 'The ' + stratotypeData.result.primaryTopic.label._value + ' has not been ratified by the ICS.' : 'The ' + stratotypeData.result.primaryTopic.label._value + ' has been ratified by the ICS.', 
+              class: 'tooltip',
+              delay: 50
+            }">
             Ratified GSSP
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li><span v-if="stratotypeData.result.primaryTopic.ratifiedGSSP == null || !stratotypeData.result.primaryTopic.ratifiedGSSP">&#x2718;</span><span v-else-if="stratotypeData.result.primaryTopic.ratifiedGSSP">&#x2714;</span></li>
@@ -28,9 +36,13 @@
           </td>
         </tr>
         <tr v-if="stratotypeData.result.primaryTopic.status != null">
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'The formal ICS status of the ' + stratotypeData.result.primaryTopic.label._value + ' (boundary and point).', 
+              class: 'tooltip',
+              delay: 50
+            }">
             Formal ICS Status
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li>{{stratotypeData.result.primaryTopic.status}}</li>
@@ -38,9 +50,13 @@
           </td>
         </tr>
         <tr v-if="stratotypeData.result.primaryTopic.boundaryLevel != null">
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'The level within the section of the point characterizing the boundary.', 
+              class: 'tooltip',
+              delay: 50
+            }">
             Boundary Level
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li>{{stratotypeData.result.primaryTopic.boundaryLevel}}</li>
@@ -48,9 +64,13 @@
           </td>
         </tr>
         <tr v-if="stratotypeData.result.primaryTopic.correlationEvent != null">
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'The stratigraphic event that is intended to be represented by the ' + stratotypeData.result.primaryTopic.label._value + '.', 
+              class: 'tooltip',
+              delay: 50
+            }">
             Correlation Event
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li>{{stratotypeData.result.primaryTopic.correlationEvent}}</li>
@@ -58,9 +78,13 @@
           </td>
         </tr>
         <tr v-if="stratotypeData.result.primaryTopic.comment != null && !(stratotypeData.result.primaryTopic.comment instanceof Array)">
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'A description of the ' + stratotypeData.result.primaryTopic.label._value + '.', 
+              class: 'tooltip',
+              delay: 50
+            }">
             Comment
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li>{{stratotypeData.result.primaryTopic.comment._value}} ({{stratotypeData.result.primaryTopic.comment._lang}})</li>
@@ -68,9 +92,13 @@
           </td>
         </tr>
         <tr v-else-if="stratotypeData.result.primaryTopic.comment != null">
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'A description of the ' + stratotypeData.result.primaryTopic.label._value + '.', 
+              class: 'tooltip',
+              delay: 50
+            }">
             Comment
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li v-for="(comment, index) in stratotypeData.result.primaryTopic.comment" v-bind:key="index">{{comment._value}} ({{comment._lang}})</li>
@@ -78,9 +106,13 @@
           </td>
         </tr>
         <tr v-if="stratotypeData.result.primaryTopic.source != null && (stratotypeData.result.primaryTopic.source instanceof Array)">
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'Source(s) where the data about the ' + stratotypeData.result.primaryTopic.label._value + 'is derived.', 
+              class: 'tooltip',
+              delay: 50
+            }">
             Source(s)
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li v-for="(source, index) in stratotypeData.result.primaryTopic.source" :key="index">{{source}}</li>
@@ -88,9 +120,13 @@
           </td>
         </tr>
         <tr v-else-if="stratotypeData.result.primaryTopic.source != null && !(stratotypeData.result.primaryTopic.source instanceof Array)">
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'Source(s) where the information about the ' + stratotypeData.result.primaryTopic.label._value + 'is derived.', 
+              class: 'tooltip',
+              delay: 50
+            }">
             Source(s)
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li>{{stratotypeData.result.primaryTopic.source}}</li>
@@ -98,9 +134,13 @@
           </td>
         </tr>
         <tr v-if="stratotypeData.result.primaryTopic.seeAlso != null && (stratotypeData.result.primaryTopic.seeAlso instanceof Array)">
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'Resource(s) that are related to the ' + stratotypeData.result.primaryTopic.label._value + '.', 
+              class: 'tooltip',
+              delay: 50
+            }">
             See Also
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li v-for="(source, index) in stratotypeData.result.primaryTopic.seeAlso" :key="index"><a :href="source" target="_blank">{{source.split('/')[source.split('/').length - 1]}}</a></li>
@@ -108,9 +148,13 @@
           </td>
         </tr>
         <tr v-else-if="stratotypeData.result.primaryTopic.seeAlso != null && !(stratotypeData.result.primaryTopic.seeAlso instanceof Array)">
-          <th class='label'>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+              content: 'Resource(s) that are related to the ' + stratotypeData.result.primaryTopic.label._value + '.', 
+              class: 'tooltip',
+              delay: 50
+            }">
             See Also
-          </th>
+          </span></th>
           <td class='value'>
             <ul>
               <li><a :href="stratotypeData.result.primaryTopic.seeAlso" target="_blank">{{stratotypeData.result.primaryTopic.seeAlso.split('/')[stratotypeData.result.primaryTopic.seeAlso.split('/').length - 1]}}</a></li>

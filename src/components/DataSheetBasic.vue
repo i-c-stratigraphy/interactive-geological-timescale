@@ -137,7 +137,7 @@
         </tr>
         <tr v-if="jsonElementData.result.primaryTopic.hasBeginning != null">
           <th class="label"><span class="tooltip-text" v-tooltip.left="{
-            content:'The stratographic point where the ' + jsonElementData.result.primaryTopic.label._value + ' started.', 
+            content:'The geochronologic boundary where the ' + jsonElementData.result.primaryTopic.label._value + ' started.', 
             class: 'tooltip',
             delay: 50
           }">Beginning</span></th>
@@ -149,7 +149,7 @@
         </tr>
         <tr v-if="jsonElementData.result.primaryTopic.hasEnd != null">
           <th class="label"><span class="tooltip-text" v-tooltip.left="{
-            content:'The stratographic point where the ' + jsonElementData.result.primaryTopic.label._value + ' ended.', 
+            content:'The geochronologic boundary where the ' + jsonElementData.result.primaryTopic.label._value + ' ended.', 
             class: 'tooltip',
             delay: 50
           }">End</span></th>
@@ -289,16 +289,4 @@ th {
 .nested-table .label {
   width: 40%;
 }
-.tooltip-text{
-  border-bottom: 1px dotted #2C3E50;
-}
-.tooltip-text:hover{
-  cursor: help;
-}
-</style>
-<style>
-.vue-tooltip.tooltip{
-  opacity: 0.75;
-}
-
 </style>

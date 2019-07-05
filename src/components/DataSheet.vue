@@ -178,4 +178,14 @@ export default {
         -ms-user-select: none;
         user-select: none;   
     }
+    .vue-tooltip.tooltip{
+        opacity: 0.75;
+    }
+    .tooltip-text{
+        border-bottom: 1px dotted #2C3E50;
+    }
+    .tooltip-text:hover{
+        cursor: help;
+    }
+
 </style>

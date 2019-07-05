@@ -379,11 +379,17 @@
         padding: 50px;
     }
     svg{
-        background-color: white;
         overflow: auto;
     }
     .animated-svg {
         border-right: solid black 1px;
+        background: repeating-linear-gradient(
+            -45deg,
+            #F0F0F0,
+            #F0F0F0 40px,
+            #F2F2F2 40px,
+            #F2F2F2 80px
+        );
     }
     rect{
         stroke-width: 1;
@@ -401,19 +407,11 @@
         transition: transform .2s ease-in-out;
     }
     .animated-svg g:hover{
-        /*transform-origin: 100% 100%;
-        transform: scale(1.1, 1);*/ 
         transform: translate3d(-2.4%, 0px, 0px);
         transform-origin: 100% 100%;
         cursor: pointer;
     }
-    /*
-    .animated-svg g rect{
-        transition: all .2s ease-in-out;
-    }
-    .animated-svg g rect:hover{
-        width: 500px;
-    }*/
+
 </style>
 
 

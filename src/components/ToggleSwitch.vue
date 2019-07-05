@@ -55,7 +55,7 @@ li{
     cursor: pointer;
     font-size: 1.4em;
     position: relative;
-    width: 150px;
+    width: 200px;
     text-align: center;
 }
 #label {

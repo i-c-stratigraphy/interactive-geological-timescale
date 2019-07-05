@@ -18,7 +18,11 @@
     <div id="table-container">
       <table>
         <tr v-if="jsonElementData.result.primaryTopic.notation != null">
-          <th class="label">Notation</th>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+            content:'Notation  of ' + jsonElementData.result.primaryTopic.label._value + ' according to Geological Timescale (2018)', 
+            class: 'tooltip',
+            delay: 50
+          }">Notation</span></th>
           <td class="value">
             <ul>
               <li>{{jsonElementData.result.primaryTopic.notation}}</li>
@@ -26,7 +30,11 @@
           </td>
         </tr>
         <tr v-if="jsonElementData.result.primaryTopic.comment != null">
-          <th class="label">Comments</th>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+            content:'A description of the ' + jsonElementData.result.primaryTopic.label._value + '.', 
+            class: 'tooltip',
+            delay: 50
+          }">Comments</span></th>
           <td class="value">
             <ul>
               <li
@@ -37,7 +45,11 @@
           </td>
         </tr>
         <tr v-if="jsonElementData.result.primaryTopic.narrower != null">
-          <th class="label">Interval Contains</th>
+           <th class="label"><span class="tooltip-text" v-tooltip.left="{
+            content:'A list of smaller (child) intervals occuring within the ' + jsonElementData.result.primaryTopic.label._value + '.', 
+            class: 'tooltip',
+            delay: 50
+          }">Interval Contains</span></th>
           <td class="value">
             <ul>
               <li>
@@ -59,7 +71,11 @@
           </td>
         </tr>
         <tr v-if="jsonElementData.result.primaryTopic.broader != null">
-          <th class="label">Interval During</th>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+            content:'A list of larger (parent) intervals that the ' + jsonElementData.result.primaryTopic.label._value + ' belongs to.', 
+            class: 'tooltip',
+            delay: 50
+          }">Interval During</span></th>
           <td class="value">
             <ul>
               <li>
@@ -96,7 +112,11 @@
           </td>
         </tr>
         <tr v-if="jsonElementData.result.primaryTopic.intervalStartedBy != null">
-          <th class="label">Interval Started By</th>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+            content:'The earliest child interval of the ' + jsonElementData.result.primaryTopic.label._value + '.', 
+            class: 'tooltip',
+            delay: 50
+          }">Interval Started By</span></th>
           <td class="value">
             <ul>
               <li>{{jsonElementData.result.primaryTopic.intervalStartedBy.label._value}}</li>
@@ -104,7 +124,11 @@
           </td>
         </tr>
         <tr v-if="jsonElementData.result.primaryTopic.intervalFinishedBy != null">
-          <th class="label">Interval Finished By</th>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+            content:'The latest child interval of the ' + jsonElementData.result.primaryTopic.label._value + '.', 
+            class: 'tooltip',
+            delay: 50
+          }">Interval Finished By</span></th>
           <td class="value">
             <ul>
               <li>{{jsonElementData.result.primaryTopic.intervalFinishedBy.label._value}}</li>
@@ -112,7 +136,11 @@
           </td>
         </tr>
         <tr v-if="jsonElementData.result.primaryTopic.hasBeginning != null">
-          <th class="label">Beginning</th>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+            content:'The stratographic point where the ' + jsonElementData.result.primaryTopic.label._value + ' started.', 
+            class: 'tooltip',
+            delay: 50
+          }">Beginning</span></th>
           <td class="value">
             <ul>
               <li @click="getMoreData(jsonElementData.result.primaryTopic.hasBeginning._about)"><a>{{jsonElementData.result.primaryTopic.hasBeginning.label._value}}</a></li>
@@ -120,7 +148,11 @@
           </td>
         </tr>
         <tr v-if="jsonElementData.result.primaryTopic.hasEnd != null">
-          <th class="label">End</th>
+          <th class="label"><span class="tooltip-text" v-tooltip.left="{
+            content:'The stratographic point where the ' + jsonElementData.result.primaryTopic.label._value + ' ended.', 
+            class: 'tooltip',
+            delay: 50
+          }">End</span></th>
           <td class="value">
             <ul>
               <li @click="getMoreData(jsonElementData.result.primaryTopic.hasEnd._about)"><a>{{jsonElementData.result.primaryTopic.hasEnd.label._value}}</a></li>
@@ -133,6 +165,7 @@
 </template>
 
 <script>
+
 import EventBus from "../assets/event-bus.js";
 export default {
   name: "DataSheetBasic",
@@ -255,6 +288,17 @@ th {
 }
 .nested-table .label {
   width: 40%;
+}
+.tooltip-text{
+  border-bottom: 1px dotted #2C3E50;
+}
+.tooltip-text:hover{
+  cursor: help;
+}
+</style>
+<style>
+.vue-tooltip.tooltip{
+  opacity: 0.75;
 }
 
 </style>

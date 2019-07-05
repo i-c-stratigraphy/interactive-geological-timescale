@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <heading></heading>
-    <toggle-switch v-bind:values="['None', 'Logarithmic', 'Linear']" v-bind:defaultSelected="'None'" v-bind:label="'Time Scale Type'" v-model="currentGraphicScale"></toggle-switch>
+    <toggle-switch v-bind:values="['Inheritance', 'Logarithmic', 'Linear']" v-bind:defaultSelected="'Inheritance'" v-bind:label="'Scale Type'" v-model="currentGraphicScale"></toggle-switch>
     <transition name='fade'>
-      <graphic v-if="currentGraphicScale == 'None'" key="None" v-bind:scaleMode="'None'"></graphic>
+      <graphic v-if="currentGraphicScale == 'Inheritance'" key="Inheritance" v-bind:scaleMode="'Inheritance'"></graphic>
       <graphic v-else-if="currentGraphicScale == 'Logarithmic'" key="Logarithmic" v-bind:scaleMode="'Logarithmic'"></graphic>
       <graphic v-else-if="currentGraphicScale == 'Linear'" key="Linear" v-bind:scaleMode="currentGraphicScale"></graphic>
     </transition>
@@ -36,7 +36,7 @@ export default {
     return {
       dataSheetOn: false,
       dataSheetId: null,
-      currentGraphicScale: 'None'
+      currentGraphicScale: 'Inheritance'
     }
   },
   mounted () {

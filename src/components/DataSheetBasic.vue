@@ -208,7 +208,6 @@ a {
   border: 0;
   padding: 10px;
   margin-bottom: 0;
-  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -229,13 +228,18 @@ a {
 #datasheet-header a:hover {
   background-size: 100% 2px;
 }
-
+#base-sheet{
+  height: 100%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
 #table-container {
   border: 3px solid lightgray;
   border: 0;
   padding: 10px;
   margin-top: 0;
-  width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;

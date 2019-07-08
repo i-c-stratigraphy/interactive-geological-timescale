@@ -2,6 +2,7 @@
   <div id="app">
     <heading></heading>
     <toggle-switch v-bind:values="['No Scaling', 'Logarithmic Time', 'Linear Time']" v-bind:defaultSelected="'No Scaling'" v-bind:label="'Time Scaling'" v-model="currentGraphicScale"></toggle-switch>
+    <br>
     <transition name='fade'>
       <graphic v-if="currentGraphicScale == 'No Scaling'" key="None" v-bind:scaleMode="'None'"></graphic>
       <graphic v-else-if="currentGraphicScale == 'Logarithmic Time'" key="Logarithmic" v-bind:scaleMode="'Logarithmic'"></graphic>

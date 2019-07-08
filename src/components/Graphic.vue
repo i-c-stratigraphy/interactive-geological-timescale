@@ -1,8 +1,8 @@
 <template>
     <div id="container" :class="scaleMode" v-if="loaded">
         <br>
-        <svg width="100%" :height="'40px'" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <g class='headings'>
+        <svg class='headings' width="95%" :height="'40px'" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g>
                 <text x="7.5%" y="50%">Supereon</text>
                 <text x="17.5%" y="50%"><tspan x="17.5%" y="30%">Eonothem /</tspan><tspan x="17.5%" y="70%">Eon</tspan></text>
                 <text x="27.5%" y="50%"><tspan x="27.5%" y="30%">Erathem /</tspan><tspan x="27.5%" y="70%">Era</tspan></text>
@@ -11,11 +11,23 @@
                 <text x="86.25%" y="50%">Stage / Age</text>
             </g>
         </svg>
-        <svg class="animated-svg" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg class="animated-svg" width="95%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <g v-for="item in entries" v-bind:key="item.id" :id="item.id" @click='sendClickToEventBus'>
                 <rect  :class="item.type" :fill="item.fill" :width="(parseFloat(item.width) + 2.5) + '%'" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y">
                 </rect>
                 <text  :class="item.type" :x="item.xlabel" :y="item.ylabel">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
+            </g>
+        </svg>
+        <svg class="timescale-label" width="5%" height="40px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <text x="50%" y="50%"><tspan x='50%' y='30%'>Numerical</tspan><tspan x='50%' y='70%'>Age (Ma)</tspan></text>
+        </svg>
+        <svg class="timescale" width="5%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g v-for="(item, index) in entries" v-if="intervalChildrenData['http://resource.geosciml.org/classifier/ics/ischart/' + item.id] == 0" v-bind:key="index">
+                <line x1="0" :y1="item.y" x2="30%" :y2="item.y" stroke='black'/>
+                <text :x="'30%'" :y="item.y">{{intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + item.id].hasEnd}}</text>
+            </g>
+            <g>
+                <text x='25%' y="100%">~4600</text>
             </g>
         </svg>
     </div>
@@ -328,6 +340,8 @@
             }
         },
         created() {
+            this.intervalChildrenData = this.preprocessChildData()
+            console.log(this.intervalData)
             if (this.scaleMode == "Logarithmic"){
                 this.entries = this.preprocessPositionsLogarithmic(data, this.intervalData)
                 this.loaded = true
@@ -335,7 +349,6 @@
                 this.entries = this.preprocessPositionsLinear(data, this.intervalData)
                 this.loaded = true
             } else if (this.scaleMode == "None"){
-                this.intervalChildrenData = this.preprocessChildData()
                 this.entries = this.preprocessPositionsNoscale(data, this.intervalData, this.intervalChildrenData)
                 this.loaded = true
             }
@@ -378,10 +391,37 @@
         margin: auto;
         padding: 50px;
     }
-    svg{
-        overflow: auto;
+    .headings{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .headings text {
+        text-anchor: middle;
+        font-weight: bold;
+    }
+    .timescale-label{
+        position: absolute;
+        overflow: visible;
+        right: 0px;
+        left: 95%;
+        top: 0px;
+        text-anchor: middle;
+        font-weight: bold;
+    }
+    .timescale{
+        position: absolute;
+        overflow: visible;
+        right: 0px;
+        left: 95%;
+        top: 40px;
+    }
+    .timescale text{
+        font-weight: bold;
+        dominant-baseline: middle;
     }
     .animated-svg {
+        position: absolute;
         border-right: solid black 1px;
         background: repeating-linear-gradient(
             -45deg,
@@ -390,12 +430,15 @@
             #F2F2F2 40px,
             #F2F2F2 80px
         );
+        left:0px;
+        top:40px;
+        bottom: 0px;
     }
-    rect{
+    .animated-svg rect{
         stroke-width: 1;
         stroke: black;
     }
-    text{
+    .animated-svg text{
         dominant-baseline: middle;
         text-anchor: middle;
         font-weight: bold;

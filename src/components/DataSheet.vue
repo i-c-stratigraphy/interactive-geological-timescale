@@ -78,15 +78,21 @@ export default {
             EventBus.$emit('destroy-data-sheet', null)
         },
         goToPrevious: function() {
-            if (this.history.length == 1) {
-                this.destroyDataSheet()
-            } else {
-                this.dataReceived = false
-                var previousNode = this.history.pop()
-                var url = this.history[this.history.length - 1][0]
-                var requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + url
-                this.$emit('input', url)
-                this.httpRequestAsync(requestURL, 'jsonElementData')
+            if (this.edgeDataReceived){
+                this.edgeDataReceived = false
+                this.dataReceived = true
+                this.stratotypeData = []
+            }else{
+                if (this.history.length == 1) {
+                    this.destroyDataSheet()
+                } else {
+                    this.dataReceived = false
+                    var previousNode = this.history.pop()
+                    var url = this.history[this.history.length - 1][0]
+                    var requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + url
+                    this.$emit('input', url)
+                    this.httpRequestAsync(requestURL, 'jsonElementData')
+                }
             }
         }
     },

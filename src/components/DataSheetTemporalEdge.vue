@@ -48,7 +48,7 @@
         </table>
       <stratotype-table v-if="stratotypeData != null && stratotypeData.length == 1" v-bind:stratotypeData="stratotypeData[0]"></stratotype-table>
       <div id="stratotype-tables" v-else-if="stratotypeData != null && stratotypeData.length > 1">
-        <stratotype-table v-for="(data, index) in stratotypeData" v-bind:key="index" v-bind:stratotypeData="data" v-bind:sdHeading="index == 0"></stratotype-table>
+        <stratotype-table v-for="(data, index) in stratotypeData" :key="index" v-bind:stratotypeData="data" v-bind:sdHeading="index == 0"></stratotype-table>
       </div>
     </div>
   </div>

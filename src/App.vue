@@ -8,7 +8,7 @@
       <graphic v-else-if="currentGraphicScale == 'Linear Time'" key="Linear" v-bind:scaleMode="'Linear'"></graphic>
     </transition>
     <transition name='fade'>
-      <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId" :key="dataSheetId"></data-sheet>
+      <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId" v-model="dataSheetId"></data-sheet>
     </transition>
     <custom-footer></custom-footer>
   </div>

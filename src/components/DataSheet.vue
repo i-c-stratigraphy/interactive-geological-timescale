@@ -26,7 +26,8 @@ export default {
         DataSheetTemporalEdge
     },
     props: {
-        id: String
+        id: String,
+        history: Array
     },
     data (){
         return {
@@ -83,10 +84,9 @@ export default {
         }),
         EventBus.$on('update-data', url =>{
         this.dataReceived = false
-        this.id = url
         requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + url
+        this.$emit('input', url)
         this.httpRequestAsync(requestURL, 'jsonElementData')
-        this.dataReceived = true
     })
     }
 }

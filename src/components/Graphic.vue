@@ -327,7 +327,7 @@
                 return data
             }
         },
-        mounted() {
+        created() {
             if (this.scaleMode == "Logarithmic"){
                 this.entries = this.preprocessPositionsLogarithmic(data, this.intervalData)
                 this.loaded = true

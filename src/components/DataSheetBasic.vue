@@ -59,7 +59,7 @@
                   v-bind:key="index"
                 >
                   <tr>
-                    <th colspan="2">{{child.label._value}}</th>
+                    <th colspan="2" @click="updateData(child._about)">{{child.label._value}}</th>
                   </tr>
                   <tr>
                     <td class="label">Interval During</td>
@@ -85,7 +85,7 @@
                   v-bind:key="index"
                 >
                   <tr>
-                    <th colspan="2">{{parent.label._value}}</th>
+                    <th colspan="2" @click="updateData(parent._about)">{{parent.label._value}}</th>
                   </tr>
                   <tr>
                     <td class="label">Interval Contains</td>
@@ -100,7 +100,7 @@
                   v-bind:key="index"
                 >
                   <tr>
-                    <th colspan="2">{{parent.label._value}}</th>
+                    <th colspan="2" @click="updateData(parent._about)">{{parent.label._value}}</th>
                   </tr>
                   <tr>
                     <td class="label">Interval Contains</td>
@@ -119,7 +119,7 @@
           }">Interval Started By</span></th>
           <td class="value">
             <ul>
-              <li>{{jsonElementData.result.primaryTopic.intervalStartedBy.label._value}}</li>
+              <li><a @click="updateData(jsonElementData.result.primaryTopic.intervalStartedBy._about)">{{jsonElementData.result.primaryTopic.intervalStartedBy.label._value}}</a></li>
             </ul>
           </td>
         </tr>
@@ -131,7 +131,7 @@
           }">Interval Finished By</span></th>
           <td class="value">
             <ul>
-              <li>{{jsonElementData.result.primaryTopic.intervalFinishedBy.label._value}}</li>
+              <li><a @click="updateData(jsonElementData.result.primaryTopic.intervalStartedBy._about)">{{jsonElementData.result.primaryTopic.intervalFinishedBy.label._value}}</a></li>
             </ul>
           </td>
         </tr>
@@ -175,6 +175,9 @@ export default {
   methods: {
     getMoreData: function(url) {
       EventBus.$emit('get-more-data', url)
+    },
+    updateData: function(url) {
+      EventBus.$emit('update-data', url)
     }
   }
 };
@@ -285,7 +288,17 @@ th {
 }
 .nested-table th {
   background-color: #dae2e6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.2s ease-in-out;
 }
+.nested-table th:hover {
+  background-color: #bdd1db;
+  cursor: pointer;
+  text-decoration: underline 1px;
+  padding-left: 30px;  
+}
+
 .nested-table .label {
   width: 40%;
 }

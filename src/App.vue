@@ -8,7 +8,7 @@
       <graphic v-else-if="currentGraphicScale == 'Linear Time'" key="Linear" v-bind:scaleMode="'Linear'"></graphic>
     </transition>
     <transition name='fade'>
-      <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId"></data-sheet>
+      <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId" :key="dataSheetId"></data-sheet>
     </transition>
     <custom-footer></custom-footer>
   </div>
@@ -42,11 +42,16 @@ export default {
   mounted () {
     EventBus.$on('create-data-sheet', id => {
       this.dataSheetOn = true
-      this.dataSheetId = id
+      this.dataSheetId = 'http://resource.geosciml.org/classifier/ics/ischart/' + id
     })
     EventBus.$on('destroy-data-sheet', payload =>{
       this.dataSheetOn = false
-      this.dataSheetId = null
+      this.dataSheetId = payload
+    })
+    EventBus.$on('update-data', url =>{
+      this.dataSheetOn = false
+      this.dataSheetId = url
+      this.dataSheetOn = true
     })
   }
 }

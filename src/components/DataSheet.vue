@@ -67,11 +67,11 @@ export default {
         xmlHttp.send(null)
         },
         destroyDataSheet: function() {
-            EventBus.$emit('destroy-data-sheet', true)
+            EventBus.$emit('destroy-data-sheet', null)
         }
     },
     mounted(){
-        var requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=http://resource.geosciml.org/classifier/ics/ischart/' + this.id
+        var requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + this.id
         this.httpRequestAsync(requestURL, 'jsonElementData')
         EventBus.$on('get-more-data', url => {
             this.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + url, 'edgeData')

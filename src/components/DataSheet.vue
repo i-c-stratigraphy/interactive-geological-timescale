@@ -4,7 +4,7 @@
         <div id="datasheet-exit-button" @click='destroyDataSheet'><div id="datasheet-exit-button-text">&#x2573;</div></div>
         <div id='datasheet-container'>
             <transition name='fade' mode='out-in'>
-                <data-sheet-basic v-if="dataReceived" v-bind:jsonElementData="jsonElementData"></data-sheet-basic>
+                <data-sheet-basic v-if="dataReceived" :key="id" v-bind:jsonElementData="jsonElementData"></data-sheet-basic>
                 <data-sheet-temporal-edge v-else-if="edgeDataReceived" v-bind:jsonElementData="edgeData" v-bind:stratotypeData="stratotypeData"></data-sheet-temporal-edge>
                 <div id="loading-icon" v-else>
                     <img src="../assets/loading.svg" width="120px" height="120px">
@@ -80,7 +80,14 @@ export default {
             this.edgeDataReceived = !payload
             this.dataReceived = payload
             this.stratotypeData = [];
-        })
+        }),
+        EventBus.$on('update-data', url =>{
+        this.dataReceived = false
+        this.id = url
+        requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + url
+        this.httpRequestAsync(requestURL, 'jsonElementData')
+        this.dataReceived = true
+    })
     }
 }
 </script>

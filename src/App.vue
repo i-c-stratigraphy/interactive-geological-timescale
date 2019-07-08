@@ -48,11 +48,6 @@ export default {
       this.dataSheetOn = false
       this.dataSheetId = payload
     })
-    EventBus.$on('update-data', url =>{
-      this.dataSheetOn = false
-      this.dataSheetId = url
-      this.dataSheetOn = true
-    })
   }
 }
 </script>

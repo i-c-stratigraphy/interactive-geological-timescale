@@ -1,8 +1,5 @@
 <template>
   <div id="base-sheet">
-    <div id="back-arrow" @click="clickBackButton">
-      &#x1f844;
-    </div>
     <div id="datasheet-header">
       <h1>{{jsonElementData.result.primaryTopic.label._value}}</h1>
       <h2 v-if="jsonElementData.result.primaryTopic.prefLabel.length > 0">

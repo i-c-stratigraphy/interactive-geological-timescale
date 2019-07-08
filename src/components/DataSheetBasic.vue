@@ -170,14 +170,15 @@ import EventBus from "../assets/event-bus.js";
 export default {
   name: "DataSheetBasic",
   props: {
-    jsonElementData: Object
+    jsonElementData: Object,
   },
   methods: {
     getMoreData: function(url) {
       EventBus.$emit('get-more-data', url)
     },
     updateData: function(url) {
-      EventBus.$emit('update-data', url)
+      var label = this.jsonElementData.result.primaryTopic.label._value
+      EventBus.$emit('update-data', [url, label])
     }
   }
 };

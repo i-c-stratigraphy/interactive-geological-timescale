@@ -17,6 +17,8 @@
                     <rect  :class="item.type" :fill="item.fill" :width="(parseFloat(item.width) + 2.5) + '%'" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y">
                     </rect>
                     <text v-if="parseFloat(item.height) >= threshold" :ref="item.id" :class="item.type" :x="item.xlabel" :y="item.ylabel">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
+                    <title v-else>{{(item.name.slice(-4) == "Null")? "" : item.name }}</title>
+
             </g>
         </svg>
         <svg class="timescale-label" width="5%" height="40px" version="1.1" xmlns="http://www.w3.org/2000/svg">

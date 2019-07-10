@@ -4,9 +4,9 @@
     <toggle-switch v-bind:values="['No Scaling', 'Logarithmic Time', 'Linear Time']" v-bind:defaultSelected="'No Scaling'" v-bind:label="'Time Scaling'" v-model="currentGraphicScale"></toggle-switch>
     <br>
     <transition name='fade'>
-      <graphic v-if="currentGraphicScale == 'No Scaling'" key="None" v-bind:scaleMode="'None'"></graphic>
-      <graphic v-else-if="currentGraphicScale == 'Logarithmic Time'" key="Logarithmic" v-bind:scaleMode="'Logarithmic'"></graphic>
-      <graphic v-else-if="currentGraphicScale == 'Linear Time'" key="Linear" v-bind:scaleMode="'Linear'"></graphic>
+      <graphic v-if="currentGraphicScale == 'No Scaling'" key="None" v-bind:scaleMode="'None'" v-bind:containerHeight="3500"></graphic>
+      <graphic v-else-if="currentGraphicScale == 'Logarithmic Time'" key="Logarithmic" v-bind:scaleMode="'Logarithmic'"  v-bind:containerHeight="30000"></graphic>
+      <graphic v-else-if="currentGraphicScale == 'Linear Time'" key="Linear" v-bind:scaleMode="'Linear'"  v-bind:containerHeight="30000"></graphic>
     </transition>
     <transition name='fade'>
       <data-sheet v-if="dataSheetOn" v-bind:id="dataSheetId" v-model="dataSheetId"></data-sheet>

@@ -1,5 +1,6 @@
 <template>
-    <div id="container" :class="scaleMode" v-if="loaded">
+    <transition name="fade">
+    <div id="container" :style="'height: ' + containerHeight + 'px;'" v-if="loaded">
         <br>
         <svg class='headings' width="95%" :height="'40px'" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <g>
@@ -12,10 +13,10 @@
             </g>
         </svg>
         <svg class="animated-svg" width="95%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <g v-for="item in entries" v-bind:key="item.id" :id="item.id" @click='sendClickToEventBus'>
-                <rect  :class="item.type" :fill="item.fill" :width="(parseFloat(item.width) + 2.5) + '%'" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y">
-                </rect>
-                <text :ref="item.id" :class="item.type" :x="item.xlabel" :y="item.ylabel">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
+            <g v-for="item in entries" v-bind:key="item.id" :id="item.id" @click='sendClickToEventBus'> 
+                    <rect  :class="item.type" :fill="item.fill" :width="(parseFloat(item.width) + 2.5) + '%'" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y">
+                    </rect>
+                    <text v-if="parseFloat(item.height) >= threshold" :ref="item.id" :class="item.type" :x="item.xlabel" :y="item.ylabel">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
             </g>
         </svg>
         <svg class="timescale-label" width="5%" height="40px" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -35,6 +36,7 @@
         <img src="../assets/loading.svg" width="120px" height="120px">
         <p>Loading...</p>
     </div>
+    </transition>
 </template>
 <script>
     import data from '../assets/timeline_data.json'
@@ -47,6 +49,11 @@
             scaleMode: {
                 type: String,
                 default: 'None'
+            },
+            containerHeight: {
+                type: Number,
+                default: 3500
+
             }
         },
         methods: {
@@ -340,18 +347,16 @@
             }
         },
         created() {
+            this.loaded = false
             this.intervalChildrenData = this.preprocessChildData()
-            console.log(this.intervalData)
             if (this.scaleMode == "Logarithmic"){
                 this.entries = this.preprocessPositionsLogarithmic(data, this.intervalData)
-                this.loaded = true
             } else if (this.scaleMode == "Linear"){
                 this.entries = this.preprocessPositionsLinear(data, this.intervalData)
-                this.loaded = true
             } else if (this.scaleMode == "None"){
                 this.entries = this.preprocessPositionsNoscale(data, this.intervalData, this.intervalChildrenData)
-                this.loaded = true
             }
+            this.loaded = true
         },
         mounted() {
             // Used to manually wrap labels if necessary. Key in requiredOverride is the original ref of the label (ID in the vocab) and the value is the hyphenated text. Newline is created at the hyphen. NOTE: can only have 1 hyphen
@@ -379,6 +384,7 @@
                     object.innerHTML = newHTML
                 }
             }
+            
         },
         data() {
             return {
@@ -386,7 +392,8 @@
                 intervalData: numericTimeData,
                 dividerPosition: -1,
                 entries: null,
-                loaded: false
+                loaded: false,
+                threshold: 16/this.containerHeight * 100
             }
         }
     }
@@ -399,15 +406,6 @@
         min-width: 1128px;
         max-width: 1250px;
         margin: auto;
-    }
-    .None {
-        height: 3500px;
-    }
-    .Logarithmic {
-        height: 30000px;
-    }
-    .Linear {
-        height: 30000px;
     }
     #loading-icon {
         position: relative;
@@ -422,6 +420,7 @@
         position: absolute;
         left: 0px;
         top: 0px;
+        background-color: white;
     }
     .headings text {
         text-anchor: middle;
@@ -435,6 +434,7 @@
         top: 0px;
         text-anchor: middle;
         font-weight: bold;
+        background-color: white;
     }
     .timescale{
         position: absolute;

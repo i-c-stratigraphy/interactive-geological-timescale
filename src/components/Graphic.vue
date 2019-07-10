@@ -15,7 +15,7 @@
             <g v-for="item in entries" v-bind:key="item.id" :id="item.id" @click='sendClickToEventBus'>
                 <rect  :class="item.type" :fill="item.fill" :width="(parseFloat(item.width) + 2.5) + '%'" :stroke="'black'" :height="item.height" :x="item.x" :y="item.y">
                 </rect>
-                <text  :class="item.type" :x="item.xlabel" :y="item.ylabel">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
+                <text :ref="item.id" :class="item.type" :x="item.xlabel" :y="item.ylabel">{{(item.name.slice(-4) == "Null")? "" : item.name }}</text>
             </g>
         </svg>
         <svg class="timescale-label" width="5%" height="40px" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -353,6 +353,33 @@
                 this.loaded = true
             }
         },
+        mounted() {
+            // Used to manually wrap labels if necessary. Key in requiredOverride is the original ref of the label (ID in the vocab) and the value is the hyphenated text. Newline is created at the hyphen. NOTE: can only have 1 hyphen
+            var requiredOverride = {
+                'Neoproterozoic' : 'Neo-proterozoic', 
+                'Mesoproterozoic' : 'Meso-proterozoic', 
+                'Paleoproterozoic' : 'Paleo-proterozoic'
+            }
+            var labels = this.$refs
+            for (var label in labels){
+                if (requiredOverride[label] != null){
+                    var object = labels[label][0]
+                    var objectX = object.x.baseVal[0].valueInSpecifiedUnits
+                    var objectHeight = object.getBBox().height // THIS SOMEHOW CHANGES THE OBJECT THAT THE NEXT COMMAND GETS FROM - FIREFOX
+                    var objectY = object.y.baseVal[0].value
+                    var newHTML = ''
+                    var parsedLabel = requiredOverride[label].split('-')
+                    for (let line in parsedLabel){
+                        if (line != parsedLabel.length - 1){
+                            newHTML += '<tspan x="' + objectX + '%" y="' + (objectY - objectHeight/2) +'">'+ parsedLabel[line] +'-</tspan>'
+                        } else {
+                            newHTML += '<tspan x="' + objectX + '%" y="' + (objectY + objectHeight/2) +'">'+ parsedLabel[line] +'</tspan>'
+                        }
+                    }
+                    object.innerHTML = newHTML
+                }
+            }
+        },
         data() {
             return {
                 intervalChildrenData: intervalChildrenData,
@@ -369,7 +396,7 @@
         position: relative;
         border: solid white 1px;
         width: 75%;
-        min-width: 980px;
+        min-width: 1128px;
         max-width: 1250px;
         margin: auto;
     }

@@ -25,7 +25,7 @@
             <text x="50%" y="50%"><tspan x='50%' y='30%'>Numerical</tspan><tspan x='50%' y='70%'>Age (Ma)</tspan></text>
         </svg>
         <svg class="timescale" width="5%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <g v-for="(item, index) in entries" v-if="intervalChildrenData['http://resource.geosciml.org/classifier/ics/ischart/' + item.id] == 0" v-bind:key="index">
+            <g v-for="(item, index) in entries" v-if="intervalChildrenData['http://resource.geosciml.org/classifier/ics/ischart/' + item.id] == 0 && parseFloat(item.height) >= threshold" v-bind:key="index">
                 <line x1="0" :y1="item.y" x2="30%" :y2="item.y" stroke='black'/>
                 <text :x="'30%'" :y="item.y">{{intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + item.id].hasEnd}}</text>
             </g>

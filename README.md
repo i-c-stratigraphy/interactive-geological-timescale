@@ -11,6 +11,10 @@ When any time period is clicked by a user, information about that period is retr
 * **<http://resource.geosciml.org/vocabulary/timescale/gts2018>**
 
 
+## Example Deployment
+You can see this application online at **<https://kurrawong.net/timescale/>**
+
+
 ## Technical details
 This is a [vue.js](https://vuejs.org/) application, built using [node.js](https://nodejs.org/en/).
 

@@ -41,11 +41,11 @@ This repository contains a pre-built arechive file for deployment: [timescale.ta
 You can rebuild this file by taring and gzipping the dist/ folder created with `npm run build`. Just make sure you make the following changes after building:
 
 1. convert paths in index.html from =/ to just =
-    a. 9 instances
+    * 9 instances
 2. strip last char from footer image paths (3 images)
-    a. go to js/app.xxxxxx.js
-    b. find the 3 images (img/...)
-    c. add this to the image path generation variable: .slice(0, -1), .e.g i.exports=r.p.slice(0, -1)+"img/
+    * go to js/app.xxxxxx.js
+    * find the 3 images (img/...)
+    * add this to the image path generation variable: .slice(0, -1), .e.g i.exports=r.p.slice(0, -1)+"img/
 
 
 ##### Run your tests

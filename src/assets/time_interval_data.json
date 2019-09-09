@@ -99,7 +99,7 @@
         "hasBeginning": 358.9,
         "hasEnd": 323.2
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyMississippian": {
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerMississippian": {
         "hasBeginning": 358.9,
         "hasEnd": 346.7
     },
@@ -135,7 +135,7 @@
         "hasBeginning": 145.0,
         "hasEnd": 139.8
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyCretaceous": {
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous": {
         "hasBeginning": 145.0,
         "hasEnd": 100.5
     },
@@ -163,7 +163,7 @@
         "hasBeginning": 419.2,
         "hasEnd": 358.9
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyDevonian": {
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian": {
         "hasBeginning": 419.2,
         "hasEnd": 393.3
     },
@@ -255,7 +255,7 @@
         "hasBeginning": 201.3,
         "hasEnd": 145.0
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyJurassic": {
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic": {
         "hasBeginning": 201.3,
         "hasEnd": 174.1
     },
@@ -287,7 +287,7 @@
         "hasBeginning": 100.5,
         "hasEnd": 93.9
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/LateCretaceous": {
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous": {
         "hasBeginning": 100.5,
         "hasEnd": 66.0
     },
@@ -295,7 +295,7 @@
         "hasBeginning": 382.7,
         "hasEnd": 372.2
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/LateDevonian": {
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperDevonian": {
         "hasBeginning": 382.7,
         "hasEnd": 358.9
     },
@@ -303,7 +303,7 @@
         "hasBeginning": 163.5,
         "hasEnd": 157.3
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/LateJurassic": {
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic": {
         "hasBeginning": 163.5,
         "hasEnd": 145.0
     },
@@ -311,7 +311,7 @@
         "hasBeginning": 330.9,
         "hasEnd": 323.2
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/LateMississippian": {
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian": {
         "hasBeginning": 330.9,
         "hasEnd":  	323.2
     },
@@ -319,7 +319,7 @@
         "hasBeginning": 458.4,
         "hasEnd": 453.0
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/LateOrdovician": {
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician": {
         "hasBeginning": 458.4,
         "hasEnd": 443.8
     },
@@ -327,11 +327,11 @@
         "hasBeginning": 307.0,
         "hasEnd": 303.7
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/LatePennsylvanian": {
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian": {
         "hasBeginning": 307.0,
         "hasEnd": 298.9
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/LatePleistocene": {
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene": {
         "hasBeginning": 0.126,
         "hasEnd": 0.0117
     },
@@ -339,7 +339,7 @@
         "hasBeginning": 237.0,
         "hasEnd": 227.0
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/LateTriassic": {
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic": {
         "hasBeginning": 237.0,
         "hasEnd": 201.3
     },
@@ -399,7 +399,7 @@
         "hasBeginning": 251.902,
         "hasEnd": 201.3
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyTriassic": {
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerTriassic": {
         "hasBeginning": 251.902,
         "hasEnd": 247.2
     },
@@ -507,7 +507,7 @@
         "hasBeginning": 485.4,
         "hasEnd": 477.7
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyOrdovician": {
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerOrdovician": {
         "hasBeginning": 485.4,
         "hasEnd": 470.0
     },
@@ -531,7 +531,7 @@
         "hasBeginning": 323.2,
         "hasEnd": 298.9
     },
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyPennsylvanian": {
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerPennsylvanian": {
         "hasBeginning": 323.2,
         "hasEnd": 315.2
     },

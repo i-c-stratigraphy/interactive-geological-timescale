@@ -35,6 +35,16 @@ Produces a `dist/` folder that can be deployed on a standard webserver (HTML, JS
 npm run build
 ```
 
+Notes for deployment on a web server:
+# convert paths in index.html from =/ to just =
+    # 9 instances
+# strip last char from footer image paths (3 images)
+    # go to js/app.707bca09.js
+    # find images (CSIRO_ & GSQ_, loading.)
+    # add this
+    # .slice(0, -1)
+
+
 ##### Run your tests
 ```
 npm run test
@@ -52,6 +62,12 @@ All code and other information in this repository is &copy; CSIRO, 2019 and avai
 
 
 ## Contacts
+Technical Owner:  
+**Nicholas Car**  
+*Data Systems Architect*  
+SURROUND Australia Pty Ltd  
+<nicholas.car@surroundaustralia.com>
+
 Developer:  
 **Jake Hashim-Jones**  
 *Junior Informatics Developer*  

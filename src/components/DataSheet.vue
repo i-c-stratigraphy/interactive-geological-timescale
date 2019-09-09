@@ -59,10 +59,10 @@ export default {
                         this_.edgeData = JSON.parse(data)
                         this_.dataReceived = false
                         if (this_.edgeData.result.primaryTopic.stratotype != null && !(this_.edgeData.result.primaryTopic.stratotype instanceof Array)){
-                            this_.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + this_.edgeData.result.primaryTopic.stratotype._about, 'stratotypeData')
+                            this_.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised-corrected/resource.json?uri=' + this_.edgeData.result.primaryTopic.stratotype._about, 'stratotypeData')
                         } else if (this_.edgeData.result.primaryTopic.stratotype != null && (this_.edgeData.result.primaryTopic.stratotype instanceof Array)){
                             for (var stratotype in this_.edgeData.result.primaryTopic.stratotype){
-                                this_.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + this_.edgeData.result.primaryTopic.stratotype[stratotype]._about, 'stratotypeData')
+                                this_.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised-corrected/resource.json?uri=' + this_.edgeData.result.primaryTopic.stratotype[stratotype]._about, 'stratotypeData')
                             }
                         }
                         this_.edgeDataReceived = true
@@ -89,7 +89,7 @@ export default {
                     this.dataReceived = false
                     var previousNode = this.history.pop()
                     var url = this.history[this.history.length - 1][0]
-                    var requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + url
+                    var requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised-corrected/resource.json?uri=' + url
                     this.$emit('input', url)
                     this.httpRequestAsync(requestURL, 'jsonElementData')
                 }
@@ -97,11 +97,11 @@ export default {
         }
     },
     mounted(){
-        var requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + this.id
+        var requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised-corrected/resource.json?uri=' + this.id
         this.httpRequestAsync(requestURL, 'jsonElementData')
         EventBus.$on('get-more-data', url => {
             this.history.push([this.id, this.jsonElementData.result.primaryTopic.label._value])
-            this.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + url, 'edgeData')
+            this.httpRequestAsync('https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised-corrected/resource.json?uri=' + url, 'edgeData')
         })
         EventBus.$on('go-back', payload => {
             this.edgeDataReceived = !payload
@@ -110,7 +110,7 @@ export default {
         }),
         EventBus.$on('update-data', node =>{
             this.dataReceived = false
-            requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised/resource.json?uri=' + node[0]
+            requestURL = 'https://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2018-revised-corrected/resource.json?uri=' + node[0]
             this.$emit('input', node[0])
             this.httpRequestAsync(requestURL, 'jsonElementData')
             this.history.push(node)

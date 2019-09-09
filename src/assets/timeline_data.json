@@ -36,7 +36,7 @@
         "Northgrippian",
         "Greenlandian",
         "Pleistocene",
-        "LatePleistocene",
+        "UpperPleistocene",
         "MiddlePleistocene",
         "Calabrian",
         "Gelasian"
@@ -95,7 +95,7 @@
       "fill": "#FFEFC0",
       "type": "epoch",
       "narrow": [
-        "LatePleistocene",
+        "UpperPleistocene",
         "MiddlePleistocene",
         "Calabrian",
         "Gelasian"
@@ -105,7 +105,7 @@
       ]
     },
     {
-      "id": "LatePleistocene",
+      "id": "UpperPleistocene",
       "name": "Upper",
       "fill": "#FFF2DD",
       "type": "age",
@@ -450,14 +450,14 @@
       "fill": "#82CC73",
       "type": "period",
       "narrow": [
-        "LateCretaceous",
+        "UpperCretaceous",
         "Maastrichtian",
         "Campanian",
         "Santonian",
         "Coniacian",
         "Turonian",
         "Cenomanian",
-        "EarlyCretaceous",
+        "LowerCretaceous",
         "Albian",
         "Aptian",
         "Barremian",
@@ -470,7 +470,7 @@
       ]
     },
     {
-      "id": "LateCretaceous",
+      "id": "UpperCretaceous",
       "name": "Upper",
       "fill": "#ABD671",
       "type": "epoch",
@@ -493,7 +493,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateCretaceous"
+        "UpperCretaceous"
       ]
     },
     {
@@ -503,7 +503,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateCretaceous"
+        "UpperCretaceous"
       ]
     },
     {
@@ -513,7 +513,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateCretaceous"
+        "UpperCretaceous"
       ]
     },
     {
@@ -523,7 +523,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateCretaceous"
+        "UpperCretaceous"
       ]
     },
     {
@@ -533,7 +533,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateCretaceous"
+        "UpperCretaceous"
       ]
     },
     {
@@ -543,11 +543,11 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateCretaceous"
+        "UpperCretaceous"
       ]
     },
     {
-      "id": "EarlyCretaceous",
+      "id": "LowerCretaceous",
       "name": "Lower",
       "fill": "#8FD07B",
       "type": "epoch",
@@ -570,7 +570,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyCretaceous"
+        "LowerCretaceous"
       ]
     },
     {
@@ -580,7 +580,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyCretaceous"
+        "LowerCretaceous"
       ]
     },
     {
@@ -590,7 +590,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyCretaceous"
+        "LowerCretaceous"
       ]
     },
     {
@@ -600,7 +600,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyCretaceous"
+        "LowerCretaceous"
       ]
     },
     {
@@ -610,7 +610,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyCretaceous"
+        "LowerCretaceous"
       ]
     },
     {
@@ -620,7 +620,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyCretaceous"
+        "LowerCretaceous"
       ]
     },
     {
@@ -629,7 +629,7 @@
       "fill": "#1AC4EC",
       "type": "period",
       "narrow": [
-        "LateJurassic",
+        "UpperJurassic",
         "Tithonian",
         "Kimmeridgian",
         "Oxfordian",
@@ -638,7 +638,7 @@
         "Bathonian",
         "Bajocian",
         "Aalenian",
-        "EarlyJurassic",
+        "LowerJurassic",
         "Toarcian",
         "Pliensbachian",
         "Sinemurian",
@@ -649,7 +649,7 @@
       ]
     },
     {
-      "id": "LateJurassic",
+      "id": "UpperJurassic",
       "name": "Upper",
       "fill": "#A9E8FB",
       "type": "epoch",
@@ -669,7 +669,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateJurassic"
+        "UpperJurassic"
       ]
     },
     {
@@ -679,7 +679,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateJurassic"
+        "UpperJurassic"
       ]
     },
     {
@@ -689,7 +689,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateJurassic"
+        "UpperJurassic"
       ]
     },
     {
@@ -748,7 +748,7 @@
       ]
     },
     {
-      "id": "EarlyJurassic",
+      "id": "LowerJurassic",
       "name": "Lower",
       "fill": "#28C1F0",
       "type": "epoch",
@@ -769,7 +769,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyJurassic"
+        "LowerJurassic"
       ]
     },
     {
@@ -779,7 +779,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyJurassic"
+        "LowerJurassic"
       ]
     },
     {
@@ -789,7 +789,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyJurassic"
+        "LowerJurassic"
       ]
     },
     {
@@ -799,7 +799,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyJurassic"
+        "LowerJurassic"
       ]
     },
     {
@@ -808,14 +808,14 @@
       "fill": "#824FA8",
       "type": "period",
       "narrow": [
-        "LateTriassic",
+        "UpperTriassic",
         "Rhaetian",
         "Norian",
         "Carnian",
         "MiddleTriassic",
         "Ladinian",
         "Anisian",
-        "EarlyTriassic",
+        "LowerTriassic",
         "Olenekian",
         "Induan"
       ],
@@ -824,7 +824,7 @@
       ]
     },
     {
-      "id": "LateTriassic",
+      "id": "UpperTriassic",
       "name": "Upper",
       "fill": "#BBA3D1",
       "type": "epoch",
@@ -844,7 +844,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateTriassic"
+        "UpperTriassic"
       ]
     },
     {
@@ -854,7 +854,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateTriassic"
+        "UpperTriassic"
       ]
     },
     {
@@ -864,7 +864,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateTriassic"
+        "UpperTriassic"
       ]
     },
     {
@@ -901,7 +901,7 @@
       ]
     },
     {
-      "id": "EarlyTriassic",
+      "id": "LowerTriassic",
       "name": "Lower",
       "fill": "#995BAE",
       "type": "epoch",
@@ -920,7 +920,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyTriassic"
+        "LowerTriassic"
       ]
     },
     {
@@ -930,7 +930,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyTriassic"
+        "LowerTriassic"
       ]
     },
     {
@@ -1134,7 +1134,7 @@
       ]
     },
     {
-      "id": "LatePennsylvanian",
+      "id": "UpperPennsylvanian",
       "name": "Upper",
       "fill": "#BCD6CD",
       "type": "epoch sub-epoch",
@@ -1153,7 +1153,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LatePennsylvanian"
+        "UpperPennsylvanian"
       ]
     },
     {
@@ -1163,7 +1163,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LatePennsylvanian"
+        "UpperPennsylvanian"
       ]
     },
     {
@@ -1189,7 +1189,7 @@
       ]
     },
     {
-      "id": "EarlyPennsylvanian",
+      "id": "LowerPennsylvanian",
       "name": "Lower",
       "fill": "#85C9CB",
       "type": "epoch sub-epoch",
@@ -1207,7 +1207,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyPennsylvanian"
+        "LowerPennsylvanian"
       ]
     },
     {
@@ -1225,7 +1225,7 @@
       ]
     },
     {
-      "id": "LateMississippian",
+      "id": "UpperMississippian",
       "name": "Upper",
       "fill": "#B6C48A",
       "type": "epoch sub-epoch",
@@ -1243,7 +1243,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateMississippian"
+        "UpperMississippian"
       ]
     },
     {
@@ -1269,7 +1269,7 @@
       ]
     },
     {
-      "id": "EarlyMississippian",
+      "id": "LowerMississippian",
       "name": "Lower",
       "fill": "#80B88B",
       "type": "epoch sub-epoch",
@@ -1287,7 +1287,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyMississippian"
+        "LowerMississippian"
       ]
     },
     {
@@ -1296,13 +1296,13 @@
       "fill": "#D59C58",
       "type": "period",
       "narrow": [
-        "LateDevonian",
+        "UpperDevonian",
         "Famennian",
         "Frasnian",
         "MiddleDevonian",
         "Givetian",
         "Eifelian",
-        "EarlyDevonian",
+        "LowerDevonian",
         "Emsian",
         "Pragian",
         "Lochkovian"
@@ -1312,7 +1312,7 @@
       ]
     },
     {
-      "id": "LateDevonian",
+      "id": "UpperDevonian",
       "name": "Upper",
       "fill": "#F6E1B2",
       "type": "epoch",
@@ -1331,7 +1331,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateDevonian"
+        "UpperDevonian"
       ]
     },
     {
@@ -1341,7 +1341,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateDevonian"
+        "UpperDevonian"
       ]
     },
     {
@@ -1378,7 +1378,7 @@
       ]
     },
     {
-      "id": "EarlyDevonian",
+      "id": "LowerDevonian",
       "name": "Lower",
       "fill": "#EDB46E",
       "type": "epoch",
@@ -1398,7 +1398,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyDevonian"
+        "LowerDevonian"
       ]
     },
     {
@@ -1408,7 +1408,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyDevonian"
+        "LowerDevonian"
       ]
     },
     {
@@ -1418,7 +1418,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyDevonian"
+        "LowerDevonian"
       ]
     },
     {
@@ -1582,14 +1582,14 @@
       "fill": "#00AF90",
       "type": "period",
       "narrow": [
-        "LateOrdovician",
+        "UpperOrdovician",
         "Hirnantian",
         "Katian",
         "Sandbian",
         "MiddleOrdovician",
         "Darriwilian",
         "Dapingian",
-        "EarlyOrdovician",
+        "LowerOrdovician",
         "Floian",
         "Tremadocian"
       ],
@@ -1598,7 +1598,7 @@
       ]
     },
     {
-      "id": "LateOrdovician",
+      "id": "UpperOrdovician",
       "name": "Upper",
       "fill": "#7AD2B1",
       "type": "epoch",
@@ -1618,7 +1618,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateOrdovician"
+        "UpperOrdovician"
       ]
     },
     {
@@ -1628,7 +1628,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateOrdovician"
+        "UpperOrdovician"
       ]
     },
     {
@@ -1638,7 +1638,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "LateOrdovician"
+        "UpperOrdovician"
       ]
     },
     {
@@ -1675,7 +1675,7 @@
       ]
     },
     {
-      "id": "EarlyOrdovician",
+      "id": "LowerOrdovician",
       "name": "Lower",
       "fill": "#0FB58F",
       "type": "epoch",
@@ -1694,7 +1694,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyOrdovician"
+        "LowerOrdovician"
       ]
     },
     {
@@ -1704,7 +1704,7 @@
       "type": "age",
       "narrow": [],
       "broad": [
-        "EarlyOrdovician"
+        "LowerOrdovician"
       ]
     },
     {

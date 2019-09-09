@@ -27,12 +27,12 @@
     ],
     "http://resource.geosciml.org/classifier/ics/ischart/Carboniferous": [
         "http://resource.geosciml.org/classifier/ics/ischart/Bashkirian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyMississippian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyPennsylvanian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerMississippian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerPennsylvanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Gzhelian",
         "http://resource.geosciml.org/classifier/ics/ischart/Kasimovian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateMississippian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LatePennsylvanian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddleMississippian",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddlePennsylvanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Mississippian",
@@ -56,7 +56,7 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Gelasian",
         "http://resource.geosciml.org/classifier/ics/ischart/Holocene",
         "http://resource.geosciml.org/classifier/ics/ischart/Langhian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LatePleistocene",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene",
         "http://resource.geosciml.org/classifier/ics/ischart/Lutetian",
         "http://resource.geosciml.org/classifier/ics/ischart/Messinian",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddlePleistocene",
@@ -92,27 +92,27 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Campanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Cenomanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Coniacian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyCretaceous",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous",
         "http://resource.geosciml.org/classifier/ics/ischart/Hauterivian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateCretaceous",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous",
         "http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian",
         "http://resource.geosciml.org/classifier/ics/ischart/Santonian",
         "http://resource.geosciml.org/classifier/ics/ischart/Turonian",
         "http://resource.geosciml.org/classifier/ics/ischart/Valanginian"
     ],
     "http://resource.geosciml.org/classifier/ics/ischart/Devonian": [
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyDevonian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian",
         "http://resource.geosciml.org/classifier/ics/ischart/Eifelian",
         "http://resource.geosciml.org/classifier/ics/ischart/Emsian",
         "http://resource.geosciml.org/classifier/ics/ischart/Famennian",
         "http://resource.geosciml.org/classifier/ics/ischart/Frasnian",
         "http://resource.geosciml.org/classifier/ics/ischart/Givetian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateDevonian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperDevonian",
         "http://resource.geosciml.org/classifier/ics/ischart/Lochkovian",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddleDevonian",
         "http://resource.geosciml.org/classifier/ics/ischart/Pragian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyCretaceous": [
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous": [
         "http://resource.geosciml.org/classifier/ics/ischart/Albian",
         "http://resource.geosciml.org/classifier/ics/ischart/Aptian",
         "http://resource.geosciml.org/classifier/ics/ischart/Barremian",
@@ -120,28 +120,28 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Hauterivian",
         "http://resource.geosciml.org/classifier/ics/ischart/Valanginian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyDevonian": [
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian": [
         "http://resource.geosciml.org/classifier/ics/ischart/Emsian",
         "http://resource.geosciml.org/classifier/ics/ischart/Lochkovian",
         "http://resource.geosciml.org/classifier/ics/ischart/Pragian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyJurassic": [
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic": [
         "http://resource.geosciml.org/classifier/ics/ischart/Hettangian",
         "http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian",
         "http://resource.geosciml.org/classifier/ics/ischart/Sinemurian",
         "http://resource.geosciml.org/classifier/ics/ischart/Toarcian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyMississippian": [
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerMississippian": [
         "http://resource.geosciml.org/classifier/ics/ischart/Tournaisian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyOrdovician": [
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerOrdovician": [
         "http://resource.geosciml.org/classifier/ics/ischart/Floian",
         "http://resource.geosciml.org/classifier/ics/ischart/Tremadocian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyPennsylvanian": [
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerPennsylvanian": [
         "http://resource.geosciml.org/classifier/ics/ischart/Bashkirian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/EarlyTriassic": [
+    "http://resource.geosciml.org/classifier/ics/ischart/LowerTriassic": [
         "http://resource.geosciml.org/classifier/ics/ischart/Induan",
         "http://resource.geosciml.org/classifier/ics/ischart/Olenekian"
     ],
@@ -171,10 +171,10 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Bajocian",
         "http://resource.geosciml.org/classifier/ics/ischart/Bathonian",
         "http://resource.geosciml.org/classifier/ics/ischart/Callovian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyJurassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic",
         "http://resource.geosciml.org/classifier/ics/ischart/Hettangian",
         "http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateJurassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic",
         "http://resource.geosciml.org/classifier/ics/ischart/Oxfordian",
         "http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian",
@@ -182,7 +182,7 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Tithonian",
         "http://resource.geosciml.org/classifier/ics/ischart/Toarcian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/LateCretaceous": [
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous": [
         "http://resource.geosciml.org/classifier/ics/ischart/Campanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Cenomanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Coniacian",
@@ -190,28 +190,28 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Santonian",
         "http://resource.geosciml.org/classifier/ics/ischart/Turonian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/LateDevonian": [
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperDevonian": [
         "http://resource.geosciml.org/classifier/ics/ischart/Famennian",
         "http://resource.geosciml.org/classifier/ics/ischart/Frasnian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/LateJurassic": [
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic": [
         "http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian",
         "http://resource.geosciml.org/classifier/ics/ischart/Oxfordian",
         "http://resource.geosciml.org/classifier/ics/ischart/Tithonian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/LateMississippian": [
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian": [
         "http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/LateOrdovician": [
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician": [
         "http://resource.geosciml.org/classifier/ics/ischart/Hirnantian",
         "http://resource.geosciml.org/classifier/ics/ischart/Katian",
         "http://resource.geosciml.org/classifier/ics/ischart/Sandbian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/LatePennsylvanian": [
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian": [
         "http://resource.geosciml.org/classifier/ics/ischart/Gzhelian",
         "http://resource.geosciml.org/classifier/ics/ischart/Kasimovian"
     ],
-    "http://resource.geosciml.org/classifier/ics/ischart/LateTriassic": [
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic": [
         "http://resource.geosciml.org/classifier/ics/ischart/Carnian",
         "http://resource.geosciml.org/classifier/ics/ischart/Norian",
         "http://resource.geosciml.org/classifier/ics/ischart/Rhaetian"
@@ -249,18 +249,18 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Cenomanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Coniacian",
         "http://resource.geosciml.org/classifier/ics/ischart/Cretaceous",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyCretaceous",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyJurassic",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyTriassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerTriassic",
         "http://resource.geosciml.org/classifier/ics/ischart/Hauterivian",
         "http://resource.geosciml.org/classifier/ics/ischart/Hettangian",
         "http://resource.geosciml.org/classifier/ics/ischart/Induan",
         "http://resource.geosciml.org/classifier/ics/ischart/Jurassic",
         "http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian",
         "http://resource.geosciml.org/classifier/ics/ischart/Ladinian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateCretaceous",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateJurassic",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateTriassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic",
         "http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddleTriassic",
@@ -315,8 +315,8 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Tortonian"
     ],
     "http://resource.geosciml.org/classifier/ics/ischart/Mississippian": [
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyMississippian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateMississippian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerMississippian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddleMississippian",
         "http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian",
         "http://resource.geosciml.org/classifier/ics/ischart/Tournaisian",
@@ -346,11 +346,11 @@
     "http://resource.geosciml.org/classifier/ics/ischart/Ordovician": [
         "http://resource.geosciml.org/classifier/ics/ischart/Dapingian",
         "http://resource.geosciml.org/classifier/ics/ischart/Darriwilian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyOrdovician",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerOrdovician",
         "http://resource.geosciml.org/classifier/ics/ischart/Floian",
         "http://resource.geosciml.org/classifier/ics/ischart/Hirnantian",
         "http://resource.geosciml.org/classifier/ics/ischart/Katian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateOrdovician",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddleOrdovician",
         "http://resource.geosciml.org/classifier/ics/ischart/Sandbian",
         "http://resource.geosciml.org/classifier/ics/ischart/Tremadocian"
@@ -399,10 +399,10 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Darriwilian",
         "http://resource.geosciml.org/classifier/ics/ischart/Devonian",
         "http://resource.geosciml.org/classifier/ics/ischart/Drumian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyDevonian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyMississippian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyOrdovician",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyPennsylvanian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerMississippian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerOrdovician",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerPennsylvanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Eifelian",
         "http://resource.geosciml.org/classifier/ics/ischart/Emsian",
         "http://resource.geosciml.org/classifier/ics/ischart/Famennian",
@@ -421,10 +421,10 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Kasimovian",
         "http://resource.geosciml.org/classifier/ics/ischart/Katian",
         "http://resource.geosciml.org/classifier/ics/ischart/Kungurian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateDevonian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateMississippian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateOrdovician",
-        "http://resource.geosciml.org/classifier/ics/ischart/LatePennsylvanian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperDevonian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Llandovery",
         "http://resource.geosciml.org/classifier/ics/ischart/Lochkovian",
         "http://resource.geosciml.org/classifier/ics/ischart/Lopingian",
@@ -462,10 +462,10 @@
     ],
     "http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian": [
         "http://resource.geosciml.org/classifier/ics/ischart/Bashkirian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyPennsylvanian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerPennsylvanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Gzhelian",
         "http://resource.geosciml.org/classifier/ics/ischart/Kasimovian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LatePennsylvanian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddlePennsylvanian",
         "http://resource.geosciml.org/classifier/ics/ischart/Moscovian"
     ],
@@ -526,13 +526,13 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Darriwilian",
         "http://resource.geosciml.org/classifier/ics/ischart/Devonian",
         "http://resource.geosciml.org/classifier/ics/ischart/Drumian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyCretaceous",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyDevonian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyJurassic",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyMississippian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyOrdovician",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyPennsylvanian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyTriassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerMississippian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerOrdovician",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerPennsylvanian",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerTriassic",
         "http://resource.geosciml.org/classifier/ics/ischart/Eifelian",
         "http://resource.geosciml.org/classifier/ics/ischart/Emsian",
         "http://resource.geosciml.org/classifier/ics/ischart/Eocene",
@@ -561,14 +561,14 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Kungurian",
         "http://resource.geosciml.org/classifier/ics/ischart/Ladinian",
         "http://resource.geosciml.org/classifier/ics/ischart/Langhian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateCretaceous",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateDevonian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateJurassic",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateMississippian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateOrdovician",
-        "http://resource.geosciml.org/classifier/ics/ischart/LatePennsylvanian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LatePleistocene",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateTriassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperDevonian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic",
         "http://resource.geosciml.org/classifier/ics/ischart/Llandovery",
         "http://resource.geosciml.org/classifier/ics/ischart/Lochkovian",
         "http://resource.geosciml.org/classifier/ics/ischart/Lopingian",
@@ -644,7 +644,7 @@
     "http://resource.geosciml.org/classifier/ics/ischart/Pleistocene": [
         "http://resource.geosciml.org/classifier/ics/ischart/Calabrian",
         "http://resource.geosciml.org/classifier/ics/ischart/Gelasian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LatePleistocene",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddlePleistocene"
     ],
     "http://resource.geosciml.org/classifier/ics/ischart/Pliocene": [
@@ -695,7 +695,7 @@
         "http://resource.geosciml.org/classifier/ics/ischart/Calabrian",
         "http://resource.geosciml.org/classifier/ics/ischart/Gelasian",
         "http://resource.geosciml.org/classifier/ics/ischart/Holocene",
-        "http://resource.geosciml.org/classifier/ics/ischart/LatePleistocene",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddlePleistocene",
         "http://resource.geosciml.org/classifier/ics/ischart/Pleistocene"
     ],
@@ -719,10 +719,10 @@
     "http://resource.geosciml.org/classifier/ics/ischart/Triassic": [
         "http://resource.geosciml.org/classifier/ics/ischart/Anisian",
         "http://resource.geosciml.org/classifier/ics/ischart/Carnian",
-        "http://resource.geosciml.org/classifier/ics/ischart/EarlyTriassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/LowerTriassic",
         "http://resource.geosciml.org/classifier/ics/ischart/Induan",
         "http://resource.geosciml.org/classifier/ics/ischart/Ladinian",
-        "http://resource.geosciml.org/classifier/ics/ischart/LateTriassic",
+        "http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic",
         "http://resource.geosciml.org/classifier/ics/ischart/MiddleTriassic",
         "http://resource.geosciml.org/classifier/ics/ischart/Norian",
         "http://resource.geosciml.org/classifier/ics/ischart/Olenekian",
@@ -840,7 +840,7 @@
     "http://resource.geosciml.org/classifier/ics/ischart/Rhyacian": [],
     "http://resource.geosciml.org/classifier/ics/ischart/Calabrian": [],
     "http://resource.geosciml.org/classifier/ics/ischart/Gelasian": [],
-    "http://resource.geosciml.org/classifier/ics/ischart/LatePleistocene": [],
+    "http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene": [],
     "http://resource.geosciml.org/classifier/ics/ischart/MiddlePleistocene": [],
     "http://resource.geosciml.org/classifier/ics/ischart/Piacenzian": [],
     "http://resource.geosciml.org/classifier/ics/ischart/Zanclean": [],

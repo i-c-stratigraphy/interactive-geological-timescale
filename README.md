@@ -15,7 +15,7 @@ When any time period is clicked by a user, information about that period is retr
 You can see this application online at **<https://kurrawong.net/timescale/>**
 
 
-## Technical details
+## Deploying this application
 This is a [vue.js](https://vuejs.org/) application, built using [node.js](https://nodejs.org/en/).
 
 #### Project setup
@@ -35,14 +35,17 @@ Produces a `dist/` folder that can be deployed on a standard webserver (HTML, JS
 npm run build
 ```
 
-Notes for deployment on a web server:
-# convert paths in index.html from =/ to just =
-    # 9 instances
-# strip last char from footer image paths (3 images)
-    # go to js/app.707bca09.js
-    # find images (CSIRO_ & GSQ_, loading.)
-    # add this
-    # .slice(0, -1)
+### Production deployment from pre-built files
+This repository contains a pre-built arechive file for deployment: [timescale.tar.gz](timescale.tar.gz).
+
+You can rebuild this file by taring and gzipping the dist/ folder created with `npm run build`. Just make sure you make the following changes after building:
+
+1. convert paths in index.html from =/ to just =
+    a. 9 instances
+2. strip last char from footer image paths (3 images)
+    a. go to js/app.xxxxxx.js
+    b. find the 3 images (img/...)
+    c. add this to the image path generation variable: .slice(0, -1), .e.g i.exports=r.p.slice(0, -1)+"img/
 
 
 ##### Run your tests

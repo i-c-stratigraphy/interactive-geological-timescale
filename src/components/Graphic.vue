@@ -25,9 +25,9 @@
             <text x="50%" y="50%"><tspan x='50%' y='30%'>Numerical</tspan><tspan x='50%' y='70%'>Age (Ma)</tspan></text>
         </svg>
         <svg class="timescale" width="5%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <g v-for="(item, index) in entries" v-if="intervalChildrenData['http://resource.geosciml.org/classifier/ics/ischart/' + item.id] == 0 && parseFloat(item.height) >= threshold" v-bind:key="index">
+            <g v-for="(item, index) in entries" v-if="intervalChildrenData[item.id] == 0 && parseFloat(item.height) >= threshold" v-bind:key="index">
                 <line x1="0" :y1="item.y" x2="30%" :y2="item.y" stroke='black'/>
-                <text :x="'30%'" :y="item.y">{{intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + item.id].hasEnd}}</text>
+                <text :x="'30%'" :y="item.y">{{intervalData[item.id].hasEnd}}</text>
             </g>
             <g>
                 <text x='25%' y="100%">~4600</text>
@@ -86,8 +86,8 @@
                     if (data[item]['id'] == "Archean") {// Necessary as archean eon has no periods
                         archean = true
                     }
-                    var end = this.baseLog(base, intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd'] + 1) / this.baseLog(base, 4568) * 100
-                    var beginning = this.baseLog(base, intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasBeginning'] + 1) / this.baseLog(base, 4568) * 100
+                    var end = this.baseLog(base, intervalData[data[item]['id']]['hasEnd'] + 1) / this.baseLog(base, 4568) * 100
+                    var beginning = this.baseLog(base, intervalData[data[item]['id']]['hasBeginning'] + 1) / this.baseLog(base, 4568) * 100
                     data[item]['y'] = (end != -Infinity) ? end + "%" : '0%'
                     data[item]['height'] = (beginning - parseFloat(data[item]['y'])) + '%'
                     data[item]['ylabel'] = (parseFloat(data[item]['y']) +  (parseFloat(data[item]['height'])) /2) + '%'
@@ -143,8 +143,8 @@
                     if (data[item]['id'] == "Archean") {// Necessary as archean eon has no periods
                         archean = true
                     }
-                    var end = (intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd']) / total * 100
-                    var beginning = (intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasBeginning']) / total * 100
+                    var end = (intervalData[data[item]['id']]['hasEnd']) / total * 100
+                    var beginning = (intervalData[data[item]['id']]['hasBeginning']) / total * 100
                     data[item]['y'] = end + "%"
                     data[item]['height'] = (beginning - parseFloat(data[item]['y'])) + '%'
                     data[item]['ylabel'] = (parseFloat(data[item]['y']) +  (parseFloat(data[item]['height'])) /2) + '%'
@@ -229,22 +229,22 @@
                         archean = true
                     }
                     if (data[item]['type'] == 'age'){
-                        ages.push([data[item]['id'], intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd']])
+                        ages.push([data[item]['id'], intervalData[data[item]['id']]['hasEnd']])
                         data[item]['x'] = "72.5%"
                         data[item]['width'] = "27.5%"
                         data[item]['xlabel'] = "86.25%"
                     }else if (data[item]['type'] == 'epoch sub-epoch'){
-                        subEpochs.push([data[item]['id'], intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd']])
+                        subEpochs.push([data[item]['id'], intervalData[data[item]['id']]['hasEnd']])
                         data[item]['x'] = "57.5%"
                         data[item]['width'] = "42.5%"
                         data[item]['xlabel'] = "65%"
                     }else if (data[item]['type'] == 'epoch'){
-                        epochs.push([data[item]['id'], intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd']])
+                        epochs.push([data[item]['id'], intervalData[data[item]['id']]['hasEnd']])
                         data[item]['x'] = "42.5%"
                         data[item]['width'] = "57.5%"
                         data[item]['xlabel'] = (data[item]['id'] == 'Mississippian' || data[item]['id'] == 'Pennsylvanian') ? "50%" : "57.5%"
                     }else if (data[item]['type'] == 'period'){
-                        periods.push([data[item]['id'], intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd']])
+                        periods.push([data[item]['id'], intervalData[data[item]['id']]['hasEnd']])
                         data[item]['x'] = "32.5%"
                         data[item]['width'] = "67.5%"
                         data[item]['xlabel'] = "37.5%"
@@ -252,7 +252,7 @@
                             data[item]['xlabel'] = "67.5%"
                         }
                     }else if (data[item]['type'] == 'era'){
-                        eras.push([data[item]['id'], intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd']])
+                        eras.push([data[item]['id'], intervalData[data[item]['id']]['hasEnd']])
                         data[item]['x'] = "22.5%"
                         data[item]['width'] = "77.5%"
                         data[item]['xlabel'] =  (!precambrian) ? "27.5%" : "27.5%"
@@ -260,7 +260,7 @@
                              data[item]['xlabel'] = "62.5%"
                         }
                     }else if (data[item]['type'] == 'eon'){
-                        eons.push([data[item]['id'], intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd']])
+                        eons.push([data[item]['id'], intervalData[data[item]['id']]['hasEnd']])
                         data[item]['x'] = "12.5%"
                         data[item]['width'] = "87.5%"
                         data[item]['xlabel'] = "17.5%"
@@ -268,7 +268,7 @@
                              data[item]['xlabel'] = "56.25%"
                         }
                     }else if (data[item]['type'] == 'super-eon'){
-                        supereons.push([data[item]['id'], intervalData['http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']]['hasEnd']])
+                        supereons.push([data[item]['id'], intervalData[data[item]['id']]['hasEnd']])
                         data[item]['x'] = "2.5%"
                         data[item]['width'] = "97.5%"
                         data[item]['xlabel'] = "7.5%"
@@ -296,51 +296,51 @@
                     return a[1] - b[1]
                 })
                 for (let age in ages){
-                    let id = 'http://resource.geosciml.org/classifier/ics/ischart/' + ages[age][0]
+                    let id = ages[age][0]
                     intervalData[id]['y'] = currentAgeY + '%'
                     intervalData[id]['height'] = blockHeight + '%'
                     currentAgeY = parseFloat(intervalData[id]['y']) + parseFloat(intervalData[id]['height'])
                 }
                 for (let epoch in epochs){
-                    let id = 'http://resource.geosciml.org/classifier/ics/ischart/' + epochs[epoch][0]
+                    let id = epochs[epoch][0]
                     intervalData[id]['y'] = currentEpochY + '%'
                     intervalData[id]['height'] = (intervalChildrenData[id] != 0 ) ? blockHeight * intervalChildrenData[id] + '%' : blockHeight + '%'
                     currentEpochY = parseFloat(intervalData[id]['y']) + parseFloat(intervalData[id]['height'])
                 }
                 currentSubEpochY = parseFloat(intervalData['http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian']['y'])// REQUIRED as the two epochs that contain sub-epochs are the Pennsylvanian and Mississippiann Epochs (which are back to back). Hence the y positions of ALL the subperiods start when the Pennsylvanian Epoch starts.
                 for (let epoch in subEpochs){
-                    let id = 'http://resource.geosciml.org/classifier/ics/ischart/' + subEpochs[epoch][0]
+                    let id = subEpochs[epoch][0]
                     intervalData[id]['y'] = currentSubEpochY + '%'
                     intervalData[id]['height'] = (intervalChildrenData[id] != 0 ) ? blockHeight * intervalChildrenData[id] + '%' : blockHeight + '%'
                     currentSubEpochY = parseFloat(intervalData[id]['y']) + parseFloat(intervalData[id]['height'])
                 }
                 for (let period in periods){
-                    let id = 'http://resource.geosciml.org/classifier/ics/ischart/' + periods[period][0]
+                    let id = periods[period][0]
                     intervalData[id]['y'] = currentPeriodY + '%'
                     intervalData[id]['height'] = (intervalChildrenData[id] != 0 ) ? blockHeight * intervalChildrenData[id] + '%' : blockHeight + '%'
                     currentPeriodY = parseFloat(intervalData[id]['y']) + parseFloat(intervalData[id]['height'])
                 }
                 for (let era in eras){
-                    let id = 'http://resource.geosciml.org/classifier/ics/ischart/' + eras[era][0]
+                    let id = eras[era][0]
                     intervalData[id]['y'] = currentEraY + '%'
                     intervalData[id]['height'] = (intervalChildrenData[id] != 0 ) ? blockHeight * intervalChildrenData[id] + '%' : blockHeight + '%'
                     currentEraY = parseFloat(intervalData[id]['y']) + parseFloat(intervalData[id]['height'])
                 }
                 for (let eon in eons){
-                    let id = 'http://resource.geosciml.org/classifier/ics/ischart/' + eons[eon][0]
+                    let id = eons[eon][0]
                     intervalData[id]['y'] = currentEonY + '%'
                     intervalData[id]['height'] = (intervalChildrenData[id] != 0 ) ? blockHeight * intervalChildrenData[id] + '%' : blockHeight + '%'
                     currentEonY = parseFloat(intervalData[id]['y']) + parseFloat(intervalData[id]['height'])
                 }
                 currentSupereonY = currentAgeY // REQUIRED as the precambrian (latest) supereon starts after the Phanerozoic Eon (which has no supereon parent) - this is where ages end.
                 for (let supereon in supereons){
-                    let id = 'http://resource.geosciml.org/classifier/ics/ischart/' + supereons[supereon][0]
+                    let id = supereons[supereon][0]
                     intervalData[id]['y'] = currentSupereonY + '%'
                     intervalData[id]['height'] = (intervalChildrenData[id] != 0 ) ? blockHeight * intervalChildrenData[id] + '%' : blockHeight + '%'
                     currentEraY = parseFloat(intervalData[id]['y']) + parseFloat(intervalData[id]['height'])
                 }
                 for (let item in data){
-                    let id = 'http://resource.geosciml.org/classifier/ics/ischart/' + data[item]['id']
+                    let id = data[item]['id']
                     data[item]['y'] = intervalData[id]['y']
                     data[item]['height'] = intervalData[id]['height']
                     data[item]['ylabel'] = (parseFloat(data[item]['y']) +  (parseFloat(data[item]['height'])) /2) + '%'

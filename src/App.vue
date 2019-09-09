@@ -43,7 +43,7 @@ export default {
   mounted () {
     EventBus.$on('create-data-sheet', id => {
       this.dataSheetOn = true
-      this.dataSheetId = 'http://resource.geosciml.org/classifier/ics/ischart/' + id
+      this.dataSheetId = id
     })
     EventBus.$on('destroy-data-sheet', payload =>{
       this.dataSheetOn = false

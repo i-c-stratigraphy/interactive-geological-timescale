@@ -2,7 +2,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic",
         "name": "Phanerozoic",
-        "fill": "#A1D4E2",
+        "fill": "#9AD9DD",
         "type": "eon",
         "narrow": [
             "http://resource.geosciml.org/classifier/ics/ischart/Cenozoic",
@@ -14,7 +14,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/Cenozoic",
         "name": "Cenozoic",
-        "fill": "#F6EB3B",
+        "fill": "#F2F91D",
         "type": "era",
         "narrow": [
             "http://resource.geosciml.org/classifier/ics/ischart/Quaternary",
@@ -28,7 +28,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/Quaternary",
         "name": "Quaternary",
-        "fill": "#FFF49E",
+        "fill": "#F9F97F",
         "type": "period",
         "narrow": [
             "http://resource.geosciml.org/classifier/ics/ischart/Holocene",
@@ -48,7 +48,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/Holocene",
         "name": "Holocene",
-        "fill": "#FFF3E6",
+        "fill": "#feebd2",
         "type": "epoch",
         "narrow": [
             "http://resource.geosciml.org/classifier/ics/ischart/Meghalayan",
@@ -62,7 +62,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/Meghalayan",
         "name": "Meghalayan",
-        "fill": "#FFF4F0",
+        "fill": "#fdedec",
         "type": "age",
         "narrow": [],
         "broad": [
@@ -72,7 +72,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/Northgrippian",
         "name": "Northgrippian",
-        "fill": "#FEF6F3",
+        "fill": "#fdece4",
         "type": "age",
         "narrow": [],
         "broad": [
@@ -82,7 +82,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/Greenlandian",
         "name": "Greenlandian",
-        "fill": "#FDF5F2",
+        "fill": "#feecdb",
         "type": "age",
         "narrow": [],
         "broad": [
@@ -92,7 +92,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/Pleistocene",
         "name": "Pleistocene",
-        "fill": "#FFEFC0",
+        "fill": "#ffefaf",
         "type": "epoch",
         "narrow": [
             "http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene",
@@ -116,8 +116,8 @@
     },
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/MiddlePleistocene",
-        "name": "Middle",
-        "fill": "#FFF1D3",
+        "name": "Chibanian",
+        "fill": "#fff2c7",
         "type": "age",
         "narrow": [],
         "broad": [
@@ -127,7 +127,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/Calabrian",
         "name": "Calabrian",
-        "fill": "#FFF0CA",
+        "fill": "#fff2ba",
         "type": "age",
         "narrow": [],
         "broad": [
@@ -137,7 +137,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/Gelasian",
         "name": "Gelasian",
-        "fill": "#FFEEB7",
+        "fill": "#ffedb3",
         "type": "age",
         "narrow": [],
         "broad": [
@@ -472,7 +472,7 @@
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous",
         "name": "Upper",
-        "fill": "#ABD671",
+        "fill": "#fff2d3",
         "type": "epoch",
         "narrow": [
             "http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian",

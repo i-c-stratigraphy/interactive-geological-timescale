@@ -106,7 +106,7 @@
     },
     {
         "id": "http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene",
-        "name": "Upper",
+        "name": "Stage 4",
         "fill": "#FFF2DD",
         "type": "age",
         "narrow": [],

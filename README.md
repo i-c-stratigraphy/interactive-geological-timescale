@@ -8,11 +8,12 @@ This application presents a familar view of the geologic timescale drawn from ol
 
 When any time period is clicked by a user, information about that period is retrieved from the [Semantic Web](https://www.w3.org/standards/semanticweb/) delivery of the 2018 version of the Geological Timescale online at:
 
-* **<http://resource.geosciml.org/vocabulary/timescale/gts2018>**
+* **[http://resource.geosciml.org/vocabulary/timescale/gts2020](https://vocabs.ardc.edu.au/repository/api/lda/csiro/international-chronostratigraphic-chart/geologic-time-scale-2020/resource?uri=http://resource.geosciml.org/vocabulary/timescale/gts2020)**
+
 
 
 ## Example Deployment
-You can see this application online at **<https://kurrawong.net/timescale/>**
+You can see this application online at **<https://stratigraphy.org/timescale/>**
 
 
 ## Deploying this application

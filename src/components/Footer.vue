@@ -2,7 +2,7 @@
     <div id="foot">
         <br>
         <p><strong>Interactive Geological Timescale</strong></p>
-        <p>This visualisation of the <a href="http://www.stratigraphy.org/">International Commission on Stratigraphy</a>'s <a href="https://stratigraphy.org/chart">Chronostratigraphic Chart</a> uses the <a href="https://www.w3.org/TR/skos-primer/">SKOS</a> &amp; <a href="https://www.w3.org/TR/owl-time/">Time Ontology in OWL</a> representation of it as the <a href="http://resource.geosciml.org/vocabulary/timescale/gts2018">Geological Timescale (2018)</a> for its data.</p>
+        <p>This visualisation of the <a href="http://www.stratigraphy.org/">International Commission on Stratigraphy</a>'s <a href="https://stratigraphy.org/chart">Chronostratigraphic Chart</a> uses the <a href="https://www.w3.org/TR/skos-primer/">SKOS</a> &amp; <a href="https://www.w3.org/TR/owl-time/">Time Ontology in OWL</a> representation of it as the <a href="http://resource.geosciml.org/vocabulary/timescale/gts2020">Geological Timescale (2020)</a> for its data.</p>
         <p>The work to develop this was supported by <a href="https://www.csiro.au/">CSIRO</a>'s <a href='https://research.csiro.au/ei/'> Environmental Informatics Group</a> and the <a href='https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq'>Geological survey of Queensland</a>.</p>
         <div id="logos">
             <img src="../assets/CSIRO_Logo.svg" height="170px"> <img src="../assets/GSQ_Logo.jpg" height="170px">
@@ -12,11 +12,10 @@
 </template>
 
 <script>
-export default {
-  name: 'CustomFooter'
-}
+    export default {
+        name: 'CustomFooter'
+    }
 </script>
-
 
 <style scoped>
     p{

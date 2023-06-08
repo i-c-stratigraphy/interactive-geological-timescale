@@ -2,7 +2,7 @@
     <div id="header">
         <h1><span id="smaller-heading">INTERACTIVE</span><br>INTERNATIONAL CHRONOSTRATIGRAPHIC CHART</h1>
         <p>An interactive version of the <a href="https://stratigraphy.org/chart">International Chronostratigraphic Chart</a>, based on its <a href="https://www.w3.org/standards/semanticweb/">Semantic Web</a> representation.</p>
-        <p>For comments/issues and this visualisation's code, please see its <a href="https://github.com/CSIRO-enviro-informatics/interactive-geological-timescale">Git Code Repository</a>.</p><br>
+        <p>For comments/issues and this visualisation's code, please see its <a href="https://github.com/i-c-stratigraphy/interactive-geological-timescale">Git Code Repository</a>.</p><br>
     </div>
 </template>
 

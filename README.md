@@ -1,3 +1,6 @@
+> [!NOTE]  
+> This interactive chart is now no longer online at <https://stratigraphy.org/timescale/> since a new dynamic chart is about to be published at <https://stratigraphy.org/chart>. Feb, 2025.
+
 # Interactive Geological Timescale
 This repository contains a single page web application that is an interactive rendering of the [International Commission on Stratigraphy](http://www.stratigraphy.org)'s [International Chronostratigraphic Chart](https://stratigraphy.org/chart).
 
